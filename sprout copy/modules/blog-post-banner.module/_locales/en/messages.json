@@ -1,0 +1,72 @@
+{
+  "button_icon.label" : {
+    "message" : "Button icon",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.default" : {
+    "message" : "Back to blog",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.label" : {
+    "message" : "Button text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Blog Post Banner",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.choices.custom_bg_color" : {
+    "message" : "Custom background color",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.choices.custom_bg_image" : {
+    "message" : "Custom background image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.choices.featured_image" : {
+    "message" : "Featured image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.label" : {
+    "message" : "Which type of banner would you like to use?",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_color.label" : {
+    "message" : "Background color",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_image.label" : {
+    "message" : "Background image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style options",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.label" : {
+    "message" : "Padding",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.help_text" : {
+    "message" : "Value is in pixels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.label" : {
+    "message" : "Top/Bottom",
+    "description" : "",
+    "placeholders" : null
+  }
+}

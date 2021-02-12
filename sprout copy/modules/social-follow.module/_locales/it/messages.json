@@ -1,0 +1,152 @@
+{
+  "name" : {
+    "message" : "Seguimi sui social",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Abilitare questa opzione ti consentirà di sovrascrivere gli stili del tema predefiniti. Disabilitare questa opzione ricollegherà il modulo agli stili del tema predefiniti.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Sovrascrivi lo stile predefinito",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.accessibility.label" : {
+    "message" : "Opzioni di accessibilità",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.accessibility.title.default" : {
+    "message" : "Seguici su Facebook",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.accessibility.title.label" : {
+    "message" : "Titolo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.custom_icon.label" : {
+    "message" : "Icona personalizzata",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.label" : {
+    "message" : "Link ai social",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.custom_icon" : {
+    "message" : "Icona personalizzata",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.envelope" : {
+    "message" : "E-mail",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.facebook-f" : {
+    "message" : "Facebook",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.instagram" : {
+    "message" : "Instagram",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.link" : {
+    "message" : "Sito web",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.linkedin-in" : {
+    "message" : "LinkedIn",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.pinterest-p" : {
+    "message" : "Pinterest",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.twitter" : {
+    "message" : "Twitter",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.whatsapp" : {
+    "message" : "Whatsapp",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.youtube" : {
+    "message" : "YouTube",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.label" : {
+    "message" : "Account social",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_link.label" : {
+    "message" : "Link ai social",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_color.label" : {
+    "message" : "Colore sfondo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.color.label" : {
+    "message" : "Colore",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.corner_radius.help_text" : {
+    "message" : "Il valore è in pixel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.corner_radius.label" : {
+    "message" : "Raggio angolo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.bg_color.label" : {
+    "message" : "Colore sfondo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.color.label" : {
+    "message" : "Colore",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.label" : {
+    "message" : "Posiziona il cursore",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Opzioni stile",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.help_text" : {
+    "message" : "Il valore è in pixel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.label" : {
+    "message" : "Dimensioni",
+    "description" : "",
+    "placeholders" : null
+  }
+}

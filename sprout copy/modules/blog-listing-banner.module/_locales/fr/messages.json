@@ -1,0 +1,62 @@
+{
+  "name" : {
+    "message" : "Bannière de listing du blog",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_image.label" : {
+    "message" : "Image d'arrière-plan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Options de style",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.horizontal.help_text" : {
+    "message" : "La valeur est en pixels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.horizontal.label" : {
+    "message" : "Gauche/droite",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.label" : {
+    "message" : "Remplissage",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.help_text" : {
+    "message" : "La valeur est en pixels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.label" : {
+    "message" : "Haut/Bas",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.subtitle_color.label" : {
+    "message" : "Couleur du sous-titre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.title_color.label" : {
+    "message" : "Couleur du titre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subtitle.label" : {
+    "message" : "Sous-titre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Titre",
+    "description" : "",
+    "placeholders" : null
+  }
+}

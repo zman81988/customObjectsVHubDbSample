@@ -1,0 +1,67 @@
+{
+  "name" : {
+    "message" : "Testimonial-schuifbalk",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Als je deze optie inschakelt, kun je de standaard themastijlen overschrijven. Als je deze optie uitschakelt wordt de module weer gekoppeld aan de standaard themastijlen.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Standaardstijl overschrijven",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Stijlopties",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.navigation_active_color.label" : {
+    "message" : "Navigatie actieve kleur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.navigation_color.label" : {
+    "message" : "Navigatie kleur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.author_image.label" : {
+    "message" : "Auteursafbeelding",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.author_name.default" : {
+    "message" : "Alan Dixon",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.author_name.label" : {
+    "message" : "Auteursnaam",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.label" : {
+    "message" : "Auteur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.content.default" : {
+    "message" : "<h3>Wow, dit is geweldig!</h3></p>Het Rally-team heeft ons bedrijf behandeld alsof het van hunzelf was. Ze hebben het probleem met doorzettingsvermogen, kennis van zaken en empathie aangepakt. Ik beveel hen TEN ZEERSTE aan voor iedereen.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.content.label" : {
+    "message" : "Testimonial tekst",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.label" : {
+    "message" : "Testimonials",
+    "description" : "",
+    "placeholders" : null
+  }
+}

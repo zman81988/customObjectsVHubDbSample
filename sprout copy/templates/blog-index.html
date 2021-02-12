@@ -1,0 +1,151 @@
+<!--
+  templateType: blog_listing
+  isAvailableForNewContent: true
+  label: Sprout - blog listing
+  screenshotPath: ../images/template-previews/blog-index.png
+-->
+{% extends './layouts/base.html' %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  <div class="body-container body-container--blog-index">
+
+    {# Blog Listing Banner #}
+    {% module 'blog_listing_banner'
+      path='../modules/blog-listing-banner'
+    %}
+    {# End Blog Listing Banner #}
+
+    {# Blog Navigation #}
+    <div class="blog-navigation">
+      <div class="content-wrapper">
+        <div class="row-fluid span12">
+          <div class="blog-navigation__tag-filter column span6">
+            {% module 'blog_tag_filter'
+              path='../modules/blog-tag-filter'
+            %}
+          </div>
+          <div class="blog-navigation__search column span6">
+            {% module 'blog_search'
+              label='Blog search',
+              path='@hubspot/search_input'
+            %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {# End Blog Navigation #}
+
+    <div class="content-wrapper content-wrapper--blog-index">
+
+      {# Tag Listing Heading #}
+      {% if tag %}
+        <h2>Posts about {{ page_meta.html_title|split(' | ')|last }}:</h2>
+      {% endif %}
+      {# End Tag Listing Heading #}
+
+      {# Blog Author Heading #}
+      {% if blog_author %}
+        <h2>Posts by {{ blog_author.display_name }}:</h2>
+      {% endif %}
+      {# End Blog Author Heading #}
+
+      {# Blog Listing #}
+      <section class="blog-index">
+        {% for content in contents %}
+          <article class="blog-card">
+            <header class="blog-card__header">
+              <h2 class="blog-card__title"><a href="{{ content.absolute_url }}">{{ content.name }}</a></h2>
+              {% if content.blog_author.avatar %}
+                <span class="blog-card__author-image">
+                  <img src="{{ content.blog_author.avatar }}" alt="Picture of {{ content.blog_author.display_name }}">
+                </span>
+              {% endif %}
+              <div class="blog-card__meta">
+                  <a class="blog-card__author-name" href="{{ group.absolute_url }}/author/{{ content.blog_post_author.slug }}">{{ content.blog_post_author.display_name }}</a>
+                  <span class="blog-card__date">{{ content.publish_date_localized }}</span>
+              </div>
+            </header>
+            <div class="blog-card__body">
+              {% if content.featured_image and group.use_featured_image_in_summary %}
+                <img class="blog-card__image" src="{{ content.featured_image }}" alt="{{ content.name }}">
+              {% endif %}
+              <div class="blog-card__content">
+                {% if content.tag_list %}
+                  <div class="blog-card__tags">
+                    {% icon
+                      name='tag',
+                      purpose='decorative',
+                      style='SOLID'
+                    %}
+                    {% for tag in content.tag_list %}
+                      <a class="blog-card__tag-link" href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+                {% if content_group.show_summary_in_listing %}
+                  {% if content.post_body is string_containing "<!--more-->" %}
+                    {{ content.post_list_content }}
+                  {% else %}
+                    {{ content.post_list_content|truncatehtml(170) }}
+                  {% endif %}
+                {% endif %}
+              </div>
+            </div>
+            <footer class="blog-card__footer">
+              <a class="blog-card__button button" href="{{ content.absolute_url }}">Read More</a>
+              <div class="blog-card__comment-count">
+                {% set comments_number =  content.comment_list|length %}
+                {% set comments_label = 'Comment' if comments_number == 1 else 'Comments' %}
+                {{ comments_number }} {{ comments_label }}
+              </div>
+            </footer>
+          </article>
+        {% endfor %}
+      </section>
+      {# End Blog Listing #}
+
+      {# Blog Pagination #}
+      {% if contents.total_page_count > 1 %}
+        <div class="blog-pagination">
+          {% set page_list = [-2, -1, 0, 1, 2] %}
+          {% if contents.total_page_count - current_page_num == 1 %}{% set offset = -1 %}
+          {% elif contents.total_page_count - current_page_num == 0 %}{% set offset = -2 %}
+          {% elif current_page_num == 2 %}{% set offset = 1 %}
+          {% elif current_page_num == 1 %}{% set offset = 2 %}
+          {% else %}{% set offset = 0 %}{% endif %}
+
+          <a class="blog-pagination__link blog-pagination__prev-link {{ 'blog-pagination__prev-link--disabled' if !last_page_num }}"{% if last_page_num %} href="{% if current_page_num == 2 %}{{ group.absolute_url }}{% else %}{{ blog_page_link(last_page_num) }}{% endif %}"{% endif %}>
+            {% icon
+              name='chevron-left',
+              no_wrapper=True,
+              purpose='decorative',
+              style='SOLID',
+              width='13'
+            %}
+            Prev
+          </a>
+          {% for page in page_list %}
+            {% set this_page = current_page_num + page + offset %}
+            {% if this_page > 0 and this_page <= contents.total_page_count %}
+              <a class="blog-pagination__link blog-pagination__number-link {{ 'blog-pagination__link--active' if this_page == current_page_num }}" href="{% if this_page == 1 %}{{ group.absolute_url }}{% else %}{{ blog_page_link(this_page) }}{% endif %}">{{ this_page }}</a>
+            {% endif %}
+          {% endfor %}
+          <a class="blog-pagination__link blog-pagination__next-link {{ 'blog-pagination__next-link--disabled' if !next_page_num }}"{% if next_page_num %} href="{{ blog_page_link(current_page_num + 1) }}"{% endif %}>
+            Next
+            {% icon
+              name='chevron-right',
+              no_wrapper=True,
+              purpose='decorative',
+              style='SOLID',
+              width='13'
+            %}
+          </a>
+        </div>
+      {% endif %}
+      {# End Blog Pagination #}
+
+    </div>
+  </div>
+</main>
+{% endblock body %}

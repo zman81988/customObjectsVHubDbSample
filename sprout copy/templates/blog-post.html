@@ -1,0 +1,119 @@
+<!--
+  templateType: blog_post
+  isAvailableForNewContent: true
+  label: Sprout - blog post
+  screenshotPath: ../images/template-previews/blog-post.png
+-->
+{% extends './layouts/base.html' %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  <div class="body-container body-container--blog-post">
+
+    {# Blog Post Banner #}
+    {% module 'blog_post_banner'
+      path='../modules/blog-post-banner'
+    %}
+    {# End Blog Post Banner #}
+
+    {# Blog Post Content #}
+    <div class="content-wrapper content-wrapper--narrow content-wrapper--blog-post">
+      <article class="blog-post">
+        <header class="blog-post__header">
+          <h1 class="blog-post__title">{{ content.name }}</h1>
+          {% if content.blog_author.avatar %}
+            <span class="blog-post__author-image">
+              <img src="{{ content.blog_author.avatar }}" alt="Picture of {{ content.blog_author.display_name }}">
+            </span>
+          {% endif %}
+          <div class="blog-post__meta">
+            <a class="blog-post__author-name" href="{{ group.absolute_url }}/author/{{ content.blog_post_author.slug }}">{{ content.blog_post_author.display_name }}</a>
+            <span class="blog-post__date">{{ content.publish_date_localized }}</span>
+          </div>
+          {% if content.tag_list %}
+            <div class="blog-post__tags">
+              {% icon
+                name='tag',
+                purpose='decorative',
+                style='SOLID'
+              %}
+              {% for tag in content.tag_list %}
+                <a class="blog-post__tag-link" href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </header>
+        <div class="blog-post__body">
+          {{ content.post_body }}
+        </div>
+        <footer class="blog-post__footer">
+          <div class="blog-post__footer__row-one {% if !group.allow_comments %}blog-post__footer__row-one--centered{% endif %}">
+            {% if group.allow_comments %}
+              <div class="blog-post__comments-buttons">
+                <button class="blog-post__show-comments button">View Comments</button>
+                <button class="blog-post__hide-comments hide-button button">Hide Comments</button>
+              </div>
+            {% endif %}
+            <div class="blog-post__social-sharing">
+              <div class="social-links">
+                {% if group.show_social_link_twitter %}
+                  <a href="https://twitter.com/intent/tweet?text=I+found+this+interesting+blog+post&url={{ content.absolute_url }}" target="_blank" rel="noopener" class="social-links__link">
+                    {% icon
+                      extra_classes='social-links__icon',
+                      name='twitter',
+                      purpose='semantic',
+                      style='SOLID',
+                      title='Share this blog post on Twitter'
+                    %}
+                  </a>
+                {% endif %}
+                {% if group.show_social_link_facebook %}
+                  <a href="http://www.facebook.com/share.php?u={{ content.absolute_url }}" target="_blank" rel="noopener" class="social-links__link">
+                    {% icon
+                      extra_classes='social-links__icon',
+                      name='facebook-f',
+                      purpose='semantic',
+                      style='SOLID',
+                      title='Share this blog post on Facebook'
+                    %}
+                  </a>
+                {% endif %}
+                {% if group.show_social_link_linkedin %}
+                  <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ content.absolute_url }}" target="_blank" rel="noopener" class="social-links__link">
+                    {% icon
+                      extra_classes='social-links__icon',
+                      name='linkedin-in',
+                      purpose='semantic',
+                      style='SOLID',
+                      title='Share this blog post on LinkedIn'
+                    %}
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          {% if group.allow_comments %}
+            <div class="blog-post__footer__row-two">
+              <div class="blog-post__comments-listing hide-comments">
+                {% module 'blog_comments'
+                  path='@hubspot/blog_comments'
+                %}
+              </div>
+            </div>
+          {% endif %}
+        </footer>
+      </article>
+    </div>
+    {# End Blog Post Content #}
+
+    {# Blog Related Posts #}
+    <div class="content-wrapper content-wrapper--blog-post">
+      {% module 'blog_related_posts'
+        path='../modules/blog-related-posts'
+      %}
+    </div>
+    {# End Blog Related Posts #}
+
+  </div>
+</main>
+{% endblock body %}

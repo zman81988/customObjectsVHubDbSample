@@ -1,0 +1,152 @@
+{
+  "name" : {
+    "message" : "Follow-Button für Social Media",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Wenn Sie diese Option aktivieren, können Sie die Standard-Designstile außer Kraft setzen. Durch Deaktivieren dieser Option wird das Modul wieder mit den Standard-Designstilen verknüpft.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Standardstil überschreiben",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.accessibility.label" : {
+    "message" : "Optionen für Barrierefreiheit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.accessibility.title.default" : {
+    "message" : "Folgen Sie uns auf Facebook",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.accessibility.title.label" : {
+    "message" : "Titel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.custom_icon.label" : {
+    "message" : "Benutzerdefiniertes Symbol",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.label" : {
+    "message" : "Social-Media-Links",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.custom_icon" : {
+    "message" : "Benutzerdefiniertes Symbol",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.envelope" : {
+    "message" : "E-Mail-Adresse",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.facebook-f" : {
+    "message" : "Facebook",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.instagram" : {
+    "message" : "Instagram",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.link" : {
+    "message" : "Website",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.linkedin-in" : {
+    "message" : "LinkedIn",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.pinterest-p" : {
+    "message" : "Pinterest",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.twitter" : {
+    "message" : "Twitter",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.whatsapp" : {
+    "message" : "Whatsapp",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.youtube" : {
+    "message" : "YouTube",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.label" : {
+    "message" : "Social-Media-Konto",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_link.label" : {
+    "message" : "Social-Media-Link",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_color.label" : {
+    "message" : "Hintergrundfarbe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.color.label" : {
+    "message" : "Farbe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.corner_radius.help_text" : {
+    "message" : "Wert in Pixel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.corner_radius.label" : {
+    "message" : "Eckenradius",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.bg_color.label" : {
+    "message" : "Hintergrundfarbe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.color.label" : {
+    "message" : "Farbe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.label" : {
+    "message" : "Zeigen auf",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Stiloptionen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.help_text" : {
+    "message" : "Wert in Pixel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.label" : {
+    "message" : "Größe",
+    "description" : "",
+    "placeholders" : null
+  }
+}

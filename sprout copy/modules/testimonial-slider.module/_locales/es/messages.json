@@ -1,0 +1,67 @@
+{
+  "name" : {
+    "message" : "Control deslizante de testimonios",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Activar esta opción te permitirá anular los estilos de temas predeterminados. Al desactivar esta opción se volverá a conectar el módulo a los estilos de temas predeterminados.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Anular estilo predeterminado",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Opciones de estilos",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.navigation_active_color.label" : {
+    "message" : "Color activo de navegación",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.navigation_color.label" : {
+    "message" : "Color de navegación",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.author_image.label" : {
+    "message" : "Imagen del autor",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.author_name.default" : {
+    "message" : "Alan Dixon",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.author_name.label" : {
+    "message" : "Nombre del autor",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.label" : {
+    "message" : "Autor",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.content.default" : {
+    "message" : "<h3>¡Esto es increíble!</h3><p>El equipo Rally trató a nuestra empresa como si fuera de ellos. Resolvió el problema con determinación, conocimiento y empatía. Lo recomiendo AMPLIAMENTE a todos.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.content.label" : {
+    "message" : "Texto del testimonio",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.label" : {
+    "message" : "Testimonios",
+    "description" : "",
+    "placeholders" : null
+  }
+}

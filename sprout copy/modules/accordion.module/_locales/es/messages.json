@@ -1,0 +1,87 @@
+{
+  "content.default" : {
+    "message" : "Saca provecho de un increíble software intuitivo que te ahorra tiempo y que ayudará a tu empresa a crecer.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content.label" : {
+    "message" : "Contenido",
+    "description" : "",
+    "placeholders" : null
+  },
+  "expanded.label" : {
+    "message" : "Ampliado de manera predeterminada",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.default" : {
+    "message" : "¿Cómo elaboro una plantilla genial?",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.label" : {
+    "message" : "Encabezado",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Acordeón",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Activar esta opción te permitirá anular los estilos de temas predeterminados. Al desactivar esta opción se volverá a conectar el módulo a los estilos de temas predeterminados.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Anular estilo predeterminado",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.accordion_color.label" : {
+    "message" : "Color del encabezado",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.accordion_color.label" : {
+    "message" : "Color del encabezado",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.icon_color.label" : {
+    "message" : "Color del ícono",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.label" : {
+    "message" : "Activa",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.accordion_color.label" : {
+    "message" : "Color del encabezado",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.icon_color.label" : {
+    "message" : "Color del ícono",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.label" : {
+    "message" : "Cursor encima",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.icon_color.label" : {
+    "message" : "Color del ícono",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Opciones de estilos",
+    "description" : "",
+    "placeholders" : null
+  }
+}

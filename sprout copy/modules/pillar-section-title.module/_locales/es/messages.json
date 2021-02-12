@@ -1,0 +1,42 @@
+{
+  "name" : {
+    "message" : "Título de la sección pilar",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Activar esta opción te permitirá anular los estilos de temas predeterminados. Al desactivar esta opción se volverá a conectar el módulo a los estilos de temas predeterminados.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Anular estilo predeterminado",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.color.label" : {
+    "message" : "Color",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Opciones de estilos",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Título de la sección",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "El título de la sección debe describirlo y ser distinto de los otros títulos de secciones de la página. El título se agregará automáticamente al menú en el módulo \"Menú pilar\".",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Título",
+    "description" : "",
+    "placeholders" : null
+  }
+}

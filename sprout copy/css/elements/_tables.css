@@ -1,0 +1,38 @@
+/* Table */
+
+table {
+  border: 1px solid #d0d0d0;
+  border-collapse: collapse;
+  color: #1e2b33;
+  margin-bottom: 1.4rem;
+}
+
+tbody + tbody {
+  border-top: 2px solid #d0d0d0;
+}
+
+/* Table Cells */
+
+th,
+td {
+  border: 1px solid #d0d0d0;
+  padding: 0.7rem;
+  vertical-align: top;
+}
+
+/* Table Header */
+
+thead th,
+thead td {
+  background-color: #34b5e5;
+  border-bottom: 2px solid #d0d0d0;
+  color: #fff;
+  vertical-align: bottom;
+}
+
+/* Table Footer */
+
+tfoot td {
+  background-color: #fff;
+  color: #1e2b33;
+}

@@ -1,0 +1,268 @@
+/* Base */
+
+form {
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  padding: 2.8rem;
+}
+
+.hs-form-field {
+  margin-bottom: 1.4rem;
+  position: relative;
+}
+
+/* Form Title */
+
+.form-title {
+  background-color: #34b5e5;
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+  margin: 0;
+  padding: 2.8rem;
+  text-transform: uppercase;
+}
+
+.form-title ~ div > form {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Labels */
+
+.hs-form-field > label {
+  color: #1e2b33;
+  display: block;
+  margin-bottom: 0.35rem;
+  padding-top: 0;
+  text-align: left;
+  width: auto;
+}
+
+/* Help Text - Legends */
+
+.hs-form-field legend {
+  color: #1e2b33;
+  font-size: 0.875rem;
+}
+
+/* Inputs */
+
+.input {
+  position: relative;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='tel'],
+input[type='number'],
+input[type='file'],
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  color: #1e2b33;
+  display: inline-block;
+  padding: 0.75rem;
+  width: 100% !important;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='tel']:focus,
+input[type='number']:focus,
+input[type='file']:focus,
+select:focus,
+textarea:focus {
+  outline-color: #c168c2;
+}
+
+fieldset {
+  max-width: 100% !important;
+}
+
+::-moz-placeholder {
+  color: #d0d0d0;
+}
+
+:-ms-input-placeholder {
+  color: #d0d0d0;
+}
+
+::placeholder {
+  color: #d0d0d0;
+}
+
+/* Inputs - Checkbox/Radio */
+
+form .inputs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.inputs-list > li {
+  display: block;
+  margin: 0.7rem 0 0.7rem 0.7rem;
+  padding: 0;
+  width: 100%;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  border: none;
+  cursor: pointer;
+  height: auto;
+  line-height: normal;
+  margin-right: 0.35rem;
+  padding: 0;
+  width: auto;
+}
+
+/* Inputs - Select */
+
+.hs-fieldtype-select .input:after {
+  content: '\25BE';
+  pointer-events: none;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Inputs - Datepicker */
+
+.hs-fieldtype-date .input .hs-dateinput:before {
+  color: #1e2b33;
+  content: '\01F4C5';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fn-date-picker .pika-table thead th {
+  color: #fff;
+}
+
+.fn-date-picker td.is-today .pika-button {
+  color: #34b5e5;
+}
+
+.fn-date-picker td.is-selected .pika-button {
+  background: #34b5e5;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.fn-date-picker td .pika-button:hover {
+  background-color: #c168c2 !important;
+  border-radius: 0 !important;
+}
+
+/* Inputs - File Picker */
+
+input[type='file'] {
+  background-color: transparent;
+  border: initial;
+  box-shadow: none;
+  line-height: initial;
+  padding: initial;
+}
+
+/* Headings and Text */
+
+form .hs-richtext,
+form .hs-richtext p {
+  color: #1e2b33;
+}
+
+form .hs-richtext img {
+  max-width: 100% !important;
+}
+
+form .header {
+  background-color: transparent;
+  border: none;
+}
+
+/* GDPR */
+
+.legal-consent-container .hs-form-booleancheckbox-display > span,
+.legal-consent-container .hs-form-booleancheckbox-display > span p {
+  font-size: 0.875rem;
+  margin-left: 1rem !important;
+}
+
+/* Validation */
+
+.hs-input.invalid.error {
+  border-color: #ef6b51;
+}
+
+.hs-error-msg {
+  color: #ef6b51;
+  margin-top: 0.35rem;
+}
+
+/* Submit */
+
+form input[type='submit'],
+form .hs-button {
+  background-color: #c168c2;
+  border: 1px solid #c168c2;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  margin: 0;
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.15s linear;
+  white-space: normal;
+  width: 100%;
+}
+
+form input[type='submit']:hover,
+form input[type='submit']:focus,
+form .hs-button:hover,
+form .hs-button:focus {
+  background-color: #99409a;
+  border-color: #99409a;
+}
+
+form input[type='submit']:active,
+form .hs-button:active {
+  background-color: #e77de8;
+  border-color: #e77de8;
+}
+
+/* Captcha */
+
+.grecaptcha-badge {
+  margin: 0 auto;
+}
+
+/* Inline Thank You Message */
+
+.submitted-message {
+  background-color: #f1f1f1;
+  border-color: 1px solid #f1f1f1;
+  padding: 2.8rem;
+}

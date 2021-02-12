@@ -1,0 +1,24 @@
+{
+  "runtime": "nodejs12.x",
+  "version": "1.0",
+  "environment": {},
+  "secrets": ["hapikey"],
+  "endpoints": {
+    "add-favorite/post": {
+      "method": "POST",
+      "file": "addFavorite.js"
+    },
+    "remove-favorite/post": {
+      "method": "POST",
+      "file": "removeFavorite.js"
+    },
+    "add-favorite/put": {
+      "method": "PUT",
+      "file": "addFavorite.js"
+    },
+    "add-favorite": {
+      "method": "GET",
+      "file": "test.js"
+    }
+  }
+}

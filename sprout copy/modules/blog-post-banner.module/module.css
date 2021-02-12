@@ -1,0 +1,15 @@
+.blog-post-header {
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+}
+
+.blog-post-header__back-button {
+  align-items: center;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 2.8rem;
+}

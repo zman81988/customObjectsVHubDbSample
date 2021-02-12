@@ -1,0 +1,62 @@
+{
+  "name" : {
+    "message" : "Estadística",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Activar esta opción te permitirá anular los estilos de temas predeterminados. Al desactivar esta opción se volverá a conectar el módulo a los estilos de temas predeterminados.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Anular estilo predeterminado",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_description.default" : {
+    "message" : "<p>Clasificación de satisfacción del cliente</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_description.label" : {
+    "message" : "Descripción estadística",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_number.label" : {
+    "message" : "Número estadístico",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_percentage.label" : {
+    "message" : "Porcentaje estadístico",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_unit.default" : {
+    "message" : "k",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_unit.label" : {
+    "message" : "Unidad estadística",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bar_color.label" : {
+    "message" : "Color de la barra",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bar_fill_color.label" : {
+    "message" : "Color de relleno de barra",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Opciones de estilos",
+    "description" : "",
+    "placeholders" : null
+  }
+}

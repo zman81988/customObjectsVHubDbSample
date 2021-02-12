@@ -1,0 +1,97 @@
+{
+  "name" : {
+    "message" : "ピラーメニュー",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.color.label" : {
+    "message" : "カラー",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.label" : {
+    "message" : "下の境界線",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.dashed" : {
+    "message" : "破線",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.dotted" : {
+    "message" : "点線",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.double" : {
+    "message" : "二重線",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.groove" : {
+    "message" : "立体線（凹）",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.inset" : {
+    "message" : "立体（全体凸）",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.none" : {
+    "message" : "なし",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.outset" : {
+    "message" : "立体（全体凹）",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.ridge" : {
+    "message" : "立体（凸）",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.solid" : {
+    "message" : "実線",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.label" : {
+    "message" : "スタイル",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.width.help_text" : {
+    "message" : "値はピクセル単位です",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.width.label" : {
+    "message" : "幅",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "スタイルオプション",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "目次",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "「ピラーセクション」モジュールをページに追加すると、メニュー項目が自動的に作成されます",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "タイトル",
+    "description" : "",
+    "placeholders" : null
+  }
+}

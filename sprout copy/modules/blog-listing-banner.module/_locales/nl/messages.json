@@ -1,0 +1,62 @@
+{
+  "name" : {
+    "message" : "Blogvermelding banner",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_image.label" : {
+    "message" : "Achtergrondafbeelding",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Stijlopties",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.horizontal.help_text" : {
+    "message" : "Waarde is in pixels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.horizontal.label" : {
+    "message" : "Links/rechts",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.label" : {
+    "message" : "Opvulling",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.help_text" : {
+    "message" : "Waarde is in pixels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.label" : {
+    "message" : "Boven/onder",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.subtitle_color.label" : {
+    "message" : "Subtitelkleur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.title_color.label" : {
+    "message" : "Titelkleur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subtitle.label" : {
+    "message" : "Subtitel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Titel",
+    "description" : "",
+    "placeholders" : null
+  }
+}

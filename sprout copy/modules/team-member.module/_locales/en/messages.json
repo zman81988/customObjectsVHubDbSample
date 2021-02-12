@@ -1,0 +1,42 @@
+{
+  "bio.default" : {
+    "message" : "<p>Joshua has over 20 years of experience in the tech industry. He helped start this company in 2015 with the mission of helping people grow. In his spare time he loves hanging out with his kids, going to the beach, and cooking.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bio.label" : {
+    "message" : "Bio",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Team Member",
+    "description" : "",
+    "placeholders" : null
+  },
+  "position.default" : {
+    "message" : "CEO, Co-Founder",
+    "description" : "",
+    "placeholders" : null
+  },
+  "position.label" : {
+    "message" : "Position",
+    "description" : "",
+    "placeholders" : null
+  },
+  "team_member_image.label" : {
+    "message" : "Image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "team_member_name.default" : {
+    "message" : "Joshua Beck",
+    "description" : "",
+    "placeholders" : null
+  },
+  "team_member_name.label" : {
+    "message" : "Name",
+    "description" : "",
+    "placeholders" : null
+  }
+}

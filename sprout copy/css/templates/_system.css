@@ -1,0 +1,149 @@
+/* Error Pages */
+
+.error-page {
+  padding: 10rem 0;
+  position: relative;
+  text-align: center;
+}
+
+.error-page:before {
+  color: #d0d0d0;
+  content: attr(data-error);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 40vw;
+  font-weight: bold;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: -1;
+}
+
+@media screen and (min-width: 1100px) {
+  .error-page:before {
+    font-size: 20rem;
+  }
+}
+
+/* System Pages */
+
+.systems-page {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 3rem 1.4rem;
+}
+
+.systems-page--search-results {
+  max-width: 100%;
+}
+
+.systems-page .success {
+  background-color: #cde3cc;
+  border: 1.5px solid #4f7d24;
+  border-radius: 6px;
+  color: #4f7d24;
+  display: inline-block;
+  margin: 1.4rem 0;
+  padding: 0.1rem 0.7rem;
+  width: 100%;
+}
+
+.systems-page form input {
+  max-width: 100%;
+}
+
+#email-prefs-form .header {
+  background-color: transparent;
+}
+
+#email-prefs-form .item.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#email-prefs-form .item.disabled input:disabled {
+  cursor: not-allowed;
+}
+
+/* Search Pages */
+
+.hs-search-field__bar {
+  position: relative;
+}
+
+.hs-search-field__suggestions {
+  background-color: #fff;
+  max-width: 360px;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 100%;
+}
+
+.hs-search-results {
+  margin-top: 1.4rem;
+}
+
+.hs-search-results__listing li {
+  margin-bottom: 1.4rem;
+}
+
+.hs-search-results__title {
+  color: #1e2b33;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.35rem;
+  text-decoration: underline;
+}
+
+.hs-search-results__title:hover {
+  text-decoration: none;
+}
+
+.hs-search-results__description {
+  padding-top: 0.7rem;
+}
+
+.hs-search-highlight {
+  font-weight: bold;
+}
+
+.hs-search-results__pagination a {
+  color: #1e2b33;
+}
+
+/* Password Prompt */
+
+.password-prompt input[type='password'] {
+  height: auto !important;
+  margin-bottom: 1.4rem;
+}
+
+.systems-page #hs-login-widget-remember,
+.systems-page #hs-login-widget-remember ~ label {
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+/* Backup Unsubscribe */
+
+.backup-unsubscribe #email-prefs-form div {
+  padding-bottom: 0 !important;
+}
+
+.backup-unsubscribe input[type='email'] {
+  margin-bottom: 1.4rem;
+  padding: 12px !important;
+}
+
+/* Input error messages */
+
+.form-input-validation-message ul.hs-error-msgs {
+  padding-left: 0;
+  margin: 0;
+}
+
+.form-input-validation-message ul.hs-error-msgs li {
+  margin: 0;
+}

@@ -1,0 +1,11 @@
+{
+  "external_js" : [ "https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" ],
+  "global" : false,
+  "master_language" : "en",
+  "smart_type" : "NOT_SMART",
+  "icon" : "@hubspot/sprout/images/module-icons/insert-quote.svg",
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 41043536969,
+  "label" : "Testimonial slider",
+  "is_available_for_new_content" : true
+}

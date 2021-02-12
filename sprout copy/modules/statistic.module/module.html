@@ -1,0 +1,39 @@
+{% set circleDegrees = module.statistic_percentage * 0.01 * 360 %}
+{% set rotate = circleDegrees|round %}
+
+<div class="statistic">
+  <div class="statistic__circle">
+    <div class="statistic__info">
+      {{ module.statistic_number }}{% if module.statistic_unit %}<span class="statistic__unit">{{ module.statistic_unit }}</span>{% endif %}
+    </div>
+    <div class="statistic__slice{% if module.statistic_percentage > 50 %} statistic__slice--large{% endif %}">
+      <div class="statistic__bar"></div>
+      <div class="statistic__fill{% if module.statistic_percentage > 50 %} statistic__fill--large{% endif %}"></div>
+    </div>
+  </div>
+  {% if module.statistic_description %}
+    <div class="statistic__description">{{ module.statistic_description }}</div>
+  {% endif %}
+</div>
+
+{% require_css %}
+<style>
+  {% if module.override_default_style %}
+    #hs_cos_wrapper_{{ name }} .statistic__circle {
+      background-color: {{ module.style.bar_color.color }};
+    }
+    #hs_cos_wrapper_{{ name }} .statistic__bar,
+    #hs_cos_wrapper_{{ name }} .statistic__fill,
+    #hs_cos_wrapper_{{ name }} .statistic__fill {
+      border-color: {{ module.style.bar_fill_color.color }};
+    }
+  {% endif %}
+  #hs_cos_wrapper_{{ name }} .statistic__bar {
+    -webkit-transform: rotate({{ rotate }}deg);
+    -moz-transform: rotate({{ rotate }}deg);
+    -ms-transform: rotate({{ rotate }}deg);
+    -o-transform: rotate({{ rotate }}deg);
+    transform: rotate({{ rotate }}deg);
+  }
+</style>
+{% end_require_css %}

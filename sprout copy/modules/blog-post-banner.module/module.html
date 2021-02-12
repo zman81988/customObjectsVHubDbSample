@@ -1,0 +1,32 @@
+{% macro banner() -%}
+  {% if module.style.banner_image_select == 'featured_image' and content.featured_image %}
+    background-image: url('{{ content.featured_image }}');
+  {% elif module.style.banner_image_select == 'custom_bg_image' and module.style.bg_image.src %}
+    background-image: url('{{ module.style.bg_image.src }}');
+  {% elif module.style.banner_image_select == 'custom_bg_color' %}
+    background: rgba({{ module.style.bg_color.color|convert_rgb }},{{ module.style.bg_color.opacity / 100 }});
+  {% else %}
+    background-color: #cccccc
+  {% endif %}
+{%- endmacro %}
+
+<div class="blog-post-header" style="{{ banner()|trim }};">
+  <a href="{{ group.absolute_url }}" class="button blog-post-header__back-button">
+    {% icon
+      extra_classes='button__icon'
+      name='{{ module.button_icon.name }}'
+      purpose='decorative'
+      style='{{ module.button_icon.type }}'
+      unicode='{{ module.button_icon.unicode }}'
+    %}
+    {{ module.button_text }}
+  </a>
+</div>
+
+{% require_css %}
+<style>
+  #hs_cos_wrapper_{{ name }} .blog-post-header {
+    padding: {{ module.style.padding.vertical ~ 'px' }} 0;
+  }
+</style>
+{% end_require_css %}

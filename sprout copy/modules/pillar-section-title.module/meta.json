@@ -1,0 +1,10 @@
+{
+  "global" : false,
+  "master_language" : "en",
+  "smart_type" : "NOT_SMART",
+  "icon" : "@hubspot/sprout/images/module-icons/section.svg",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 41043537206,
+  "label" : "Pillar section",
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,62 @@
+{
+  "name" : {
+    "message" : "Estatística",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Ativar esta opção permitirá substituir os estilos do tema padrão. Desativar esta opção reconectará o módulo aos estilos do tema padrão.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Substituir estilo padrão",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_description.default" : {
+    "message" : "<p>Avaliação de satisfação do cliente</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_description.label" : {
+    "message" : "Descrição da estatística",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_number.label" : {
+    "message" : "Número estatísitico",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_percentage.label" : {
+    "message" : "Percentual estatístico",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_unit.default" : {
+    "message" : "k",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_unit.label" : {
+    "message" : "Unidade estatística",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bar_color.label" : {
+    "message" : "Cor da barra",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bar_fill_color.label" : {
+    "message" : "Cor de preenchimento da barra",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Opções de estilo",
+    "description" : "",
+    "placeholders" : null
+  }
+}

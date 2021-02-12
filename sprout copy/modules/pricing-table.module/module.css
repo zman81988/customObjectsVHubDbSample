@@ -1,0 +1,142 @@
+.pricing-block-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.price-block {
+  background-color: #fff;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-bottom: 1.4rem;
+}
+
+.price-block--1 {
+  width: 100%;
+}
+
+.price-block--2 {
+  width: 47%;
+}
+
+.price-block--3 {
+  width: 30%;
+}
+
+.price-block--4 {
+  width: 23%;
+}
+
+@media (max-width: 1000px) {
+  .price-block--3,
+  .price-block--4 {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .price-block--2,
+  .price-block--3,
+  .price-block--4 {
+    width: 100%;
+  }
+}
+
+.price-block--annual {
+  display: none;
+}
+
+.billing-selectors {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+}
+
+.billing-selectors__form {
+  background: #fff;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.billing-selectors__pricing-option {
+  display: table-cell;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.billing-selectors__pricing-option--left {
+  border-right: 1px solid #d0d0d0;
+}
+
+.billing-selectors__pricing-option input[type='radio'] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.billing-selectors__pricing-option input[type='radio'] + label:before {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  height: 16px;
+  margin-right: 5px;
+  vertical-align: sub;
+  width: 16px;
+}
+
+.billing-selectors__pricing-option input[type='radio']:checked + label:before {
+  background-color: #fff;
+  border: 6px solid #34b5e5;
+}
+
+.billing-selectors__pricing-option label {
+  align-items: center;
+  display: flex;
+}
+
+.price-block__header {
+  background-color: #34b5e5;
+  color: #fff;
+  padding: 2.1rem 0.7rem;
+  text-align: center;
+}
+
+.price-block__title {
+  color: #fff;
+  letter-spacing: 0.2em;
+}
+
+.price-block__currency,
+.price-block__number {
+  display: inline-block;
+}
+
+.price-block__currency {
+  font-size: 1.4rem;
+  line-height: 3rem;
+  vertical-align: top;
+}
+
+.price-block__number {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 4rem;
+  vertical-align: top;
+}
+
+.price-block__description-block {
+  padding: 1.4rem 2.8rem;
+}
+
+.price-block__button {
+  margin-top: auto;
+  text-align: center;
+}

@@ -1,0 +1,112 @@
+<section class="pricing-table">
+
+  {# Pricing Filters #}
+  <div class="billing-selectors">
+    <form class="billing-selectors__form">
+        <div class="billing-selectors__pricing-option billing-selectors__pricing-option--left">
+          <input type="radio" id="monthly-{{ name }}" name="pricing-select" checked>
+          <label for="monthly-{{name}}">{{ module.option_one.billing_option_one_title }}</label>
+        </div>
+        <div class="billing-selectors__pricing-option billing-selectors__pricing-option--right">
+          <input type="radio" id="annual-{{ name }}" name="pricing-select">
+          <label for="annual-{{ name }}">{{ module.option_two.billing_option_two_title }}</label>
+        </div>
+    </form>
+  </div>
+
+  {# Pricing Table Blocks #}
+  <div class="pricing-block-section">
+
+    {# Monthly Block #}
+    {% for option in module.option_one.option_one_table %}
+      <section class="price-block price-block--monthly price-block--{{ loop.length }} price-block--monthly-{{ name }}">
+        <div class="price-block__header">
+          <h3 class="price-block__title">{{ option.option_one_title }}</h3>
+          {% if option.option_one_currency or option.option_one_price %}
+            <div class="price-block__price">
+              {% if option.option_one_currency %}
+                <div class="price-block__currency">{{ option.option_one_currency }}</div>
+              {% endif %}
+              {% if option.option_one_price %}
+                <div class="price-block__number">{{ option.option_one_price }}</div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+        <div class="price-block__description-block">{{ option.option_one_description }}</div>
+        <div class="price-block__button">
+            {% if option.option_one_button_link.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" ~ option.option_one_button_link.url.href %}
+            {% else %}
+              {% unless (option.option_one_button_link.url.href is string_containing "//") or !option.option_one_button_link.url.href %}
+                {% set href = "//" ~ option.option_one_button_link.url.href %}
+              {% else %}
+                {% set href = option.option_one_button_link.url.href || "" %}
+              {% endunless %}
+            {% endif %}
+            {% set rel = (option.option_one_button_link.open_in_new_tab ? "noopener " : null) ~ (option.option_one_button_link.no_follow ? "nofollow" : null) %}
+            <a class="button" href="{{ href }}"
+            {% if option.option_one_button_link.open_in_new_tab %}target="_blank"{% endif %}
+            rel ="{{ rel }}">
+            {{ option.option_one_button_text }}
+            </a>
+          </div>
+      </section>
+    {% endfor %}
+
+    {# Yearly Block #}
+    {% for option in module.option_two.option_two_table %}
+      <section class="price-block price-block--annual price-block--{{ loop.length }} price-block--annual-{{ name }}">
+        <div class="price-block__header">
+          <h3 class="price-block__title">{{ option.option_two_title }}</h3>
+          {% if option.option_two_currency or option.option_two_price %}
+            <div class="price-block__price">
+              {% if option.option_two_currency %}
+                <div class="price-block__currency">{{ option.option_two_currency }}</div>
+              {% endif %}
+              {% if option.option_two_price %}
+                <div class="price-block__number">{{ option.option_two_price }}</div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+        <div class="price-block__description-block">{{ option.option_two_description }}</div>
+        <div class="price-block__button">
+            {% if option.option_two_button_link.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" ~ option.option_two_button_link.url.href %}
+            {% else %}
+              {% unless (option.option_two_button_link.url.href is string_containing "//") or !option.option_two_button_link.url.href %}
+                {% set href = "//" ~ option.option_two_button_link.url.href %}
+              {% else %}
+                {% set href = option.option_two_button_link.url.href || "" %}
+              {% endunless %}
+            {% endif %}
+            {% set rel = (option.option_two_button_link.open_in_new_tab ? "noopener " : null) ~ (option.option_two_button_link.no_follow ? "nofollow" : null) %}
+            <a class="button" href="{{ href }}"
+            {% if option.option_two_button_link.open_in_new_tab %}target="_blank"{% endif %}
+            rel ="{{ rel }}">
+            {{ option.option_two_button_text }}
+            </a>
+          </div>
+      </section>
+    {% endfor %}
+
+  </div>
+</section>
+
+{% if module.override_default_style %}
+{% require_css %}
+<style>
+  #hs_cos_wrapper_{{ name }} .price-block__header {
+    background-color: rgba({{ module.style.header_bg_color.color|convert_rgb }},{{ module.style.header_bg_color.opacity / 100 }});
+  }
+  #hs_cos_wrapper_{{ name }} .price-block__header,
+  #hs_cos_wrapper_{{ name }} .price-block__title {
+    color: {{ module.style.header_color.color }};
+  }
+  #hs_cos_wrapper_{{ name }} .billing-selectors__pricing-option input[type="radio"]:checked + label:before {
+    border-color: {{ module.style.active_option_color.color }};
+  }
+</style>
+{% end_require_css %}
+{% endif %}

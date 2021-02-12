@@ -1,0 +1,164 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #fff;
+  color: #1e2b33;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+html[lang^='ja'] body,
+html[lang^='zh'] body,
+html[lang^='ko'] body {
+  line-break: strict;
+  word-break: break-all;
+}
+
+/* Paragraphs */
+
+p {
+  font-size: 1rem;
+  margin: 0 0 1.4rem;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Anchors */
+
+a {
+  color: #c168c2;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #99409a;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #e990ea;
+  text-decoration: underline;
+}
+
+a.button:disabled {
+  background-color: #e6e6e6;
+  pointer-events: none;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin: 0 0 1.4rem;
+}
+
+h1,
+h2,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h5 {
+  color: #34b5e5;
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+/* Lists */
+
+ul,
+ol {
+  margin: 0 0 1.4rem;
+  padding-left: 1rem;
+}
+
+ul li,
+ol li {
+  margin-bottom: 0.7rem;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin: 1.4rem;
+}
+
+ul.no-list {
+  list-style: none;
+}
+
+/* Code Blocks */
+
+code {
+  vertical-align: bottom;
+}
+
+/* Blockquotes */
+
+blockquote {
+  border-left: 1.4rem solid #34b5e5;
+  font-size: 1.4rem;
+  margin: 0 0 1.4rem;
+  padding-left: 1.4rem;
+}
+
+/* Horizontal Rules */
+
+hr {
+  border: 0 none;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+/* Subscripts and Superscripts */
+
+sup,
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}

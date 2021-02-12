@@ -1,0 +1,62 @@
+{
+  "name" : {
+    "message" : "Statistique",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Activer cette option vous permettra de remplacer les styles de thèmes par défaut. Désactiver cette option reconnectera le module aux styles de thèmes par défaut.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Remplacer le style par défaut",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_description.default" : {
+    "message" : "<p>Niveau de satisfaction du client</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_description.label" : {
+    "message" : "Description statistique",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_number.label" : {
+    "message" : "Nombre statistique",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_percentage.label" : {
+    "message" : "Pourcentage statistique",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_unit.default" : {
+    "message" : "mille",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_unit.label" : {
+    "message" : "Unité statistique",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bar_color.label" : {
+    "message" : "Couleur des barres",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bar_fill_color.label" : {
+    "message" : "Couleur de remplissage des barres",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Options de style",
+    "description" : "",
+    "placeholders" : null
+  }
+}

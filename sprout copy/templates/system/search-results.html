@@ -1,0 +1,27 @@
+<!--
+  templateType: search_results_page
+  isAvailableForNewContent: true
+  label: Sprout - search results
+  screenshotPath: ../../images/template-previews/search-results.png
+-->
+{% extends '../layouts/base.html' %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  <section class="content-wrapper">
+    <div class="systems-page systems-page--search-results">
+      {% module_block module 'search_results_content'
+        label='Search results heading',
+        path='@hubspot/rich_text'
+      %}
+        {% module_attribute 'html' %}
+          <h1>Results for "{{ request.query_dict.term|escape }}"</h1>
+        {% end_module_attribute %}
+      {% end_module_block %}
+      {% module 'search_results'
+        path='@hubspot/search_results'
+      %}
+    </div>
+  </section>
+</main>
+{% endblock body %}

@@ -1,0 +1,109 @@
+[ {
+  "id" : "statistic_number",
+  "name" : "statistic_number",
+  "label" : "Statistic number",
+  "required" : true,
+  "locked" : false,
+  "display" : "text",
+  "min" : 0,
+  "max" : 1000,
+  "step" : 1,
+  "type" : "number",
+  "default" : 10
+}, {
+  "id" : "statistic_unit",
+  "name" : "statistic_unit",
+  "label" : "Statistic unit",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "k"
+}, {
+  "id" : "statistic_percentage",
+  "name" : "statistic_percentage",
+  "label" : "Statistic percentage",
+  "required" : true,
+  "locked" : false,
+  "display" : "text",
+  "min" : 0,
+  "max" : 100,
+  "step" : 1,
+  "type" : "number",
+  "default" : 50
+}, {
+  "id" : "statistic_description",
+  "name" : "statistic_description",
+  "label" : "Statistic description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Customer satisfaction rating</p>"
+}, {
+  "id" : "override_default_style",
+  "name" : "override_default_style",
+  "label" : "Override default style",
+  "help_text" : "Enabling this option will allow you to override default theme styles. Disabling this option will reconnect the module back to the default theme styles.",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "style",
+  "name" : "style",
+  "label" : "Style options",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "override_default_style",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "style.bar_color",
+    "name" : "bar_color",
+    "label" : "Bar color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_value_regex" : null,
+      "operator" : null,
+      "access" : null,
+      "hidden_subfields" : {
+        "opacity" : true
+      }
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#D0D0D0"
+    }
+  }, {
+    "id" : "style.bar_fill_color",
+    "name" : "bar_fill_color",
+    "label" : "Bar fill color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_value_regex" : null,
+      "operator" : null,
+      "access" : null,
+      "hidden_subfields" : {
+        "opacity" : true
+      }
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#34B5E5"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+} ]

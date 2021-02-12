@@ -1,0 +1,42 @@
+{
+  "bio.default" : {
+    "message" : "<p>Joshua heeft meer dan 20 jaar ervaring in de tech-industrie. Hij heeft dit bedrijf helpen oprichten in 2015 met als missie om mensen te helpen groeien. Zijn vrije tijd brengt hij graag door met zijn kinderen, op het strand of in de keuken.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bio.label" : {
+    "message" : "Biografie",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Teamlid",
+    "description" : "",
+    "placeholders" : null
+  },
+  "position.default" : {
+    "message" : "CEO, mede-oprichter",
+    "description" : "",
+    "placeholders" : null
+  },
+  "position.label" : {
+    "message" : "Positie",
+    "description" : "",
+    "placeholders" : null
+  },
+  "team_member_image.label" : {
+    "message" : "Afbeelding",
+    "description" : "",
+    "placeholders" : null
+  },
+  "team_member_name.default" : {
+    "message" : "Joshua Beck",
+    "description" : "",
+    "placeholders" : null
+  },
+  "team_member_name.label" : {
+    "message" : "Naam",
+    "description" : "",
+    "placeholders" : null
+  }
+}

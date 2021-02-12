@@ -1,0 +1,17 @@
+<!--
+  templateType: global_partial
+  label: Footer no navigation
+-->
+<footer class="footer footer--no-navigation">
+  <div class="footer__container">
+
+    {# Copyright #}
+    {% module 'footer_no_navigation_copyright'
+      label='Copyright',
+      path='@hubspot/text',
+      value='Copyright © {{ year }}, {{ site_settings.company_name }}'
+    %}
+    {# End Copyright #}
+
+  </div>
+</footer>

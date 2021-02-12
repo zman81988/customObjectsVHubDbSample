@@ -1,0 +1,112 @@
+.car {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.car.carImage {
+  grid-area: span 2;
+}
+
+.carListing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  grid-auto-rows: max-content;
+}
+
+.carListing a {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+  background-color: #fff;
+  color: #1e2b33;
+}
+
+.carListing a:hover {
+  text-decoration: none;
+}
+
+.carListing .carCard {
+  padding: 20px;
+  box-shadow: 0 1px 5px 0 rgb(45 62 80 / 12%);
+  background-color: white;
+}
+.carListing .carCard:hover {
+  box-shadow: 0 1px 5px 0 rgb(0 170 255 / 50%);
+}
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.red-heart-checkbox {
+  visibility: hidden;
+}
+.red-heart-checkbox + label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 30px;
+  padding-left: 15px;
+  transition: all 0.2s;
+}
+.red-heart-checkbox:checked + label:before {
+  content: "";
+  color: #f00;
+}
+.red-heart-checkbox + label:before {
+  width: 31.5px;
+  height: 30px;
+  content: "";
+  position: absolute;
+  margin-left: -32px;
+  margin-top: 3px;
+  font-family: FontAwesome;
+  font-size: 30px;
+  content: "";
+  transition: all 0.3s;
+  color: #888;
+}
+.red-heart-checkbox + label:hover:before {
+  transform: scale(1.2);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.control-group {
+  margin: 3px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+body {
+  font-family: Open Sans, Helvetica;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+}

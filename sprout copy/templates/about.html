@@ -1,0 +1,254 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: About
+  screenshotPath: ../images/template-previews/about.png
+-->
+{% extends './layouts/base.html' %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  {% dnd_area 'dnd_area' class='body-container body-container--about', label='Main section' %}
+
+    {# Banner Section #}
+    {% dnd_section
+      background_image={
+        'backgroundPosition': 'MIDDLE_CENTER',
+        'backgroundSize': 'cover',
+        'imageUrl': get_asset_url('../images/about-banner.jpg')
+      },
+      max_width=760,
+      padding={
+        'top': 135,
+        'right': 20,
+        'bottom': 135,
+        'left': 20
+      },
+      vertical_alignment='MIDDLE'
+    %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path='@hubspot/rich_text'
+          %}
+            {% module_attribute 'html' %}
+              <div style="text-align: center">
+                <h1 style="color: #fff; margin-bottom: 0;">About Us</h1>
+              </div>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+    {# End Banner Section #}
+
+    {# About Section #}
+    {% dnd_section
+      max_width=760
+    %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path='@hubspot/rich_text'
+          %}
+            {% module_attribute 'html' %}
+              <div>
+                <p style="font-size: 1.2rem;">Our company was started by our two founders 10 years ago. We started out with just two customers and a mission to help people grow their businesses with the power of automation.</p>
+                <p style="font-size: 1.2rem;">We now proudly have well over 10,000 happy customers and are continuing to help more customers grow daily. Our team has grown from two people in a small office to 100 employees spread across the globe.</p>
+              </div>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+    {# End About Section #}
+
+    {# Our Mission Section #}
+    {% dnd_section
+      background_color={{ theme.colors.secondary.color }}
+    %}
+      {% dnd_column
+        offset=0,
+        width=6
+      %}
+        {% dnd_row %}
+          {% dnd_module
+            path='@hubspot/linked_image',
+            img={
+              'alt': 'A woman teaching a man how to do something on the computer',
+              'size_type': 'auto',
+              'src': get_asset_url('../images/our-mission.jpg')
+            }
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+      {% dnd_column
+        offset=6,
+        width=6
+      %}
+        {% dnd_row %}
+          {% dnd_module
+            path='@hubspot/rich_text'
+          %}
+            {% module_attribute 'html' %}
+              <div>
+                <h2 style="color: #fff;">Our Mission</h2>
+                <p style="color: #fff;">Our mission is simple. We want to help as many customers grow their business as possible. We love helping push our customers to new limits that they didn't think possible. With our easy to use software and dedicated services team we will continue to focus on creating the best customer experience possible.</p>
+              </div>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+    {# End Our Mission Section #}
+
+    {# Our Values Section #}
+    {% dnd_section %}
+      {% dnd_column
+        offset=0,
+        width=6
+      %}
+        {% dnd_row %}
+          {% dnd_module
+            path='@hubspot/rich_text'
+          %}
+            {% module_attribute 'html' %}
+              <div>
+                <h2>Our Values</h2>
+                <p>Our values are incredibly important to us. They help us build the right team to achieve our mission. Our core values are:</p>
+                <ul>
+                  <li>Excellence</li>
+                  <li>Empathy</li>
+                  <li>Integrity</li>
+                </ul>
+              </div>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+      {% dnd_column
+        offset=6,
+        width=6
+      %}
+        {% dnd_row %}
+          {% dnd_module
+            path='@hubspot/linked_image',
+            img={
+              'alt': 'A woman instructing a workshop with her team in an office',
+              'size_type': 'auto',
+              'src': get_asset_url('../images/our-values.jpg')
+            }
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+    {# End Our Values Section #}
+
+    {# Our Story Section #}
+    {% dnd_section
+      background_color={{ theme.colors.secondary.color }}
+    %}
+      {% dnd_column
+        offset=0,
+        width=6
+      %}
+        {% dnd_row %}
+          {% dnd_module
+            path='@hubspot/linked_image',
+            img={
+              'alt': 'A group of web developers working on their computers at a table',
+              'size_type': 'auto',
+              'src': get_asset_url('../images/our-story.jpg')
+            }
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+      {% dnd_column
+        offset=6,
+        width=6
+      %}
+        {% dnd_row %}
+          {% dnd_module
+            path='@hubspot/rich_text'
+          %}
+            {% module_attribute 'html' %}
+              <div>
+                <h2 style="color: #fff;">Our Story</h2>
+                <p style="color: #fff;">Our company was started from a small coffee shop in Nashville, Tennessee. Our founders met at a local technology meetup and both shared a similar mission. One month later the company was created and we moved into our first office.</p>
+                <p style="color: #fff;">Five years later, we have now grown our company to 100 incredible employees around the globe. We still have a small office in Nashville but the majority of our employees work remote.</p>
+              </div>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+    {# End Our Story Section #}
+
+    {# Meet the Team Section #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path='@hubspot/rich_text'
+          %}
+            {% module_attribute 'html' %}
+              <div style="text-align: center;">
+                <h2>Meet Our Team</h2>
+              </div>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+        {% dnd_row %}
+          {% dnd_module
+            path='../modules/team-member',
+            horizontal_alignment='CENTER',
+            offset=0,
+            bio='<p>Sarah is a renowned leader in the customer services industry. She has helped several large companies completely turnaround their service departments. Her passion for helping people is what lead her to start this company. In her spare time she loves surfing, hiking, and reading.</p>',
+            team_member_image={
+              'src': get_asset_url('../images/team-member-one.jpg'),
+              'alt': 'Sarah Stevens'
+            },
+            team_member_name='Sarah Stevens',
+            position='CEO, Co-Founder',
+            width=4
+          %}
+          {% end_dnd_module %}
+          {% dnd_module
+            path='../modules/team-member',
+            horizontal_alignment='CENTER',
+            offset=4,
+            bio='<p>Joshua has over 20 years of experience in the tech industry. He helped start this company in 2014 with the mission of helping people grow. In his spare time he loves hanging out with his kids, going to the beach, and cooking.</p>',
+            team_member_image={
+              'src': get_asset_url('../images/team-member-two.png'),
+              'alt': 'Joshua Beck'
+            },
+            team_member_name='Joshua Beck',
+            position='CTO, Co-Founder',
+            width=4
+          %}
+          {% end_dnd_module %}
+          {% dnd_module
+            path='../modules/team-member',
+            horizontal_alignment='CENTER',
+            offset=8,
+            bio='<p>Gene has been a CFO at several medium sized businesses and has a strong background in finance. He loved the mission of the company, so he joined shortly after it was created. In his spare time Gene loves hanging out with his dog, rock climbing, and yoga.</p>',
+            team_member_image={
+              'src': get_asset_url('../images/team-member-three.jpg'),
+              'alt': 'Gene Maxwell'
+            },
+            team_member_name='Gene Maxwell',
+            position='CFO',
+            width=4
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+    {# End Meet the Team Section #}
+
+  {% end_dnd_area %}
+</main>
+{% endblock body %}

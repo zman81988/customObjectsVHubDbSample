@@ -1,0 +1,87 @@
+{
+  "content.default" : {
+    "message" : "Tirez parti de ce formidable logiciel intuitif qui vous fera gagner du temps et vous aidera à développer votre entreprise.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content.label" : {
+    "message" : "Contenu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "expanded.label" : {
+    "message" : "Développé par défaut",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.default" : {
+    "message" : "Comment créer un superbe modèl ?",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.label" : {
+    "message" : "En-tête",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Accordéon",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Activer cette option vous permettra de remplacer les styles de thèmes par défaut. Désactiver cette option reconnectera le module aux styles de thèmes par défaut.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Remplacer le style par défaut",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.accordion_color.label" : {
+    "message" : "Couleur de l'en-tête",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.accordion_color.label" : {
+    "message" : "Couleur de l'en-tête",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.icon_color.label" : {
+    "message" : "Couleur de l'icône",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.label" : {
+    "message" : "Actif",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.accordion_color.label" : {
+    "message" : "Couleur de l'en-tête",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.icon_color.label" : {
+    "message" : "Couleur de l'icône",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.label" : {
+    "message" : "Placer le curseur sur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.icon_color.label" : {
+    "message" : "Couleur de l'icône",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Options de style",
+    "description" : "",
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,53 @@
+{% macro recent_post(post, count, total) %}
+  {% if count == 1 %}
+  <section class="blog-related-posts">
+    <h2 class="blog-related-posts__title">Related Articles</h2>
+    <div class="blog-related-posts__list">
+  {% endif %}
+      <article class="blog-card">
+        <header class="blog-card__header">
+          <h2 class="blog-card__title"><a href="{{ post.absolute_url }}">{{ post.name }}</a></h2>
+          {% if content.blog_author.avatar %}
+            <span class="blog-card__author-image">
+              <img src="{{ post.blog_author.avatar }}" alt="Picture of {{ post.blog_author.display_name }}">
+            </span>
+          {% endif %}
+          <div class="blog-card__meta">
+            <a class="blog-card__author-name" href="{{ group.absolute_url }}/author/{{ post.blog_post_author.slug }}">{{ post.blog_post_author.display_name }}</a>
+            <span class="blog-card__date">{{ post.publish_date_localized }}</span>
+          </div>
+        </header>
+        <div class="blog-card__body">
+          {% if post.featured_image and group.use_featured_image_in_summary %}
+            <img class="blog-card__image" src="{{ post.featured_image }}" alt="{{ post.name }}">
+          {% endif %}
+          <div class="blog-card__content">
+            <div class="blog-card__tags">
+              {% icon
+                name='tag',
+                purpose='decorative',
+                style='SOLID'
+              %}
+              {% for tag in post.tag_list %}
+                <a class="blog-card__tag-link" href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>
+              {% endfor %}
+            </div>
+            {{ post.post_list_content|truncatehtml(170) }}
+          </div>
+        </div>
+        <footer class="blog-card__footer">
+          <a class="blog-card__button button" href="{{ post.absolute_url }}">Read More</a>
+          <div class="blog-card__comment-count">
+            {% set comments_number =  post.comment_list|length %}
+            {% set comments_label = 'Comment' if comments_number == 1 else 'Comments' %}
+            {{ comments_number }} {{ comments_label }}
+          </div>
+        </footer>
+      </article>
+  {% if count == total %}
+      </div>
+    </section>
+  {% endif %}
+{% endmacro %}
+
+{% related_blog_posts limit=2, post_formatter="recent_post", no_wrapper=True %}

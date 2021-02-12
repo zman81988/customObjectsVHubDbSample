@@ -1,0 +1,42 @@
+{
+  "bio.default" : {
+    "message" : "<p>Herr Beck verfügt über mehr als 20 Jahre Erfahrung in der Technologiebranche. 2015 beteiligte er sich an der Gründung dieses Unternehmens mit dem Ziel, andere Unternehmen bei ihrem Wachstum zu unterstützen. In seiner Freizeit kocht er gerne oder entspannt mit seinen Kindern am Strand.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bio.label" : {
+    "message" : "Bio",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Teammitglied",
+    "description" : "",
+    "placeholders" : null
+  },
+  "position.default" : {
+    "message" : "CEO, Mitgründer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "position.label" : {
+    "message" : "Position",
+    "description" : "",
+    "placeholders" : null
+  },
+  "team_member_image.label" : {
+    "message" : "Bild",
+    "description" : "",
+    "placeholders" : null
+  },
+  "team_member_name.default" : {
+    "message" : "Joshua Beck",
+    "description" : "",
+    "placeholders" : null
+  },
+  "team_member_name.label" : {
+    "message" : "Name",
+    "description" : "",
+    "placeholders" : null
+  }
+}

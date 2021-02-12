@@ -1,0 +1,71 @@
+<!-- module html  -->
+
+{% if dynamic_page_hubdb_row %}        
+
+{% set car = dynamic_page_hubdb_row %}
+
+{% set model = car.model[0]["1"] %}
+
+    <h1>{{car.year}} {{car.make}} {{model}} </h1>
+
+    <div class="car">
+        <div class="carImage">
+            <img src="{{car.picture.url}}" alt="{{car.year}} {{car.make}} {{model}}">
+        </div>
+        <div class="carDetails">
+            <div class="carPrice">
+                Price: {{car.price |format_currency("en-US")}}
+            </div>
+            <div class="carBody">
+                Body Type: {{ car.body_style.name}}
+            </div>
+            <div class="carDescription">
+                 {{car.description }}
+            </div>
+            <div class="carDistance">
+                Distance from Cambridge: {{car.location | geo_distance(42.3667, -71.1060, "mi" )|round(2,'common') }} Miles
+            </div>
+            <div class="carListingDate">
+                Time since listing: <span class="listing_date">{{ car.listing_date |between_times(unixtimestamp(),'days') }} days </span> 
+            </div>
+
+        </div>
+
+    </div>
+
+{% elif dynamic_page_hubdb_table_id %}
+    <div class="carListing">
+        {% for row in hubdb_table_rows(dynamic_page_hubdb_table_id,"orderBy=location") %}
+        
+       
+            <div class="carCard">
+                <a href="{{ request.path }}/{{ row.hs_path }}">
+                <div class="carImage">
+                    {% if row.picture%}
+                    <img src="{{row.picture.url}}" alt="{{row.year}} {{row.make}} {{row.model[0]['1']}}">
+                    {% else %}
+                    <img src="https://f.hubspotusercontent20.net/hubfs/9307273/Imported%20images/plchldr255.png" alt="Picture coming soon">
+                    {% endif %}
+                </div>  
+                <div class="carDetails">
+                    <div class="carPrice">
+                        Price: {{row.price |format_currency("en-US")}}
+                    </div>
+                    <div class="carBody">
+                        Body Type: {{ row.body_style.name}}
+                    </div>
+                    <div class="carDistance">
+                        Distance from Cambridge: {{row.location | geo_distance(42.3667, -71.1060, "mi" )|round(2,'common') }} Miles
+                    </div>
+                    <div class="carListingDate">
+                        Time since listing: <span class="listing_date">{{ row.listing_date |between_times(unixtimestamp(),'days') }} days </span> 
+                    </div>
+        
+                </div>
+            </a>
+            </div>
+        
+        {% endfor %}
+    </div>
+
+{% endif %}
