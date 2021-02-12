@@ -1,0 +1,42 @@
+{
+  "name" : {
+    "message" : "ピラーセクションのタイトル",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "このオプションを有効にすると、既定のテーマスタイルを上書きできます。このオプションを無効にすると、モジュールが既定のテーマスタイルに再接続されます。",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "既定のスタイルを上書き",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.color.label" : {
+    "message" : "カラー",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "スタイルオプション",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "セクションのタイトル",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "セクションのタイトルではセクションについて説明し、ページの他のセクションのタイトルとは異なる内容にする必要があります。タイトルは「ピラーメニュー」モジュールのメニューに自動で追加されます。",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "タイトル",
+    "description" : "",
+    "placeholders" : null
+  }
+}

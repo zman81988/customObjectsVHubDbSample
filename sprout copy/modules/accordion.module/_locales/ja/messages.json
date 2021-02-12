@@ -1,0 +1,87 @@
+{
+  "content.default" : {
+    "message" : "時間の節約に貢献し、ビジネスの成長を後押ししてくれる直観的で使いやすいソフトウェアをぜひご活用ください。",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content.label" : {
+    "message" : "コンテンツ",
+    "description" : "",
+    "placeholders" : null
+  },
+  "expanded.label" : {
+    "message" : "既定で拡大",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.default" : {
+    "message" : "どうすればすばらしいテンプレートを作成できますか？",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.label" : {
+    "message" : "ヘッダー",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "アコーディオン",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "このオプションを有効にすると、既定のテーマスタイルを上書きできます。このオプションを無効にすると、モジュールが既定のテーマスタイルに再接続されます。",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "既定のスタイルを上書き",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.accordion_color.label" : {
+    "message" : "ヘッダーの色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.accordion_color.label" : {
+    "message" : "ヘッダーの色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.icon_color.label" : {
+    "message" : "アイコンの色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.label" : {
+    "message" : "有効",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.accordion_color.label" : {
+    "message" : "ヘッダーの色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.icon_color.label" : {
+    "message" : "アイコンの色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.label" : {
+    "message" : "カーソルを置く",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.icon_color.label" : {
+    "message" : "アイコンの色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "スタイルオプション",
+    "description" : "",
+    "placeholders" : null
+  }
+}

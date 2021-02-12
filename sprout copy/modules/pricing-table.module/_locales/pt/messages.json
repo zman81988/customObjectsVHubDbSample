@@ -1,0 +1,177 @@
+{
+  "name" : {
+    "message" : "Tabela de preços",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.billing_option_one_title.default" : {
+    "message" : "Cobrança mensal",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.billing_option_one_title.label" : {
+    "message" : "Rótulo de cobrança",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.label" : {
+    "message" : "Primeira opção de preço",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.label" : {
+    "message" : "Tabela",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_button_link.label" : {
+    "message" : "Link do botão",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_button_text.default" : {
+    "message" : "Inscreva-se",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_button_text.label" : {
+    "message" : "Texto do botão",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_currency.default" : {
+    "message" : "US$",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_currency.label" : {
+    "message" : "Moeda",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_description.default" : {
+    "message" : "<p><strong>Downloads gratuitos ilimitados</strong> e muito mais!</p><ul><li>Tamanho máximo de arquivo de 25 MB</li><li>Largura de banda de 2 GB</li><li>Gravações de tela de 15 segundos</li><li>Gravação de câmera de vídeo de 15 segundos</li><li>Marca CloudApp</li><li>Anotações ilimitadas</li><li>Arquivos ilimitados</li><li>Integrações com aplicativos de desktop</li></ul>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_description.label" : {
+    "message" : "Descrição",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_price.label" : {
+    "message" : "Preço",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_title.default" : {
+    "message" : "Starter",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_title.label" : {
+    "message" : "Título",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.billing_option_two_title.default" : {
+    "message" : "Economize 15% na cobrança anual",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.billing_option_two_title.label" : {
+    "message" : "Rótulo de cobrança",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.label" : {
+    "message" : "Segunda opção de preços",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.label" : {
+    "message" : "Tabela",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_button_link.label" : {
+    "message" : "Link do botão",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_button_text.default" : {
+    "message" : "Inscreva-se",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_button_text.label" : {
+    "message" : "Texto do botão",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_currency.default" : {
+    "message" : "US$",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_currency.label" : {
+    "message" : "Moeda",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_description.default" : {
+    "message" : "<p><strong>Downloads gratuitos ilimitados</strong> e muito mais!</p><ul><li>Tamanho máximo de arquivo de 25 MB</li><li>Largura de banda de 2 GB</li><li>Gravações de tela de 15 segundos</li><li>Gravação de câmera de vídeo de 15 segundos</li><li>Marca CloudApp</li><li>Anotações ilimitadas</li><li>Arquivos ilimitados</li><li>Integrações com aplicativos de desktop</li></ul>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_description.label" : {
+    "message" : "Descrição",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_price.label" : {
+    "message" : "Preço",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_title.default" : {
+    "message" : "Enterprise",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_title.label" : {
+    "message" : "Título",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Ativar esta opção permitirá substituir os estilos do tema padrão. Desativar esta opção reconectará o módulo aos estilos do tema padrão.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Substituir estilo padrão",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active_option_color.label" : {
+    "message" : "Cor de opção ativa",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.header_bg_color.label" : {
+    "message" : "Cor de fundo do cabeçalho",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.header_color.label" : {
+    "message" : "Cor do texto do cabeçalho",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Opções de estilo",
+    "description" : "",
+    "placeholders" : null
+  }
+}

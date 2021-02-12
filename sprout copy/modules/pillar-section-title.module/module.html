@@ -1,0 +1,33 @@
+{% set section_anchor = module.title|lower|regex_replace('[^a-zA-Z]', '') %}
+
+{% if not section_anchor %}
+  {% set section_anchor= module.title|lower|regex_replace(' ', '')|safe %}
+{% endif %}
+
+<h2 class="pillar-section-title" id="{{ section_anchor }}" tabindex="-1">{{ module.title }}</h2>
+
+{% if module.override_default_style %}
+{% require_css %}
+<style>
+  #hs_cos_wrapper_{{ name }} .pillar-section-title {
+    color: {{ module.style.color.color }};
+  }
+</style>
+{% end_require_css %}
+{% endif %}
+
+{# Appends a navigation item to the pillar menu #}
+{% require_js %}
+<script>
+  (function() {
+    // Adds menu items to the pillar menu
+    var pillarMenu = document.getElementById("pillar-navigation__menu-items");
+    if (pillarMenu) {
+      var navChild = document.createElement("li");
+      navChild.className = "pillar-navigation__menu-item";
+      navChild.innerHTML = '<a href="#{{ section_anchor }}">{{ module.title|escape }}</a>';
+      pillarMenu.appendChild(navChild);
+    }
+  })();
+</script>
+{% end_require_js %}

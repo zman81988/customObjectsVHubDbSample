@@ -1,0 +1,42 @@
+{
+  "bio.default" : {
+    "message" : "<p>Joshuaは20年以上ハイテク産業に携わっています。人々の成長を手助けするという信念のもとに、2015年に当社の立ち上げに参加しました。時間があるときには子供たちと過ごしたり、ビーチを訪れたり、料理をしたりするのが趣味です。</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bio.label" : {
+    "message" : "プロフィール",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "チームメンバー",
+    "description" : "",
+    "placeholders" : null
+  },
+  "position.default" : {
+    "message" : "CEO、共同創業者",
+    "description" : "",
+    "placeholders" : null
+  },
+  "position.label" : {
+    "message" : "位置",
+    "description" : "",
+    "placeholders" : null
+  },
+  "team_member_image.label" : {
+    "message" : "画像",
+    "description" : "",
+    "placeholders" : null
+  },
+  "team_member_name.default" : {
+    "message" : "Joshua Beck",
+    "description" : "",
+    "placeholders" : null
+  },
+  "team_member_name.label" : {
+    "message" : "氏名",
+    "description" : "",
+    "placeholders" : null
+  }
+}

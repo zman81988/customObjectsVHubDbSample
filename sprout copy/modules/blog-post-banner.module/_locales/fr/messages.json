@@ -1,0 +1,72 @@
+{
+  "button_icon.label" : {
+    "message" : "Icône bouton",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.default" : {
+    "message" : "Revenir au blog",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.label" : {
+    "message" : "Texte du bouton",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Bannière d'article de blog",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.choices.custom_bg_color" : {
+    "message" : "Couleur d'arrière-plan personnalisée",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.choices.custom_bg_image" : {
+    "message" : "Image d'arrière-plan personnalisée",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.choices.featured_image" : {
+    "message" : "Image en vignette",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.label" : {
+    "message" : "Quel type de bannière voulez-vous utiliser ?",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_color.label" : {
+    "message" : "Couleur de l'arrière-plan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_image.label" : {
+    "message" : "Image d'arrière-plan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Options de style",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.label" : {
+    "message" : "Remplissage",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.help_text" : {
+    "message" : "La valeur est en pixels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.label" : {
+    "message" : "Haut/Bas",
+    "description" : "",
+    "placeholders" : null
+  }
+}

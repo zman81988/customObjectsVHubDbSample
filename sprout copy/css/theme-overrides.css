@@ -1,0 +1,1350 @@
+{% import './tools/_macros.css' %}
+
+{## Table of contents
+
+  1. Variables
+    1a. Containers
+    1b. Breakpoints
+    1c. Colors
+    1d. Typography
+    1e. Borders
+    1f. Corner Radius
+    1g. Lists
+    1h. Horizontal Rule
+    1i. Blockquote
+    1j. Buttons
+    1k. Forms
+    1l. Tables
+    1m. Site Header
+    1n. Site Footer
+    1o. Blog
+  2. Containers / Grid / DnD Areas
+  3. Typography
+  4. Buttons
+  5. Forms
+  6. Tables
+  7. Site Header
+  8. Site Footer
+  9. Blog
+  10. System Pages
+  11. Modules
+
+##}
+
+/* ************************************************************************* */
+/* ****************************  1. Variables   **************************** */
+/* ************************************************************************* */
+
+/* 1a. Containers */
+
+{% set container_width = theme.spacing.content_width ~ 'px' %}
+{% set container_width_narrow = '760px' %}
+{% set dnd_section_padding = theme.spacing.vertical_spacing ~ 'px ' ~ '20px' %}
+
+/* 1b. Breakpoints */
+
+{% set bp_small = '768px' %}
+{% set bp_narrow = '800px' %}
+{% set bp_medium = '980px' %}
+{% set bp_large = '1024px' %}
+{% set bp_xlarge = '1380px' %}
+
+/* 1c. Colors */
+
+{% set primary_color = theme.colors.primary.color %}
+{% set secondary_color = theme.colors.secondary.color %}
+{% set body_color = theme.colors.body_bg.color %}
+{% set light_gray = '#f1f1f1' %}
+{% set gray = '#d0d0d0' %}
+{% set success = '#00db7c' %}
+{% set error = '#ef6b51' %}
+
+/* 1d. Typography */
+
+{% set primary_font = theme.fonts.primary %}
+{% set secondary_font = theme.fonts.secondary %}
+{% set base_font_size = theme.global.typography.body_font.font.size %}
+{% set body_font = theme.global.typography.body_font.font %}
+{% set headings_font = theme.global.typography.headings.font %}
+{% set custom_heading_styles = theme.global.typography.headings.heading_toggle %}
+{% set anchor_font = theme.global.typography.links.font %}
+{% set anchor_font_hover = theme.global.typography.links.hover %}
+{% set lead_paragraph_size = '1.25rem' %}
+
+/* 1e. Border */
+
+{% set global_border = '1px solid #d0d0d0' %}
+
+/* 1f. Corner Radius */
+
+{% set corner_radius = '4px' %}
+
+/* 1g. Lists */
+
+{% set list_padding = '1.4rem' %}
+{% set list_margin = '1.4rem 0' %}
+{% set list_li_margin = '0.7rem' %}
+{% set list_nested_margin = '1.4rem' %}
+
+/* 1h. Horizontal Rule */
+
+{% set hr_color = gray %}
+
+/* 1i. Blockquote */
+
+{% set blockquote_padding = '1.4rem' %}
+{% set blockquote_border = '16px solid {{ primary_color }}' %}
+
+/* 1j. Buttons */
+
+{% set button_small_font_size = theme.global.buttons.size.small.font_size ~ 'px' %}
+{% set button_small_spacing = theme.global.buttons.size.small.vertical_spacing ~ 'px' ~ ' ' ~ theme.global.buttons.size.small.horizontal_spacing ~ 'px' %}
+
+{% set button_regular_font_size = theme.global.buttons.size.regular.font_size ~ 'px' %}
+{% set button_regular_spacing = theme.global.buttons.size.regular.vertical_spacing ~ 'px' ~ ' ' ~ theme.global.buttons.size.regular.horizontal_spacing ~ 'px' %}
+
+{% set button_large_font_size = theme.global.buttons.size.large.font_size ~ 'px' %}
+{% set button_large_spacing = theme.global.buttons.size.large.vertical_spacing ~ 'px' ~ ' ' ~ theme.global.buttons.size.large.horizontal_spacing ~ 'px' %}
+
+{% set button_primary_font = theme.global.buttons.primary.font %}
+{% set button_primary_text_transform = theme.global.buttons.primary.text_transform %}
+{% set button_primary_bg_color = color(theme.global.buttons.primary.bg_color) %}
+{% set button_primary_border = theme.global.buttons.primary.border.width ~ 'px' ~ ' ' ~ theme.global.buttons.primary.border.style ~ ' ' ~ theme.global.buttons.primary.border.color.color %}
+{% set button_primary_corner_radius = theme.global.buttons.primary.border.corner_radius ~ 'px' %}
+
+{% set button_primary_font_hover = theme.global.buttons.primary.hover.font %}
+{% set button_primary_bg_color_hover = color(theme.global.buttons.primary.hover.bg_color) %}
+{% set button_primary_border_hover = theme.global.buttons.primary.hover.border.width ~ 'px' ~ ' ' ~ theme.global.buttons.primary.hover.border.style ~ ' ' ~ theme.global.buttons.primary.hover.border.color.color %}
+
+{% set button_secondary_font = theme.global.buttons.secondary.font %}
+{% set button_secondary_text_transform = theme.global.buttons.secondary.text_transform %}
+{% set button_secondary_bg_color = color(theme.global.buttons.secondary.bg_color) %}
+{% set button_secondary_border = theme.global.buttons.secondary.border.width ~ 'px' ~ ' ' ~ theme.global.buttons.secondary.border.style ~ ' ' ~ theme.global.buttons.secondary.border.color.color %}
+{% set button_secondary_corner_radius = theme.global.buttons.secondary.border.corner_radius ~ 'px' %}
+
+{% set button_secondary_font_hover = theme.global.buttons.secondary.hover.font %}
+{% set button_secondary_bg_color_hover = color(theme.global.buttons.secondary.hover.bg_color) %}
+{% set button_secondary_border_hover = theme.global.buttons.secondary.hover.border.width ~ 'px' ~ ' ' ~ theme.global.buttons.secondary.hover.border.style ~ ' ' ~ theme.global.buttons.secondary.hover.border.color.color %}
+
+{% set button_simple_font = theme.global.buttons.simple.font %}
+{% set button_simple_text_transform = theme.global.buttons.simple.text_transform %}
+{% set button_simple_underline = theme.global.buttons.simple.underline %}
+
+{% set button_simple_font_hover = theme.global.buttons.simple.hover.font %}
+{% set button_simple_underline_hover = theme.global.buttons.simple.hover.underline %}
+
+{% set button_disabled_bg_color = gray %}
+{% set button_disabled_color = light_gray %}
+
+/* 1k. Forms */
+
+{% set form_bg_color = color(theme.global.forms.bg_color.color) %}
+{% set form_padding = theme.global.forms.padding.vertical ~ 'px' ~ ' ' ~ theme.global.forms.padding.horizontal ~ 'px' %}
+{% set form_border = theme.global.forms.border.width ~ 'px' ~ ' ' ~ theme.global.forms.border.style ~ ' ' ~ theme.global.forms.border.color.color %}
+{% set form_corner_radius = theme.global.forms.border.corner_radius ~ 'px' %}
+{% set form_field_spacing = '1.4rem' %}
+
+{% set form_fieldset_border = '' %}
+{% set form_fieldset_padding = '' %}
+{% set form_fieldset_margin = '' %}
+
+{% set form_legend_padding = '' %}
+{% set form_legend_margin = '' %}
+
+{% set form_label_font = theme.global.forms.labels.font %}
+{% set form_label_padding = theme.global.forms.labels.padding.vertical ~ 'px' ~ ' ' ~ theme.global.forms.labels.padding.horizontal ~ 'px' %}
+
+{% set form_title_bg_color = color(theme.global.forms.title.bg_color) %}
+{% set form_title_font = theme.global.forms.title.font %}
+{% set form_title_text_transform = theme.global.forms.title.text_transform %}
+{% set form_title_padding = theme.global.forms.title.padding.vertical ~ 'px' ~ ' ' ~ theme.global.forms.title.padding.horizontal ~ 'px' %}
+{% set form_title_border = theme.global.forms.title.border.width ~ 'px' ~ ' ' ~ theme.global.forms.title.border.style ~ ' ' ~ theme.global.forms.title.border.color.color %}
+{% set form_title_corner_radius = theme.global.forms.title.border.corner_radius ~ 'px' %}
+
+{% set form_help_text_font = theme.global.forms.help_text.font %}
+
+{% set form_input_font = theme.global.forms.fields.font %}
+{% set form_input_bg_color = color(theme.global.forms.fields.bg_color) %}
+{% set form_input_placeholder_color = theme.global.forms.fields.placeholder_color.color %}
+{% set form_input_border = theme.global.forms.fields.border.width ~ 'px' ~ ' ' ~ theme.global.forms.fields.border.style ~ ' ' ~ theme.global.forms.fields.border.color.color %}
+{% set form_input_corner_radius = theme.global.forms.fields.border.corner_radius ~ 'px' %}
+{% set form_input_padding = theme.global.forms.fields.padding.vertical ~ 'px' ~ ' ' ~ theme.global.forms.fields.padding.horizontal ~ 'px' %}
+{% set form_input_disabled_bg_color = light_gray %}
+{% set form_input_disabled_border = gray %}
+
+{% set form_checkbox_radio_font = theme.global.forms.fields.checkbox_radio.font %}
+
+{% set form_gdpr_text_font = theme.global.forms.fields.gdpr_text.font %}
+
+{% set form_rich_text_font = theme.global.forms.fields.rich_text.font %}
+
+{% set form_select_toggle_color = primary_color %}
+{% set form_select_toggle_size = '6px' %}
+
+{% set form_submit_style = theme.global.forms.submit.button_style %}
+{% set form_submit_size = theme.global.forms.submit.button_size %}
+
+/* 1l. Tables */
+
+{% set table_bg_color = color(theme.global.tables.bg_color.color) %}
+{% set table_border = theme.global.tables.border.width ~ 'px' ~ ' ' ~ theme.global.tables.border.style ~ ' ' ~ theme.global.tables.border.color.color %}
+{% set table_padding = theme.global.tables.padding.vertical ~ 'px' ~ ' ' ~ theme.global.tables.padding.horizontal ~ 'px' %}
+{% set table_font_color = theme.global.tables.font_color.color.color %}
+
+{% set table_head_bg_color = color(theme.global.tables.head.bg_color) %}
+{% set table_head_border = theme.global.tables.head.border.width ~ 'px' ~ ' ' ~ theme.global.tables.head.border.style ~ ' ' ~ theme.global.tables.head.border.color.color %}
+{% set table_head_padding = theme.global.tables.head.padding.vertical ~ 'px' ~ ' ' ~ theme.global.tables.head.padding.horizontal ~ 'px' %}
+{% set table_head_font_color = theme.global.tables.head.font_color.color %}
+
+/* 1m. Site Header */
+
+{% set header_bg_color = color(theme.global.header.bg_color.color) %}
+{% set header_border = theme.global.header.border.width ~ 'px' ~ ' ' ~ theme.global.header.border.style ~ ' ' ~ theme.global.header.border.color.color %}
+
+{% set header_primary_nav_font = theme.global.header.menu.font %}
+{% set header_primary_nav_text_transform = theme.global.header.menu.text_transform %}
+{% set header_primary_nav_font_hover = theme.global.header.menu.hover.font %}
+{% set header_primary_nav_bg_color_hover = color(theme.global.header.menu.hover.bg_color) %}
+{% set header_primary_nav_font_active = theme.global.header.menu.active.font %}
+{% set header_primary_nav_bg_color_active = color(theme.global.header.menu.active.bg_color) %}
+
+/* 1n. Site Footer */
+
+{% set footer_bg_color = color(theme.global.footer.bg_color.color) %}
+{% set footer_border = theme.global.footer.border.width ~ 'px' ~ ' ' ~ theme.global.footer.border.style ~ ' ' ~ theme.global.footer.border.color.color %}
+{% set footer_content_color = theme.global.footer.font_color.color.color %}
+
+{% set footer_primary_nav_font = theme.global.footer.menu.font %}
+{% set footer_primary_nav_text_transform = theme.global.footer.menu.text_transform %}
+{% set footer_primary_nav_font_hover = theme.global.footer.menu.hover.font %}
+{% set footer_primary_nav_font_active = theme.global.footer.menu.active.font %}
+
+/* 1o. Blog */
+
+{% set blog_listing_bg_image = theme.global.blog.blog_banner_images.listing_bg.src %}
+{% set blog_post_bg_image = theme.global.blog.blog_banner_images.post_bg.src %}
+{% set blog_tag_bg_color = color(theme.global.blog.tags.bg_color) %}
+{% set blog_tag_color = theme.global.blog.tags.color.color %}
+{% set blog_filter_bg_color = color(theme.global.blog.filter_banner.bg_color) %}
+{% set blog_filter_color = theme.global.blog.filter_banner.color.color %}
+
+/* ************************************************************************* */
+/* *****************   2. Containers / Grid / DnD Areas   ****************** */
+/* ************************************************************************* */
+
+.content-wrapper {
+  max-width: {{ container_width }};
+}
+
+@media screen and (min-width: {{ bp_xlarge }}) {
+  .content-wrapper {
+    padding: 0;
+  }
+}
+
+.content-wrapper--narrow {
+  max-width: {{ container_width_narrow }};
+}
+
+@media screen and (min-width: {{ bp_narrow }}) {
+  .content-wrapper--narrow {
+    padding: 0;
+  }
+}
+
+.dnd-section,
+.content-wrapper--blog-index,
+.content-wrapper--blog-post {
+  padding: {{ dnd_section_padding }};
+}
+
+.dnd-section > .row-fluid {
+  max-width: {{ container_width }};
+}
+
+/* ************************************************************************* */
+/* **************************   3. Typography   **************************** */
+/* ************************************************************************* */
+
+html {
+  font-size: {{ base_font_size ~ 'px' }};
+}
+
+body {
+  {{ body_font.style }};
+  background-color: {{ body_color }};
+  color: {{ body_font.color }};
+  font-size: {{ body_font.size ~ body_font.size_unit }};
+}
+
+/* Paragraphs */
+
+p {
+  {{ body_font.style }};
+}
+
+p.lead,
+p.intro {
+  font-size: {{ lead_paragraph_size }};
+}
+
+/* Anchors */
+
+a {
+  {{ anchor_font.style }};
+  color: {{ anchor_font.color }};
+}
+
+a:hover, a:focus {
+  {{ anchor_font_hover.style }};
+  color: {{ anchor_font_hover.color }};
+}
+
+a:active {
+  {{ anchor_font_hover.style }};
+  color: {{ color_variant(anchor_font_hover.color, 80) }};
+}
+
+a.button:disabled {
+  background-color: {{ button_disabled_color }};
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  {{ headings_font.style }};
+  color: {{ headings_font.color }};
+  text-transform: {{ theme.global.typography.headings.text_transform }};
+}
+
+{% if custom_heading_styles %}
+
+  h1 {
+    {{ theme.global.typography.h1.font.style }};
+    color: {{ theme.global.typography.h1.font.color }};
+    font-size: {{ theme.global.typography.h1.font.size ~ theme.global.typography.h1.font.size_unit }};
+    letter-spacing: {{ theme.global.typography.h1.letter_spacing ~ 'px' }};
+    text-transform: {{ theme.global.typography.h1.text_transform }};
+  }
+
+  h2 {
+    {{ theme.global.typography.h2.font.style }};
+    color: {{ theme.global.typography.h2.font.color }};
+    font-size: {{ theme.global.typography.h2.font.size ~ theme.global.typography.h2.font.size_unit }};
+    letter-spacing: {{ theme.global.typography.h2.letter_spacing ~ 'px' }};
+    text-transform: {{ theme.global.typography.h2.text_transform }};
+  }
+
+  h3 {
+    {{ theme.global.typography.h3.font.style }};
+    color: {{ theme.global.typography.h3.font.color }};
+    font-size: {{ theme.global.typography.h3.font.size ~ theme.global.typography.h3.font.size_unit }};
+    letter-spacing: {{ theme.global.typography.h3.letter_spacing ~ 'px' }};
+    text-transform: {{ theme.global.typography.h3.text_transform }};
+  }
+
+  h4 {
+    {{ theme.global.typography.h4.font.style }};
+    color: {{ theme.global.typography.h4.font.color }};
+    font-size: {{ theme.global.typography.h4.font.size ~ theme.global.typography.h4.font.size_unit }};
+    letter-spacing: {{ theme.global.typography.h4.letter_spacing ~ 'px' }};
+    text-transform: {{ theme.global.typography.h4.text_transform }};
+  }
+
+  h5 {
+    {{ theme.global.typography.h5.font.style }};
+    color: {{ theme.global.typography.h5.font.color }};
+    font-size: {{ theme.global.typography.h5.font.size ~ theme.global.typography.h5.font.size_unit }};
+    letter-spacing: {{ theme.global.typography.h5.letter_spacing ~ 'px' }};
+    text-transform: {{ theme.global.typography.h5.text_transform }};
+  }
+
+  h6 {
+    {{ theme.global.typography.h6.font.style }};
+    color: {{ theme.global.typography.h6.font.color }};
+    font-size: {{ theme.global.typography.h6.font.size ~ theme.global.typography.h6.font.size_unit }};
+    letter-spacing: {{ theme.global.typography.h6.letter_spacing ~ 'px' }};
+    text-transform: {{ theme.global.typography.h6.text_transform }};
+  }
+
+{% endif %}
+
+/* Lists */
+
+ul,
+ol {
+  margin: {{ list_margin }};
+  padding-left: {{ list_padding }};
+}
+
+ul li,
+ol li {
+  margin: {{ list_li_margin }};
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin: {{ list_nested_margin }};
+}
+
+/* Blockquote */
+
+blockquote {
+  border-left: {{ blockquote_border }};
+  padding-left: {{ blockquote_padding }};
+}
+
+/* Horizontal Rules */
+
+hr {
+  border-bottom-color: {{ hr_color }};
+}
+
+/* ************************************************************************* */
+/* ***************************   4. Buttons   ****************************** */
+/* ************************************************************************* */
+
+/* Primary Button */
+
+button,
+.button {
+  {{ button_primary_font.style }};
+  background-color: {{ button_primary_bg_color }};
+  border: {{ button_primary_border }};
+  border-radius: {{ button_primary_corner_radius }};
+  color: {{ button_primary_font.color }};
+  fill: {{ button_primary_font.color }};
+  font-size: {{ button_regular_font_size }};
+  padding: {{ button_regular_spacing }};
+  text-transform: {{ button_primary_text_transform }};
+}
+
+button:disabled,
+.button:disabled {
+  background-color: {{ button_disabled_bg_color }};
+  color: {{ button_disabled_color }};
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus,
+button:active,
+.button:active {
+  {{ button_primary_font_hover.style }};
+  background-color: {{ button_primary_bg_color_hover }};
+  border: {{ button_primary_border_hover }};
+  color: {{ button_primary_font_hover.color }};
+}
+
+button:active,
+.button:active {
+  {{ button_primary_font_hover.style }};
+  background-color: rgba({{ color_variant(theme.global.buttons.primary.hover.bg_color.color, 80)|convert_rgb }}, {{ theme.global.buttons.primary.hover.bg_color.opacity }});
+  border: {{ button_primary_border_hover }};
+  border-color: {{ color_variant(theme.global.buttons.primary.hover.border.color.color, 80) }};
+}
+
+/* Secondary Button */
+
+.button.button--secondary {
+  {{ button_secondary_font.style }};
+  background-color: {{ button_secondary_bg_color }};
+  border: {{ button_secondary_border }};
+  border-radius: {{ button_secondary_corner_radius }};
+  color: {{ button_secondary_font.color }};
+  fill: {{ button_secondary_font.color }};
+  padding: {{ button_regular_spacing }};
+  text-transform: {{ button_secondary_text_transform }};
+}
+
+.button.button--secondary:hover,
+.button.button--secondary:focus,
+.button.button--secondary:active {
+  {{ button_secondary_font_hover.style }};
+  background-color: {{ button_secondary_bg_color_hover }};
+  border: {{ button_secondary_border_hover }};
+  color: {{ button_secondary_font_hover.color }};
+  fill: {{ button_secondary_font_hover.color }};
+}
+
+.button.button--secondary:active {
+  {{ button_secondary_font_hover.style }};
+  background-color: rgba({{ color_variant(theme.global.buttons.secondary.hover.bg_color.color, 80)|convert_rgb }}, {{ theme.global.buttons.secondary.hover.bg_color.opacity }});
+  border: {{ button_secondary_border_hover }};
+  border-color: {{ color_variant(theme.global.buttons.secondary.hover.border.color.color, 80) }};
+  color: {{ color_variant(button_secondary_font_hover.color, 80) }};
+  fill: {{ color_variant(button_secondary_font_hover.color, 80) }};
+}
+
+/* Simple Button */
+
+.button.button--simple {
+  {{ button_simple_font.style }};
+  color: {{ button_simple_font.color }};
+  fill: {{ button_simple_font.color }};
+  text-transform: {{ button_simple_text_transform }};
+}
+
+{% if button_simple_underline.add_underline == 'true' %}
+
+  .button.button--simple:after {
+    background-color: {{ button_simple_underline.color.color }};
+    bottom: -{{ button_simple_underline.width + 1 ~ 'px' }};
+    content: '';
+    height: {{ button_simple_underline.width ~ 'px' }};
+  }
+
+{% else %}
+
+  .button.button--simple:after {
+    content: none;
+  }
+
+{% endif %}
+
+.button.button--simple:hover,
+.button.button--simple:focus {
+  {{ button_simple_font_hover.style }};
+  border: none;
+  color: {{ button_simple_font_hover.color }};
+  fill: {{ button_simple_font_hover.color }};
+}
+
+{% if button_simple_underline_hover.add_underline == 'true' %}
+
+  .button.button--simple:hover:after,
+  .button.button--simple:focus:after,
+  .button.button--simple:active:after {
+    background-color: {{ button_simple_underline_hover.color.color }};
+    bottom: -{{ button_simple_underline.width + 1 ~ 'px' }};
+    content: '';
+    height: {{ button_simple_underline_hover.width ~ 'px' }};
+  }
+
+{% else %}
+
+  .button.button--simple:hover:after,
+  .button.button--simple:focus:after,
+  .button.button--simple:active:after {
+    content: none;
+  }
+
+{% endif %}
+
+.button.button--simple:active {
+  {{ button_simple_font_hover.style }};
+  border: none;
+  color: {{ color_variant(button_simple_font_hover.color, 80) }};
+  fill: {{ color_variant(button_simple_font_hover.color, 80) }};
+}
+
+/* Button Sizing */
+
+.button.button--small {
+  font-size: {{ button_small_font_size }};
+  padding: {{ button_small_spacing }};
+}
+
+.button.button--large {
+  font-size: {{ button_large_font_size }};
+  padding: {{ button_large_spacing }};
+}
+
+/* ************************************************************************* */
+/* *****************************   5. Forms   ****************************** */
+/* ************************************************************************* */
+
+form {
+  background-color: {{ form_bg_color }};
+  border: {{ form_border }};
+  border-radius: {{ form_corner_radius }};
+  padding: {{ form_padding }};
+}
+
+.hs-form-field {
+  margin-bottom: {{ form_field_spacing }};
+}
+
+.submitted-message {
+  background-color: {{ form_bg_color }};
+  border: {{ form_border }};
+  border-radius: {{ form_corner_radius }};
+  padding: {{ form_padding }};
+}
+
+/* Form Title */
+
+.form-title {
+  {{ form_title_font.style }};
+  background-color: {{ form_title_bg_color }};
+  border: {{ form_title_border }};
+  border-top-left-radius: {{ form_title_corner_radius }};
+  border-top-right-radius: {{ form_title_corner_radius }};
+  color: {{ form_title_font.color }};
+  font-size: {{ form_title_font.size ~ form_title_font.size_unit }};
+  padding: {{ form_title_padding }};
+  text-transform: {{ form_title_text_transform }};
+}
+
+/* Labels */
+
+.hs-form-field > label {
+  {{ form_label_font.style }};
+  color: {{ form_label_font.color }};
+  font-size: {{ form_label_font.size ~ form_label_font.size_unit }};
+  padding: {{ form_label_padding }};
+}
+
+/* Help Text - Legends */
+
+.hs-form-field legend {
+  {{ form_help_text_font.style }};
+  color: {{ form_help_text_font.color }};
+  font-size: {{ form_help_text_font.size ~ form_help_text_font.size_unit }};
+}
+
+/* Inputs */
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='tel'],
+input[type='number'],
+select,
+textarea {
+  {{ form_input_font.style }};
+  background-color: {{ form_input_bg_color }};
+  border: {{ form_input_border }};
+  border-radius: {{ form_input_corner_radius }};
+  color: {{ form_input_font.color }};
+  font-size: {{ form_input_font.size ~ form_input_font.size_unit }};
+  padding: {{ form_input_padding }};
+}
+
+::-webkit-input-placeholder {
+  color: {{ form_input_placeholder_color }};
+}
+
+::-moz-placeholder {
+  color: {{ form_input_placeholder_color }};
+}
+
+:-ms-input-placeholder {
+  color: {{ form_input_placeholder_color }};
+}
+
+:-moz-placeholder {
+  color: {{ form_input_placeholder_color }};
+}
+
+::placeholder {
+  color: {{ form_input_placeholder_color }};
+}
+
+/* Inputs - Checkbox/Radio */
+
+form .inputs-list:not(.no-list) label,
+form .inputs-list:not(.no-list) label > span,
+form .inputs-list:not(.no-list) label > span p {
+  {{ form_checkbox_radio_font.style }};
+  color: {{ form_checkbox_radio_font.color }};
+  font-size: {{ form_checkbox_radio_font.size ~ form_checkbox_radio_font.size_unit }};
+}
+
+/* Inputs - Datepicker */
+
+.fn-date-picker td.is-today .pika-button {
+  color: {{ secondary_color }};
+}
+
+.hs-datepicker .is-selected button.pika-button {
+  background-color: {{ secondary_color }};
+}
+
+.hs-datepicker button.pika-button:hover {
+  background-color: {{ primary_color }} !important;
+}
+
+/* Form Rich Text */
+
+form .hs-richtext,
+form .hs-richtext *,
+form .hs-richtext p,
+form .hs-richtext h1,
+form .hs-richtext h2,
+form .hs-richtext h3,
+form .hs-richtext h4,
+form .hs-richtext h5,
+form .hs-richtext h6 {
+  {{ form_rich_text_font.style }};
+  color: {{ form_rich_text_font.color }};
+}
+
+/* GDPR Text */
+
+.legal-consent-container,
+.legal-consent-container .hs-richtext,
+.legal-consent-container .hs-richtext p {
+  {{ form_gdpr_text_font.style }};
+  color: {{ form_gdpr_text_font.color }};
+  font-size: {{ form_gdpr_text_font.size ~ form_gdpr_text_font.size_unit }};
+}
+
+/* Validation */
+
+.hs-input.invalid.error {
+  border-color: {{ error }};
+}
+
+.hs-error-msg {
+  color: {{ error }};
+}
+
+/* Submit */
+
+{% if form_submit_style == 'primary' %}
+
+  form input[type='submit'],
+  form .hs-button {
+    {{ button_primary_font.style }};
+    background-color: {{ button_primary_bg_color }};
+    border: {{ button_primary_border }};
+    border-radius: {{ button_primary_corner_radius }};
+    color: {{ button_primary_font.color }};
+    fill: {{ button_primary_font.color }};
+    padding: {{ button_regular_spacing }};
+    text-transform: {{ button_primary_text_transform }};
+  }
+
+  form input[type='submit']:hover,
+  form input[type='submit']:focus,
+  form .hs-button:hover,
+  form .hs-button:focus {
+    {{ button_primary_font_hover.style }};
+    background-color: {{ button_primary_bg_color_hover }};
+    border: {{ button_primary_border_hover }};
+    color: {{ button_primary_font_hover.color }};
+  }
+
+  form input[type='submit']:active,
+  form .hs-button:active {
+    {{ button_primary_font_hover.style }};
+    background-color: rgba({{ color_variant(theme.global.buttons.primary.hover.bg_color.color, 80)|convert_rgb }}, {{ theme.global.buttons.primary.hover.bg_color.opacity }});
+    border: {{ button_primary_border_hover }};
+    border-color: {{ color_variant(theme.global.buttons.primary.hover.border.color.color, 80) }};
+}
+
+{% elif form_submit_style == 'secondary' %}
+
+  form input[type='submit'],
+  form .hs-button {
+    {{ button_secondary_font.style }};
+    background-color: {{ button_secondary_bg_color }};
+    border: {{ button_secondary_border }};
+    border-radius: {{ button_secondary_corner_radius }};
+    color: {{ button_secondary_font.color }};
+    fill: {{ button_secondary_font.color }};
+    padding: {{ button_regular_spacing }};
+    text-transform: {{ button_secondary_text_transform }};
+  }
+
+  form input[type='submit']:hover,
+  form input[type='submit']:focus,
+  form .hs-button:hover,
+  form .hs-button:focus {
+    {{ button_secondary_font_hover.style }};
+    background-color: {{ button_secondary_bg_color_hover }};
+    border: {{ button_secondary_border_hover }};
+    color: {{ button_secondary_font_hover.color }};
+    fill: {{ button_secondary_font_hover.color }};
+  }
+
+  form input[type='submit']:active,
+  form .hs-button:active {
+    {{ button_secondary_font_hover.style }};
+    background-color: rgba({{ color_variant(theme.global.buttons.secondary.hover.bg_color.color, 80)|convert_rgb }}, {{ theme.global.buttons.secondary.hover.bg_color.opacity }});
+    border: {{ button_secondary_border_hover }};
+    border-color: {{ color_variant(theme.global.buttons.secondary.hover.border.color.color, 80) }};
+    color: {{ color_variant(button_secondary_font_hover.color, 80) }};
+    fill: {{ color_variant(button_secondary_font_hover.color, 80) }};
+  }
+
+{% elif form_submit_style == 'simple' %}
+
+  form input[type='submit'],
+  form .hs-button {
+    {{ button_simple_font.style }};
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: {{ button_simple_font.color }};
+    fill: {{ button_simple_font.color }};
+    padding: 0;
+    text-transform: {{ button_simple_text_transform }};
+  }
+
+  {% if button_simple_underline.add_underline == 'true' %}
+
+    form input[type='submit']:after,
+    form .hs-button:after {
+      background-color: {{ button_simple_underline.color.color }};
+      bottom: -{{ button_simple_underline.width + 1 ~ 'px' }};
+      content: '';
+      height: {{ button_simple_underline.width ~ 'px' }};
+    }
+
+  {% else %}
+
+    form input[type='submit']:after,
+    form .hs-button:after {
+      content: none;
+    }
+
+  {% endif %}
+
+  form input[type='submit']:hover,
+  form input[type='submit']:focus,
+  form .hs-button:hover,
+  form .hs-button:focus {
+    {{ button_simple_font_hover.style }};
+    background-color: transparent;
+    border: none;
+    color: {{ button_simple_font_hover.color }};
+    fill: {{ button_simple_font_hover.color }};
+  }
+
+  {% if button_simple_underline_hover.add_underline == 'true' %}
+
+    form input[type='submit']:hover:after,
+    form input[type='submit']:focus:after,
+    form input[type='submit']:active:after,
+    form .hs-button:hover:after,
+    form .hs-button:focus:after,
+    form .hs-button:active:after {
+      background-color: {{ button_simple_underline_hover.color.color }};
+      bottom: -{{ button_simple_underline.width + 1 ~ 'px' }};
+      content: '';
+      height: {{ button_simple_underline_hover.width ~ 'px' }};
+    }
+
+  {% else %}
+
+    form input[type='submit']:hover:after,
+    form input[type='submit']:focus:after,
+    form input[type='submit']:active:after,
+    form .hs-button:hover:after,
+    form .hs-button:focus:after,
+    form .hs-button:active:after {
+      content: none;
+    }
+
+  {% endif %}
+
+  form input[type='submit']:active,
+  form .hs-button:active {
+    {{ button_simple_font_hover.style }};
+    background-color: transparent;
+    border: none;
+    color: {{ color_variant(button_simple_font_hover.color, 80) }};
+    fill: {{ color_variant(button_simple_font_hover.color, 80) }};
+  }
+
+{% endif %}
+
+{% if form_submit_size == 'small' %}
+
+  form input[type='submit'],
+  form .hs-button {
+    font-size: {{ button_small_font_size }};
+    padding: {{ button_small_spacing }};
+  }
+
+{% elif form_submit_size == 'regular' %}
+
+  form input[type='submit'],
+  form .hs-button {
+    font-size: {{ button_regular_font_size }};
+    padding: {{ button_regular_spacing }};
+  }
+
+{% elif form_submit_size == 'large' %}
+
+  form input[type='submit'],
+  form .hs-button {
+    font-size: {{ button_large_font_size }};
+    padding: {{ button_large_spacing }};
+  }
+
+{% endif %}
+
+/* ************************************************************************* */
+/* ****************************   6. Tables   ****************************** */
+/* ************************************************************************* */
+
+table {
+  background-color: {{ table_bg_color }};
+  border: {{ table_border }};
+}
+
+th,
+td {
+  border: {{ table_border }};
+  color: {{ table_font_color }};
+  padding: {{ table_padding }};
+}
+
+thead th,
+thead td {
+  background-color: {{ table_head_bg_color }};
+  border-bottom: {{ table_head_border }};
+  color: {{ table_head_font_color }};
+}
+
+tbody + tbody {
+  border-top: {{ table_head_border }};
+}
+
+
+/* ************************************************************************* */
+/* **************************   7. Site Header   *************************** */
+/* ************************************************************************* */
+
+.header {
+  background-color: {{ header_bg_color }};
+  border-bottom: {{ header_border }};
+}
+
+.header__container {
+  max-width: {{ container_width }};
+}
+
+/* Logo */
+
+.header__logo .logo-company-name {
+  color: {{ body_color }};
+}
+
+/* Navigation Menu */
+
+.navigation-primary .menu-item a {
+  {{ header_primary_nav_font.style }};
+  color: {{ header_primary_nav_font.color }};
+  font-size: {{ header_primary_nav_font.size ~ header_primary_nav_font.size_unit }};
+  text-transform: {{ header_primary_nav_text_transform }};
+}
+
+.navigation-primary .menu-item a:hover,
+.navigation-primary .menu-item a:focus {
+  {{ header_primary_nav_font_hover.style }};
+  color: {{ header_primary_nav_font_hover.color }};
+}
+
+.navigation-primary .menu-item a:active {
+  {{ header_primary_nav_font_active.style }};
+  color: {{ header_primary_nav_font_active.color }};
+}
+
+body .navigation-primary .submenu.level-1 > li > a.active-item:after,
+body .navigation-primary .submenu.level-1 > li > a.active-branch:after {
+  background-color: {{ header_primary_nav_font.color }};
+}
+
+.navigation-primary .submenu.level-2 {
+  background-color: {{ header_bg_color }};
+  border: {{ global_border }};
+}
+
+.navigation-primary .submenu.level-2 > li {
+  border-bottom: {{ global_border }};
+}
+
+.navigation-primary .submenu.level-2 .menu-item .menu-link:hover,
+.navigation-primary .submenu.level-2 .menu-item .menu-link:focus {
+  {{ header_primary_nav_font_hover.style }};
+  background-color: {{ header_primary_nav_bg_color_hover }};
+  color: {{ header_primary_nav_font_hover.color }};
+}
+
+.navigation-primary .submenu.level-2 .menu-item .menu-link:active {
+  {{ header_primary_nav_font_active.style }};
+  background-color: {{ header_primary_nav_bg_color_active }};
+  color: {{ header_primary_nav_font_active.color }};
+}
+
+@media (max-width: {{ bp_small }}) {
+  .header__navigation {
+    background-color: {{ header_bg_color }};
+  }
+
+  .header__menu .header__mobile-menu-icon,
+  .header__menu .header__mobile-menu-icon:after,
+  .header__menu .header__mobile-menu-icon:before,
+  .header__menu .menu-arrow-icon,
+  .header__menu .menu-arrow-icon:after {
+      background-color: {{ theme.global.header.menu.font.color }};
+  }
+
+  .navigation-primary .submenu.level-1 > li,
+  .navigation-primary .submenu.level-2 .menu-item {
+    border-top-color: #d0d0d0;
+  }
+}
+
+/* Language Switcher */
+
+.header__language-switcher .lang_list_class {
+  background-color: {{ header_bg_color }};
+  border: {{ global_border }};
+}
+
+.header__language-switcher .lang_list_class li:hover {
+  background-color: {{ primary_color }};
+}
+
+/* ************************************************************************* */
+/* **************************   8. Site Footer   *************************** */
+/* ************************************************************************* */
+
+.footer {
+  background-color: {{ footer_bg_color }};
+  border-top: {{ footer_border }};
+}
+
+.footer__container {
+  max-width: {{ container_width }};
+}
+
+.footer__bottom-section {
+  border-top: {{ global_border }};
+  border-top-color: {{ footer_content_color }};
+}
+
+/* Footer Content */
+
+.footer h1,
+.footer h2,
+.footer h3,
+.footer h4,
+.footer h5,
+.footer h6,
+.footer p,
+.footer a,
+.footer div,
+.footer span {
+  color: {{ footer_content_color }};
+}
+
+{% if custom_heading_styles %}
+
+  .footer h4 {
+      {{ theme.global.typography.h6.font.style }};
+      color: {{ theme.global.typography.h6.font.color }};
+      font-size: {{ theme.global.typography.h6.font.size ~ theme.global.typography.h6.font.size_unit }};
+      letter-spacing: {{ theme.global.typography.h6.letter_spacing ~ 'px' }};
+      text-transform: {{ theme.global.typography.h6.text_transform }};
+  }
+
+{% endif %}
+
+/* Footer Menu */
+
+.footer__navigation a {
+  {{ footer_primary_nav_font.style }};
+  color: {{ footer_primary_nav_font.color }};
+  font-size: {{ footer_primary_nav_font.size ~ footer_primary_nav_font.size_unit }};
+  text-transform: {{ footer_primary_nav_text_transform }};
+}
+
+.footer__navigation a:hover,
+.footer__navigation a:focus {
+  {{ footer_primary_nav_font_hover.style }};
+  color: {{ footer_primary_nav_font_hover.color }};
+}
+
+.footer__navigation a:active {
+  {{ footer_primary_nav_font_active.style }};
+  color: {{ footer_primary_nav_font_active.color }};
+}
+
+/* ************************************************************************* */
+/* *****************************   9. Blog   ******************************* */
+/* ************************************************************************* */
+
+/* Blog Meta - Author */
+
+.blog-card__author-name,
+.blog-post__author-name {
+  {{ body_font.style }};
+  color: {{ body_font.color }};
+}
+
+/* Tags */
+
+.blog-card__tag-link,
+.blog-post__tag-link {
+  background-color: {{ blog_tag_bg_color }};
+  color: {{ blog_tag_color }};
+}
+
+.blog-card__tags svg,
+.blog-post__tags svg {
+  fill: {{ secondary_color }};
+}
+
+/* Blog Listing */
+
+.blog-index-header {
+  background-image: url('{{ blog_listing_bg_image }}');
+}
+
+.blog-card__title a {
+  {{ headings_font.style }};
+  color: {{ headings_font.color }};
+  letter-spacing: {{ theme.global.typography.headings.letter_spacing ~ 'px' }};
+  text-transform: {{ theme.global.typography.headings.text_transform }};
+}
+
+/* Blog Filter Banner */
+.blog-navigation {
+  background-color: {{ blog_filter_bg_color }};
+}
+
+.blog-tag-filter__title {
+  color: {{ blog_filter_color }} !important;
+}
+
+{% if custom_heading_styles %}
+
+  .blog-card__title a {
+    {{ theme.global.typography.h2.font.style }};
+    color: {{ theme.global.typography.h2.font.color }};
+    font-size: {{ theme.global.typography.h2.font.size ~ theme.global.typography.h2.font.size_unit }};
+    letter-spacing: {{ theme.global.typography.h2.letter_spacing ~ 'px' }};
+    text-transform: {{ theme.global.typography.h2.text_transform }};
+  }
+
+{% endif %}
+
+/* Blog Pagination */
+
+.blog-pagination__link {
+  color: {{ anchor_font.color }};
+}
+
+.blog-pagination__link:hover {
+  color: {{ anchor_font_hover.color }};
+}
+
+.blog-pagination__link:hover svg,
+.blog-pagination__link:focus svg {
+  fill: {{ anchor_font_hover.color }};
+}
+
+.blog-pagination__link:active {
+  color: {{ color_variant(anchor_font_hover.color, 80) }};
+}
+
+.blog-pagination__link:active svg {
+  fill: {{ color_variant(anchor_font_hover.color, 80) }};
+}
+
+.blog-pagination__prev-link--disabled,
+.blog-pagination__next-link--disabled {
+  color: {{ gray }};
+}
+
+.blog-pagination__prev-link--disabled svg,
+.blog-pagination__next-link--disabled svg,
+.blog-pagination__next-link--disabled:hover svg,
+.blog-pagination__next-link--disabled:focus svg,
+.blog-pagination__next-link--disabled:active svg {
+  fill: {{ gray }};
+}
+
+.blog-pagination__link--active {
+  background-color: {{ secondary_color }};
+  color: #fff;
+}
+
+.blog-pagination__link--active:hover {
+  color: #fff;
+}
+
+/* Blog Post */
+
+.blog-post-header {
+  background-image: url('{{ blog_post_bg_image }}');
+}
+
+/* ************************************************************************* */
+/* *************************   10. System Pages   ************************** */
+/* ************************************************************************* */
+
+/* Error Pages - Global */
+
+.error-page:before {
+  {{ primary_font.style }};
+  color: {{ gray }};
+}
+
+/* System Pages - Global */
+
+.hs-search-results__title {
+  {{ headings_font.style }};
+  color: {{ headings_font.color }};
+}
+
+.hs-search-results__title:hover {
+  {{ headings_font.style }};
+}
+
+/* Forms in System Pages */
+
+#email-prefs-form h3 {
+  font-size: {{ theme.global.typography.h4.font.size ~ theme.global.typography.h4.font.size_unit }};
+}
+
+/* Password Prompt */
+
+.password-prompt input[type='password'] {
+  margin-bottom: {{ form_field_spacing }};
+}
+
+/* Backup Unsubscribe */
+
+.backup-unsubscribe input[type='email'] {
+  margin-bottom: {{ form_field_spacing }};
+  padding: {{ form_input_padding }} !important;
+}
+
+/* ************************************************************************* */
+/* ***************************   11. Modules  ****************************** */
+/* ************************************************************************* */
+
+/* Accordion */
+
+body .accordion button {
+  color: {{ anchor_font.color }};
+}
+
+body .accordion button:hover,
+body .accordion button:focus {
+  color: {{ anchor_font_hover.color }};
+}
+
+body .accordion button:active,
+body .accordion[aria-expanded='true'] button {
+  color: {{ color_variant(anchor_font_hover.color, 80) }};
+}
+
+body button .accordion__icon {
+  background-color: {{ anchor_font.color }};
+}
+
+body button:hover .accordion__icon,
+body button:focus .accordion__icon {
+  background-color: {{ anchor_font_hover.color }};
+}
+
+body button:active .accordion__icon,
+body .accordion[aria-expanded=true] button .accordion__icon {
+  background-color: {{ color_variant(anchor_font_hover.color, 80) }};
+}
+
+/* Blog Related Posts */
+
+body .blog-card__title a {
+  {{ headings_font.style }};
+  color: {{ headings_font.color }};
+  text-transform: {{ theme.global.typography.headings.text_transform }};
+}
+
+{% if custom_heading_styles %}
+
+  body .blog-card__title a {
+    {{ theme.global.typography.h2.font.style }};
+    color: {{ theme.global.typography.h2.font.color }};
+    font-size: {{ theme.global.typography.h2.font.size ~ theme.global.typography.h2.font.size_unit }};
+    letter-spacing: {{ theme.global.typography.h2.letter_spacing ~ 'px' }};
+    text-transform: {{ theme.global.typography.h2.text_transform }};
+  }
+
+{% endif %}
+
+body .blog-card__title a,
+body .blog-card__author-name {
+  color: {{ body_font.color }};
+}
+
+/* Icon */
+
+body .icon svg {
+  fill: {{ secondary_color }};
+}
+
+/* Pricing Table */
+
+body .price-block__header {
+  background-color: {{ secondary_color }};
+}
+
+body .billing-selectors__pricing-option input[type="radio"]:checked + label:before {
+  border-color: {{ secondary_color }};
+}
+
+/* Image Module */
+
+img {
+  max-width: 100%;
+}
+
+/* Social Follow */
+
+body .social-links__icon svg {
+  fill: {{ body_font.color }};
+}
+
+body .social-links__icon:hover svg {
+  fill: {{ body_font.color }};
+}
+
+body .social-links__icon:hover {
+  background-color: transparent;
+}
+
+/* Statististic */
+
+body .statistic__circle {
+  background-color: {{ gray }};
+}
+
+body .statistic__info {
+  color: {{ body_font.color }};
+}
+
+body .statistic__bar,
+body .statistic__fill {
+  border-color: {{ secondary_color }};
+}
+
+body .statistic__circle:after {
+  background-color: {{ body_color }}
+}
+
+/* Testimonial Slider */
+
+body .tns-nav button {
+  background-color: {{ gray }};
+}
+
+body .tns-nav .tns-nav-active {
+  background-color: {{ secondary_color }};
+}

@@ -1,0 +1,97 @@
+{
+  "name" : {
+    "message" : "Menu pillar",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.color.label" : {
+    "message" : "Colore",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.label" : {
+    "message" : "Bordo inferiore",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.dashed" : {
+    "message" : "Tratteggiato",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.dotted" : {
+    "message" : "Punteggiato",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.double" : {
+    "message" : "Doppio",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.groove" : {
+    "message" : "Incassato",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.inset" : {
+    "message" : "Interno",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.none" : {
+    "message" : "Nessuna",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.outset" : {
+    "message" : "Esterno",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.ridge" : {
+    "message" : "In rilievo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.solid" : {
+    "message" : "Continuo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.label" : {
+    "message" : "Stilo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.width.help_text" : {
+    "message" : "Il valore è in pixel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.width.label" : {
+    "message" : "Larghezza",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Opzioni stile",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Tabella di contenuti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "Le voci di menu vengono create automaticamente quando si aggiunge il modulo \"Sezione pillar\" alla pagina",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Titolo",
+    "description" : "",
+    "placeholders" : null
+  }
+}

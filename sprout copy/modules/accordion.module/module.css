@@ -1,0 +1,106 @@
+.accordion {
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  margin-bottom: 1.4rem;
+}
+
+.accordion button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 0 none;
+  border-radius: 0;
+  color: #c168c2;
+  cursor: pointer;
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 1.4rem 3.5rem 1.4rem 1.4rem;
+  position: relative;
+  text-align: left;
+  text-transform: none;
+  width: 100%;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  color: #99409a;
+}
+
+.accordion button:active {
+  color: #e990ea;
+}
+
+.accordion__icon {
+  background-color: #c168c2;
+  border-radius: 50%;
+  height: 1.25em;
+  pointer-events: none;
+  position: absolute;
+  right: 1.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.2s ease-in;
+  width: 1.25em;
+}
+
+button:hover .accordion__icon,
+button:focus .accordion__icon {
+  background-color: #99409a;
+}
+
+button:active .accordion__icon {
+  background-color: #e990ea;
+}
+
+.accordion__icon:before {
+  background-color: #fff;
+  content: '';
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.75em;
+}
+
+.accordion__icon:after {
+  background-color: #fff;
+  content: '';
+  height: 0.75em;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+}
+
+.accordion[aria-expanded='true'] button {
+  color: #e990ea;
+}
+
+.accordion[aria-expanded='true'] button .accordion__icon {
+  background-color: #e990ea;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.accordion main {
+  display: block;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease-out 0.2s, max-height 0.3s ease-out;
+}
+
+.accordion[aria-expanded='true'] main {
+  max-height: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease-in, max-height 0.5s ease-in;
+}
+
+.accordion__item-content {
+  padding: 1.4rem 1.4em;
+}

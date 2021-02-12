@@ -1,0 +1,67 @@
+{
+  "name" : {
+    "message" : "Testimonial-Schieberegler",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Wenn Sie diese Option aktivieren, können Sie die Standard-Designstile außer Kraft setzen. Durch Deaktivieren dieser Option wird das Modul wieder mit den Standard-Designstilen verknüpft.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Standardstil überschreiben",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Stiloptionen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.navigation_active_color.label" : {
+    "message" : "Aktive Farbe für Navigationsmenü",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.navigation_color.label" : {
+    "message" : "Farbe für Navigationsmenü",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.author_image.label" : {
+    "message" : "Bild des Autors",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.author_name.default" : {
+    "message" : "Alan Dixon",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.author_name.label" : {
+    "message" : "Autorname",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.label" : {
+    "message" : "Autor",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.content.default" : {
+    "message" : "<h3>Großartig!</h3><p>Das Team von Rally stand unserem Unternehmen engagiert zur Seite und ging das Problem mit Elan, Know-how und Einfühlungsvermögen an. Ich kann sie WIRKLICH weiterempfehlen.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.content.label" : {
+    "message" : "Testimonial-Text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.label" : {
+    "message" : "Referenzen",
+    "description" : "",
+    "placeholders" : null
+  }
+}

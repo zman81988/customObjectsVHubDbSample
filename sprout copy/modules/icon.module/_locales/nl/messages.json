@@ -1,0 +1,67 @@
+{
+  "accessibility.label" : {
+    "message" : "Toegankelijkheidsopties",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.choices.decorative" : {
+    "message" : "Genegeerd door schermlezer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.choices.semantic" : {
+    "message" : "Gelezen door schermlezer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.label" : {
+    "message" : "Doel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.title.label" : {
+    "message" : "Titel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "icon_field.label" : {
+    "message" : "Pictogram",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Pictogram",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Als je deze optie inschakelt, kun je de standaard themastijlen overschrijven. Als je deze optie uitschakelt wordt de module weer gekoppeld aan de standaard themastijlen.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Standaardstijl overschrijven",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.color.label" : {
+    "message" : "Kleur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Stijlopties",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.help_text" : {
+    "message" : "Waarde is in pixels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.label" : {
+    "message" : "Grootte",
+    "description" : "",
+    "placeholders" : null
+  }
+}

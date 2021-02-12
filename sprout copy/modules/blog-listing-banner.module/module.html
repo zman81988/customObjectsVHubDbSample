@@ -1,0 +1,33 @@
+<section class="blog-index-header">
+  <div class="content-wrapper content-wrapper--narrow">
+    {% if module.title %}
+      <h1 class="blog-index-header__title">{{ module.title }}</h1>
+    {% else %}
+      <h1 class="blog-index-header__title">{{ group.public_title }}</h1>
+    {% endif %}
+    {% if module.subtitle %}
+      <p class="blog-index-header__subtitle">{{ module.subtitle }}</p>
+    {% else %}
+      <p class="blog-index-header__subtitle">{{ group.description }}</p>
+    {% endif %}
+  </div>
+</section>
+
+{% require_css %}
+<style>
+  #hs_cos_wrapper_{{ name }} .blog-index-header__title {
+    color: {{ module.style.title_color.color }};
+  }
+  #hs_cos_wrapper_{{ name }} .blog-index-header__subtitle {
+    color: {{ module.style.subtitle_color.color }};
+  }
+  #hs_cos_wrapper_{{ name }} .content-wrapper {
+    padding: {{ module.style.padding.vertical ~ 'px' }} {{ module.style.padding.horizontal ~ 'px' }};
+  }
+  {% if module.style.bg_image.src %}
+    #hs_cos_wrapper_{{ name }} .blog-index-header {
+      background-image: url('{{ module.style.bg_image.src }}')
+    }
+  {% endif %}
+</style>
+{% end_require_css %}

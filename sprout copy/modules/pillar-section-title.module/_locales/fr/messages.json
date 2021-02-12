@@ -1,0 +1,42 @@
+{
+  "name" : {
+    "message" : "Titre de la section pilier",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Activer cette option vous permettra de remplacer les styles de thèmes par défaut. Désactiver cette option reconnectera le module aux styles de thèmes par défaut.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Remplacer le style par défaut",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.color.label" : {
+    "message" : "Couleur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Options de style",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Titre de la section",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "Le titre de votre section doit décrire votre section et doit être différent de tous les autres titres de sections de la page. Le titre sera automatiquement ajouté au menu dans le module « Menu pilier ».",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Titre",
+    "description" : "",
+    "placeholders" : null
+  }
+}

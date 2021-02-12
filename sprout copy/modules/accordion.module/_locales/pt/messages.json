@@ -1,0 +1,87 @@
+{
+  "content.default" : {
+    "message" : "Utilize um software fantástico e intuitivo, que permite economizar tempo e ajuda sua empresa a crescer.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content.label" : {
+    "message" : "Conteúdo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "expanded.label" : {
+    "message" : "Expandido por padrão",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.default" : {
+    "message" : "Como criar um modelo incrível?",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.label" : {
+    "message" : "Cabeçalho",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Acordeão",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Ativar esta opção permitirá substituir os estilos do tema padrão. Desativar esta opção reconectará o módulo aos estilos do tema padrão.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Substituir estilo padrão",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.accordion_color.label" : {
+    "message" : "Cor do cabeçalho",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.accordion_color.label" : {
+    "message" : "Cor do cabeçalho",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.icon_color.label" : {
+    "message" : "Cor do ícone",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.label" : {
+    "message" : "Ativo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.accordion_color.label" : {
+    "message" : "Cor do cabeçalho",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.icon_color.label" : {
+    "message" : "Cor do ícone",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.label" : {
+    "message" : "Passar o mouse",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.icon_color.label" : {
+    "message" : "Cor do ícone",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Opções de estilo",
+    "description" : "",
+    "placeholders" : null
+  }
+}

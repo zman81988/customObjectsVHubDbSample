@@ -1,0 +1,152 @@
+{
+  "name" : {
+    "message" : "Volgen op social media",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Als je deze optie inschakelt, kun je de standaard themastijlen overschrijven. Als je deze optie uitschakelt wordt de module weer gekoppeld aan de standaard themastijlen.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Standaardstijl overschrijven",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.accessibility.label" : {
+    "message" : "Toegankelijkheidsopties",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.accessibility.title.default" : {
+    "message" : "Volg ons op Facebook",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.accessibility.title.label" : {
+    "message" : "Titel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.custom_icon.label" : {
+    "message" : "Aangepast pictogram",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.label" : {
+    "message" : "Social media-koppelingen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.custom_icon" : {
+    "message" : "Aangepast pictogram",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.envelope" : {
+    "message" : "E-mail",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.facebook-f" : {
+    "message" : "Facebook",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.instagram" : {
+    "message" : "Instagram",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.link" : {
+    "message" : "Website",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.linkedin-in" : {
+    "message" : "LinkedIn",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.pinterest-p" : {
+    "message" : "Pinterest",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.twitter" : {
+    "message" : "Twitter",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.whatsapp" : {
+    "message" : "Whatsapp",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.youtube" : {
+    "message" : "YouTube",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.label" : {
+    "message" : "Social media-account",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_link.label" : {
+    "message" : "Social media-koppeling",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_color.label" : {
+    "message" : "Achtergrondkleur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.color.label" : {
+    "message" : "Kleur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.corner_radius.help_text" : {
+    "message" : "Waarde is in pixels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.corner_radius.label" : {
+    "message" : "Hoekradius",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.bg_color.label" : {
+    "message" : "Achtergrondkleur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.color.label" : {
+    "message" : "Kleur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.label" : {
+    "message" : "Aanwijzen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Stijlopties",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.help_text" : {
+    "message" : "Waarde is in pixels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.label" : {
+    "message" : "Grootte",
+    "description" : "",
+    "placeholders" : null
+  }
+}

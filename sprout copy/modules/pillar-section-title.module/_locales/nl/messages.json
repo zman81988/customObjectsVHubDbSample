@@ -1,0 +1,42 @@
+{
+  "name" : {
+    "message" : "Titel pillar-sectie",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Als je deze optie inschakelt, kun je de standaard themastijlen overschrijven. Als je deze optie uitschakelt wordt de module weer gekoppeld aan de standaard themastijlen.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Standaardstijl overschrijven",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.color.label" : {
+    "message" : "Kleur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Stijlopties",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Sectietitel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "Je sectietitel moet je sectie beschrijven en uniek zijn ten opzichte van de andere sectietitels op de pagina. De titel wordt automatisch toegevoegd aan het menu in de module 'Pillar-menu'.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Titel",
+    "description" : "",
+    "placeholders" : null
+  }
+}

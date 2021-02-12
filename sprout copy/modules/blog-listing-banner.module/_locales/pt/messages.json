@@ -1,0 +1,62 @@
+{
+  "name" : {
+    "message" : "Banner de lista de blog",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_image.label" : {
+    "message" : "Imagem de fundo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Opções de estilo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.horizontal.help_text" : {
+    "message" : "O valor está em pixels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.horizontal.label" : {
+    "message" : "Esquerda/direita",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.label" : {
+    "message" : "Horizontal",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.help_text" : {
+    "message" : "O valor está em pixels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.label" : {
+    "message" : "Superior/inferior",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.subtitle_color.label" : {
+    "message" : "Cor do subtítulo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.title_color.label" : {
+    "message" : "Cor do título",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subtitle.label" : {
+    "message" : "Subtítulo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Título",
+    "description" : "",
+    "placeholders" : null
+  }
+}

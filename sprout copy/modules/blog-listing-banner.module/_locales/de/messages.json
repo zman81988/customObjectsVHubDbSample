@@ -1,0 +1,62 @@
+{
+  "name" : {
+    "message" : "Blog-Listing-Banner",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_image.label" : {
+    "message" : "Hintergrundbild",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Stiloptionen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.horizontal.help_text" : {
+    "message" : "Wert in Pixel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.horizontal.label" : {
+    "message" : "Links/rechts",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.label" : {
+    "message" : "Auffüllung",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.help_text" : {
+    "message" : "Wert in Pixel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.label" : {
+    "message" : "Oben/Unten",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.subtitle_color.label" : {
+    "message" : "Untertitelfarbe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.title_color.label" : {
+    "message" : "Titelfarbe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subtitle.label" : {
+    "message" : "Untertitel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Titel",
+    "description" : "",
+    "placeholders" : null
+  }
+}

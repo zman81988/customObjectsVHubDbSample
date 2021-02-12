@@ -1,0 +1,67 @@
+{
+  "name" : {
+    "message" : "お客様の声のスライダー",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "このオプションを有効にすると、既定のテーマスタイルを上書きできます。このオプションを無効にすると、モジュールが既定のテーマスタイルに再接続されます。",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "既定のスタイルを上書き",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "スタイルオプション",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.navigation_active_color.label" : {
+    "message" : "ナビゲーションの有効色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.navigation_color.label" : {
+    "message" : "ナビゲーションの色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.author_image.label" : {
+    "message" : "執筆者の画像",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.author_name.default" : {
+    "message" : "Alan Dixon",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.author_name.label" : {
+    "message" : "執筆者の名前",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.label" : {
+    "message" : "作成者",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.content.default" : {
+    "message" : "<h3>驚きでした！</h3><p>Rallyチームは親身になって弊社のビジネスのことを考えてくれた上に、不屈の精神と知識、そして情熱をもって課題に取り組んでくれました。このチームを強く推奨します。</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.content.label" : {
+    "message" : "お客様の声のテキスト",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.label" : {
+    "message" : "お客様の声",
+    "description" : "",
+    "placeholders" : null
+  }
+}

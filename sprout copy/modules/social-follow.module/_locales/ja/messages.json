@@ -1,0 +1,152 @@
+{
+  "name" : {
+    "message" : "ソーシャルフォロー",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "このオプションを有効にすると、既定のテーマスタイルを上書きできます。このオプションを無効にすると、モジュールが既定のテーマスタイルに再接続されます。",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "既定のスタイルを上書き",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.accessibility.label" : {
+    "message" : "アクセスに関するオプション",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.accessibility.title.default" : {
+    "message" : "Facebookでフォローしてください",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.accessibility.title.label" : {
+    "message" : "タイトル",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.custom_icon.label" : {
+    "message" : "カスタムアイコン",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.label" : {
+    "message" : "ソーシャルリンク",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.custom_icon" : {
+    "message" : "カスタムアイコン",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.envelope" : {
+    "message" : "Eメール",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.facebook-f" : {
+    "message" : "Facebook",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.instagram" : {
+    "message" : "Instagram",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.link" : {
+    "message" : "ウェブサイト",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.linkedin-in" : {
+    "message" : "LinkedIn",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.pinterest-p" : {
+    "message" : "Pinterest",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.twitter" : {
+    "message" : "Twitter",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.whatsapp" : {
+    "message" : "Whatsapp",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.choices.youtube" : {
+    "message" : "YouTube",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_account.label" : {
+    "message" : "ソーシャルアカウント",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_links.social_link.label" : {
+    "message" : "ソーシャルリンク",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_color.label" : {
+    "message" : "背景色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.color.label" : {
+    "message" : "カラー",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.corner_radius.help_text" : {
+    "message" : "値はピクセル単位です",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.corner_radius.label" : {
+    "message" : "角の半径",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.bg_color.label" : {
+    "message" : "背景色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.color.label" : {
+    "message" : "カラー",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.label" : {
+    "message" : "カーソルを置く",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "スタイルオプション",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.help_text" : {
+    "message" : "値はピクセル単位です",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.label" : {
+    "message" : "サイズ",
+    "description" : "",
+    "placeholders" : null
+  }
+}

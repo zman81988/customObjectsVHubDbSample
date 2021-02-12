@@ -1,0 +1,38 @@
+.car {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.car.carImage {
+  grid-area: span 2;
+}
+
+.carListing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  grid-auto-rows: max-content;
+}
+
+.carListing a {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+  background-color: #fff;
+  color: #1e2b33;
+}
+
+.carListing a:hover {
+  text-decoration: none;
+}
+
+.carListing .carCard {
+  padding: 20px;
+  box-shadow: 0 1px 5px 0 rgb(45 62 80 / 12%);
+  background-color: white;
+}
+.carListing .carCard:hover {
+  box-shadow: 0 1px 5px 0 rgb(0 170 255 / 50%);
+}

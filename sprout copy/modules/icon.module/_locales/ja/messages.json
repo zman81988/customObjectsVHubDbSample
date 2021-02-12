@@ -1,0 +1,67 @@
+{
+  "accessibility.label" : {
+    "message" : "アクセスに関するオプション",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.choices.decorative" : {
+    "message" : "スクリーンリーダーによって無視される",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.choices.semantic" : {
+    "message" : "スクリーンリーダーによって読まれる",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.label" : {
+    "message" : "目的",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.title.label" : {
+    "message" : "タイトル",
+    "description" : "",
+    "placeholders" : null
+  },
+  "icon_field.label" : {
+    "message" : "アイコン",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "アイコン",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "このオプションを有効にすると、既定のテーマスタイルを上書きできます。このオプションを無効にすると、モジュールが既定のテーマスタイルに再接続されます。",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "既定のスタイルを上書き",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.color.label" : {
+    "message" : "カラー",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "スタイルオプション",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.help_text" : {
+    "message" : "値はピクセル単位です",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.label" : {
+    "message" : "サイズ",
+    "description" : "",
+    "placeholders" : null
+  }
+}

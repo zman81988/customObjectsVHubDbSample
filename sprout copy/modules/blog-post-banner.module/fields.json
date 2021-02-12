@@ -1,0 +1,111 @@
+[ {
+  "id" : "button_text",
+  "name" : "button_text",
+  "label" : "Button text",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Back to blog"
+}, {
+  "id" : "button_icon",
+  "name" : "button_icon",
+  "label" : "Button icon",
+  "required" : false,
+  "locked" : true,
+  "icon_set" : "fontawesome-5.0.10",
+  "type" : "icon",
+  "default" : {
+    "name" : "chevron-left",
+    "unicode" : "f053",
+    "type" : "SOLID"
+  }
+}, {
+  "id" : "style",
+  "name" : "style",
+  "label" : "Style options",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "banner_image_select",
+    "name" : "banner_image_select",
+    "label" : "Which type of banner would you like to use?",
+    "required" : true,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "featured_image", "Featured image" ], [ "custom_bg_image", "Custom background image" ], [ "custom_bg_color", "Custom background color" ] ],
+    "type" : "choice",
+    "default" : "featured_image"
+  }, {
+    "id" : "style.bg_image",
+    "name" : "bg_image",
+    "label" : "Background image",
+    "required" : true,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "banner_image_select",
+      "controlling_value_regex" : "custom_bg_image",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "alt" : null,
+      "size_type" : null,
+      "width" : null,
+      "height" : null,
+      "max_width" : null,
+      "max_height" : null,
+      "loading" : "disabled"
+    }
+  }, {
+    "id" : "style.bg_color",
+    "name" : "bg_color",
+    "label" : "Background color",
+    "required" : true,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "banner_image_select",
+      "controlling_value_regex" : "custom_bg_color",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#D0D0D0",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "style.padding",
+    "name" : "padding",
+    "label" : "Padding",
+    "required" : false,
+    "locked" : true,
+    "children" : [ {
+      "id" : "style.padding.vertical",
+      "name" : "vertical",
+      "label" : "Top/Bottom",
+      "help_text" : "Value is in pixels",
+      "required" : false,
+      "locked" : false,
+      "display" : "text",
+      "step" : 1,
+      "type" : "number",
+      "default" : 80
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+} ]

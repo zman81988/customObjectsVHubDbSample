@@ -1,0 +1,8 @@
+.icon svg {
+  box-sizing: border-box;
+  fill: #34b5e5;
+  height: auto;
+  margin: 0 auto 1.4rem;
+  max-width: 100%;
+  width: 60px;
+}

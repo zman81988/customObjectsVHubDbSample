@@ -1,0 +1,177 @@
+{
+  "name" : {
+    "message" : "価格表",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.billing_option_one_title.default" : {
+    "message" : "月次請求",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.billing_option_one_title.label" : {
+    "message" : "請求ラベル",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.label" : {
+    "message" : "価格オプション1",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.label" : {
+    "message" : "テーブル",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_button_link.label" : {
+    "message" : "ボタンリンク",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_button_text.default" : {
+    "message" : "登録",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_button_text.label" : {
+    "message" : "ボタンテキスト",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_currency.default" : {
+    "message" : "$",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_currency.label" : {
+    "message" : "通貨単位",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_description.default" : {
+    "message" : "<p><strong>無料で無制限</strong>のダウンロードに加えて、さらに追加予定！</p><ul><li>最大25 MBのファイルサイズ</li><li>2 GBの帯域幅</li><li>15秒間の画面録画</li><li>15秒間のウェブカメラ動画録画</li><li>CloudAppブランディング</li><li>無制限の注釈</li><li>無制限のファイル</li><li>デスクトップアプリとの連携</li></ul>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_description.label" : {
+    "message" : "説明",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_price.label" : {
+    "message" : "価格",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_title.default" : {
+    "message" : "Starter",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_title.label" : {
+    "message" : "タイトル",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.billing_option_two_title.default" : {
+    "message" : "年次請求を15%割引",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.billing_option_two_title.label" : {
+    "message" : "請求ラベル",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.label" : {
+    "message" : "価格オプション2",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.label" : {
+    "message" : "テーブル",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_button_link.label" : {
+    "message" : "ボタンリンク",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_button_text.default" : {
+    "message" : "登録",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_button_text.label" : {
+    "message" : "ボタンテキスト",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_currency.default" : {
+    "message" : "$",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_currency.label" : {
+    "message" : "通貨単位",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_description.default" : {
+    "message" : "<p><strong>無料で無制限</strong>のダウンロードに加えて、さらに追加予定！</p><ul><li>最大25 MBのファイルサイズ</li><li>2 GBの帯域幅</li><li>15秒間の画面録画</li><li>15秒間のウェブカメラ動画録画</li><li>CloudAppブランディング</li><li>無制限の注釈</li><li>無制限のファイル</li><li>デスクトップアプリとの連携</li></ul>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_description.label" : {
+    "message" : "説明",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_price.label" : {
+    "message" : "価格",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_title.default" : {
+    "message" : "Enterprise",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_title.label" : {
+    "message" : "タイトル",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "このオプションを有効にすると、既定のテーマスタイルを上書きできます。このオプションを無効にすると、モジュールが既定のテーマスタイルに再接続されます。",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "既定のスタイルを上書き",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active_option_color.label" : {
+    "message" : "有効なオプションの色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.header_bg_color.label" : {
+    "message" : "ヘッダーの背景色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.header_color.label" : {
+    "message" : "ヘッダーのテキストの色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "スタイルオプション",
+    "description" : "",
+    "placeholders" : null
+  }
+}

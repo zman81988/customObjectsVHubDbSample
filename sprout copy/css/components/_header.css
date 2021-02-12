@@ -1,0 +1,230 @@
+/* Header Container */
+
+.header {
+  background-color: #34b5e5;
+  width: 100%;
+  z-index: 3;
+}
+
+.header__container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1340px;
+  padding: 1.4rem 2.8rem;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .header__container {
+    padding: 1.4rem;
+  }
+}
+
+/* Logo */
+
+.header__logo {
+  margin-right: 2.1rem;
+}
+
+.header__logo img {
+  height: auto;
+  max-width: 250px;
+}
+
+.header__logo .logo-company-name {
+  color: #1e2b33;
+  font-size: 28px;
+}
+
+/* Navigation Menu */
+
+.header__menu {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .header .header__menu {
+    margin-left: 0;
+    min-height: 0;
+    order: 3;
+  }
+}
+
+/* Language Switcher */
+
+.header__language-switcher {
+  cursor: pointer;
+  margin-left: 2.1rem;
+}
+
+.header__language-switcher .lang_switcher_class {
+  position: static;
+}
+
+.header__language-switcher .lang_switcher_class .globe_class {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.header__language-switcher .lang_list_class {
+  background-color: #34b5e5;
+  border-color: #d0d0d0;
+  border-radius: 0 0 4px 4px;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  left: auto;
+  min-width: 100%;
+  opacity: 0;
+  padding-top: 0;
+  right: 0;
+  text-align: left;
+  top: 100%;
+  transform: none;
+  visibility: hidden;
+}
+
+.header__language-switcher:hover .lang_list_class {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header__language-switcher .lang_list_class:after,
+.header__language-switcher .lang_list_class:before {
+  content: none;
+}
+
+.header__language-switcher .lang_list_class li {
+  background-color: transparent;
+  border: none;
+  line-height: 2;
+  margin: 0;
+  padding: 10px;
+}
+
+.header__language-switcher .lang_list_class li:first-child {
+  border-top: none;
+  padding-top: 0.7rem;
+}
+
+.header__language-switcher .lang_list_class li:last-child {
+  border-bottom: none;
+  padding-bottom: 0.7rem;
+}
+
+.header__language-switcher .lang_list_class li:hover {
+  background-color: #c168c2;
+  transition: background-color 0.3s;
+}
+
+.header__language-switcher-label-current,
+.header__language-switcher .lang_list_class li a {
+  color: #fff;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.header__language-switcher .lang_list_class li:hover a {
+  color: #fff;
+}
+
+.header__language-switcher-label {
+  display: flex;
+  position: relative;
+}
+
+.header__language-switcher-label-current {
+  align-items: center;
+  display: flex;
+  line-height: 2;
+  margin-left: 0.7rem;
+}
+
+.header__language-switcher-label-current:hover,
+.header__language-switcher-label-current:focus,
+.header__language-switcher-label-current:active {
+  color: #fff;
+}
+
+.header__language-switcher-label-current:after {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #fff;
+  content: '';
+  display: block;
+  height: 0;
+  margin: 3px 0 0 10px;
+  width: 0;
+}
+
+@media (max-width: 767px) {
+  .header__language-switcher {
+    margin-left: auto;
+    margin-right: 20px;
+    order: 2;
+  }
+
+  .header__language-switcher .lang_switcher_class .globe_class {
+    height: 24px;
+    margin-top: 0;
+    width: 24px;
+  }
+
+  .header__language-switcher .lang_list_class {
+    border: 0;
+    border-radius: 0;
+  }
+
+  .header__language-switcher:hover .lang_list_class {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .header__language-switcher .lang_list_class li {
+    border-top: 1px solid #d0d0d0;
+    padding: 0.7rem;
+  }
+
+  .header__language-switcher .lang_list_class li:first-child {
+    border-top: 1px solid #d0d0d0;
+    padding-top: 0.7rem;
+  }
+
+  .header__language-switcher .lang_list_class li:hover {
+    background-color: transparent;
+  }
+
+  .header__language-switcher .lang_list_class li:hover a {
+    color: #fff;
+  }
+
+  .header__language-switcher-label {
+    position: static;
+  }
+
+  .header__language-switcher-label-current {
+    display: none;
+  }
+
+  .header__language-switcher.open .lang_list_class {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Header - No Navigation */
+
+.header--no-navigation .header__container {
+  justify-content: center;
+}
+
+.header--no-navigation .header__logo {
+  margin-right: 0;
+}

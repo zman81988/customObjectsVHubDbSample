@@ -1,0 +1,67 @@
+{
+  "accessibility.label" : {
+    "message" : "Opzioni di accessibilità",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.choices.decorative" : {
+    "message" : "Ignorato dal lettore di schermate",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.choices.semantic" : {
+    "message" : "Letto dal lettore di schermate",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.label" : {
+    "message" : "Scopo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.title.label" : {
+    "message" : "Titolo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "icon_field.label" : {
+    "message" : "Icona",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Icona",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Abilitare questa opzione ti consentirà di sovrascrivere gli stili del tema predefiniti. Disabilitare questa opzione ricollegherà il modulo agli stili del tema predefiniti.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Sovrascrivi lo stile predefinito",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.color.label" : {
+    "message" : "Colore",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Opzioni stile",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.help_text" : {
+    "message" : "Il valore è in pixel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.label" : {
+    "message" : "Dimensioni",
+    "description" : "",
+    "placeholders" : null
+  }
+}

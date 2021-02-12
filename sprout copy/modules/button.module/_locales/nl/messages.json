@@ -1,0 +1,102 @@
+{
+  "button_icon.icon_position.choices.left" : {
+    "message" : "Links",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_icon.icon_position.choices.right" : {
+    "message" : "Rechts",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_icon.icon_position.label" : {
+    "message" : "Positie",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_icon.label" : {
+    "message" : "Pictogram",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_link.label" : {
+    "message" : "Koppeling voor knop",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_options.button_icon_toggle.label" : {
+    "message" : "Pictogram voor toevoegen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_options.button_link_toggle.label" : {
+    "message" : "Als koppeling gebruiken",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_options.label" : {
+    "message" : "Knopopties",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.default" : {
+    "message" : "Hier een knop met een link toevoegen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.label" : {
+    "message" : "Knoptekst",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Knop",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.button_size.choices.large" : {
+    "message" : "Groot",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.button_size.choices.regular" : {
+    "message" : "Standaard",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.button_size.choices.small" : {
+    "message" : "Klein",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.button_size.label" : {
+    "message" : "Knopgrootte",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.button_type.choices.primary" : {
+    "message" : "Primair",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.button_type.choices.secondary" : {
+    "message" : "Secundair",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.button_type.choices.simple" : {
+    "message" : "Eenvoudig",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.button_type.label" : {
+    "message" : "Knopstijl",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Stijlopties",
+    "description" : "",
+    "placeholders" : null
+  }
+}

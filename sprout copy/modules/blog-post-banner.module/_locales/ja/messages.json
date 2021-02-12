@@ -1,0 +1,72 @@
+{
+  "button_icon.label" : {
+    "message" : "ボタンアイコン",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.default" : {
+    "message" : "ブログに戻る",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.label" : {
+    "message" : "ボタンテキスト",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "ブログ記事バナー",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.choices.custom_bg_color" : {
+    "message" : "カスタム背景色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.choices.custom_bg_image" : {
+    "message" : "カスタム背景画像",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.choices.featured_image" : {
+    "message" : "キービジュアル",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.label" : {
+    "message" : "どの種類のバナーを使用しますか？",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_color.label" : {
+    "message" : "背景色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_image.label" : {
+    "message" : "背景画像",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "スタイルオプション",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.label" : {
+    "message" : "パディング",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.help_text" : {
+    "message" : "値はピクセル単位です",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.label" : {
+    "message" : "上／下",
+    "description" : "",
+    "placeholders" : null
+  }
+}

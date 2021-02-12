@@ -1,0 +1,363 @@
+[ {
+  "id" : "option_one",
+  "name" : "option_one",
+  "label" : "Pricing option one",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "option_one.billing_option_one_title",
+    "name" : "billing_option_one_title",
+    "label" : "Billing label",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Monthly Billing"
+  }, {
+    "id" : "option_one.option_one_table",
+    "name" : "option_one_table",
+    "label" : "Table",
+    "required" : true,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 4,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "option_one.option_one_table.option_one_title",
+      "name" : "option_one_title",
+      "label" : "Title",
+      "required" : true,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Starter"
+    }, {
+      "id" : "option_one.option_one_table.option_one_currency",
+      "name" : "option_one_currency",
+      "label" : "Currency",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "$"
+    }, {
+      "id" : "option_one.option_one_table.option_one_price",
+      "name" : "option_one_price",
+      "label" : "Price",
+      "required" : false,
+      "locked" : false,
+      "display" : "text",
+      "step" : 1,
+      "type" : "number",
+      "default" : 25
+    }, {
+      "id" : "option_one.option_one_table.option_one_description",
+      "name" : "option_one_description",
+      "label" : "Description",
+      "required" : true,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<p><strong>Free unlimited</strong> downloads, plus more stuff!</p><ul><li>25 MB max file size</li><li>2 GB bandwidth</li><li>15 second screen recordings</li><li>15 second webcam video recording</li><li>CloudApp branding</li><li>Unlimited annotations</li><li>Unlimited files</li><li>Desktop app integrations</li></ul>"
+    }, {
+      "id" : "option_one.option_one_table.option_one_button_text",
+      "name" : "option_one_button_text",
+      "label" : "Button text",
+      "required" : true,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Sign Up"
+    }, {
+      "id" : "option_one.option_one_table.option_one_button_link",
+      "name" : "option_one_button_link",
+      "label" : "Button link",
+      "required" : true,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "#"
+        }
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "option_one_button_text" : "Sign Up",
+      "option_one_currency" : "$",
+      "option_one_description" : "<p><strong>Free unlimited</strong> downloads, plus more stuff!</p><ul><li>25 MB max file size</li><li>2 GB bandwidth</li><li>15 second screen recordings</li><li>15 second webcam video recording</li><li>CloudApp branding</li><li>Unlimited annotations</li><li>Unlimited files</li><li>Desktop app integrations</li></ul>",
+      "option_one_price" : 25,
+      "option_one_title" : "Starter"
+    }, {
+      "option_one_button_text" : "Sign Up",
+      "option_one_currency" : "$",
+      "option_one_description" : "<p><strong>Free unlimited</strong> downloads, plus more stuff!</p><ul><li>25 MB max file size</li><li>2 GB bandwidth</li><li>15 second screen recordings</li><li>15 second webcam video recording</li><li>CloudApp branding</li><li>Unlimited annotations</li><li>Unlimited files</li><li>Desktop app integrations</li></ul>",
+      "option_one_price" : 25,
+      "option_one_title" : "Starter"
+    }, {
+      "option_one_button_text" : "Sign Up",
+      "option_one_currency" : "$",
+      "option_one_description" : "<p><strong>Free unlimited</strong> downloads, plus more stuff!</p><ul><li>25 MB max file size</li><li>2 GB bandwidth</li><li>15 second screen recordings</li><li>15 second webcam video recording</li><li>CloudApp branding</li><li>Unlimited annotations</li><li>Unlimited files</li><li>Desktop app integrations</li></ul>",
+      "option_one_price" : 25,
+      "option_one_title" : "Starter"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "billing_option_one_title" : "Monthly Billing",
+    "option_one_table" : [ {
+      "option_one_button_text" : "Sign Up",
+      "option_one_currency" : "$",
+      "option_one_description" : "<p><strong>Free unlimited</strong> downloads, plus more stuff!</p><ul><li>25 MB max file size</li><li>2 GB bandwidth</li><li>15 second screen recordings</li><li>15 second webcam video recording</li><li>CloudApp branding</li><li>Unlimited annotations</li><li>Unlimited files</li><li>Desktop app integrations</li></ul>",
+      "option_one_price" : 25,
+      "option_one_title" : "Starter"
+    }, {
+      "option_one_button_text" : "Sign Up",
+      "option_one_currency" : "$",
+      "option_one_description" : "<p><strong>Free unlimited</strong> downloads, plus more stuff!</p><ul><li>25 MB max file size</li><li>2 GB bandwidth</li><li>15 second screen recordings</li><li>15 second webcam video recording</li><li>CloudApp branding</li><li>Unlimited annotations</li><li>Unlimited files</li><li>Desktop app integrations</li></ul>",
+      "option_one_price" : 25,
+      "option_one_title" : "Starter"
+    }, {
+      "option_one_button_text" : "Sign Up",
+      "option_one_currency" : "$",
+      "option_one_description" : "<p><strong>Free unlimited</strong> downloads, plus more stuff!</p><ul><li>25 MB max file size</li><li>2 GB bandwidth</li><li>15 second screen recordings</li><li>15 second webcam video recording</li><li>CloudApp branding</li><li>Unlimited annotations</li><li>Unlimited files</li><li>Desktop app integrations</li></ul>",
+      "option_one_price" : 25,
+      "option_one_title" : "Starter"
+    } ]
+  }
+}, {
+  "id" : "option_two",
+  "name" : "option_two",
+  "label" : "Pricing option two",
+  "required" : true,
+  "locked" : false,
+  "children" : [ {
+    "id" : "option_two.billing_option_two_title",
+    "name" : "billing_option_two_title",
+    "label" : "Billing label",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Annual Billing Save 15%"
+  }, {
+    "id" : "option_two.option_two_table",
+    "name" : "option_two_table",
+    "label" : "Table",
+    "required" : true,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 4,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "option_two.option_two_table.option_two_title",
+      "name" : "option_two_title",
+      "label" : "Title",
+      "required" : true,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Enterprise"
+    }, {
+      "id" : "option_two.option_two_table.option_two_currency",
+      "name" : "option_two_currency",
+      "label" : "Currency",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "$"
+    }, {
+      "id" : "option_two.option_two_table.option_two_price",
+      "name" : "option_two_price",
+      "label" : "Price",
+      "required" : false,
+      "locked" : false,
+      "display" : "text",
+      "step" : 1,
+      "type" : "number",
+      "default" : 100
+    }, {
+      "id" : "option_two.option_two_table.option_two_description",
+      "name" : "option_two_description",
+      "label" : "Description",
+      "required" : true,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<p><strong>Free unlimited</strong> downloads, plus more stuff!</p><ul><li>25 MB max file size</li><li>2 GB bandwidth</li><li>15 second screen recordings</li><li>15 second webcam video recording</li><li>CloudApp branding</li><li>Unlimited annotations</li><li>Unlimited files</li><li>Desktop app integrations</li></ul>"
+    }, {
+      "id" : "option_two.option_two_table.option_two_button_text",
+      "name" : "option_two_button_text",
+      "label" : "Button text",
+      "required" : true,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Sign Up"
+    }, {
+      "id" : "option_two.option_two_table.option_two_button_link",
+      "name" : "option_two_button_link",
+      "label" : "Button link",
+      "required" : true,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "#"
+        }
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "option_two_title" : "Enterprise",
+      "option_two_currency" : "$",
+      "option_two_price" : 100,
+      "option_two_button_text" : "Sign Up",
+      "option_two_description" : "<p><strong>Free unlimited</strong> downloads, plus more stuff!</p><ul><li>25 MB max file size</li><li>2 GB bandwidth</li><li>15 second screen recordings</li><li>15 second webcam video recording</li><li>CloudApp branding</li><li>Unlimited annotations</li><li>Unlimited files</li><li>Desktop app integrations</li></ul>"
+    }, {
+      "option_two_title" : "Enterprise",
+      "option_two_currency" : "$",
+      "option_two_price" : 100,
+      "option_two_button_text" : "Sign Up",
+      "option_two_description" : "<p><strong>Free unlimited</strong> downloads, plus more stuff!</p><ul><li>25 MB max file size</li><li>2 GB bandwidth</li><li>15 second screen recordings</li><li>15 second webcam video recording</li><li>CloudApp branding</li><li>Unlimited annotations</li><li>Unlimited files</li><li>Desktop app integrations</li></ul>"
+    }, {
+      "option_two_title" : "Enterprise",
+      "option_two_currency" : "$",
+      "option_two_price" : 100,
+      "option_two_button_text" : "Sign Up",
+      "option_two_description" : "<p><strong>Free unlimited</strong> downloads, plus more stuff!</p><ul><li>25 MB max file size</li><li>2 GB bandwidth</li><li>15 second screen recordings</li><li>15 second webcam video recording</li><li>CloudApp branding</li><li>Unlimited annotations</li><li>Unlimited files</li><li>Desktop app integrations</li></ul>"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "billing_option_two_title" : "Annual Billing Save 15%",
+    "option_two_table" : [ {
+      "option_two_title" : "Enterprise",
+      "option_two_currency" : "$",
+      "option_two_price" : 100,
+      "option_two_button_text" : "Sign Up",
+      "option_two_description" : "<p><strong>Free unlimited</strong> downloads, plus more stuff!</p><ul><li>25 MB max file size</li><li>2 GB bandwidth</li><li>15 second screen recordings</li><li>15 second webcam video recording</li><li>CloudApp branding</li><li>Unlimited annotations</li><li>Unlimited files</li><li>Desktop app integrations</li></ul>"
+    }, {
+      "option_two_title" : "Enterprise",
+      "option_two_currency" : "$",
+      "option_two_price" : 100,
+      "option_two_button_text" : "Sign Up",
+      "option_two_description" : "<p><strong>Free unlimited</strong> downloads, plus more stuff!</p><ul><li>25 MB max file size</li><li>2 GB bandwidth</li><li>15 second screen recordings</li><li>15 second webcam video recording</li><li>CloudApp branding</li><li>Unlimited annotations</li><li>Unlimited files</li><li>Desktop app integrations</li></ul>"
+    }, {
+      "option_two_title" : "Enterprise",
+      "option_two_currency" : "$",
+      "option_two_price" : 100,
+      "option_two_button_text" : "Sign Up",
+      "option_two_description" : "<p><strong>Free unlimited</strong> downloads, plus more stuff!</p><ul><li>25 MB max file size</li><li>2 GB bandwidth</li><li>15 second screen recordings</li><li>15 second webcam video recording</li><li>CloudApp branding</li><li>Unlimited annotations</li><li>Unlimited files</li><li>Desktop app integrations</li></ul>"
+    } ]
+  }
+}, {
+  "id" : "override_default_style",
+  "name" : "override_default_style",
+  "label" : "Override default style",
+  "help_text" : "Enabling this option will allow you to override default theme styles. Disabling this option will reconnect the module back to the default theme styles.",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "style",
+  "name" : "style",
+  "label" : "Style options",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "override_default_style",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "style.header_bg_color",
+    "name" : "header_bg_color",
+    "label" : "Header background color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#34B5E5",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "style.header_color",
+    "name" : "header_color",
+    "label" : "Header text color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_value_regex" : null,
+      "operator" : null,
+      "access" : null,
+      "hidden_subfields" : {
+        "opacity" : true
+      }
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF"
+    }
+  }, {
+    "id" : "style.active_option_color",
+    "name" : "active_option_color",
+    "label" : "Active option color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_value_regex" : null,
+      "operator" : null,
+      "access" : null,
+      "hidden_subfields" : {
+        "opacity" : true
+      }
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#34B5E5"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+} ]

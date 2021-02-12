@@ -1,0 +1,67 @@
+{
+  "accessibility.label" : {
+    "message" : "Opções de acessibilidade",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.choices.decorative" : {
+    "message" : "Ignorado pelo leitor de tela",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.choices.semantic" : {
+    "message" : "Leitura pelo leitor de tela",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.label" : {
+    "message" : "Finalidade",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.title.label" : {
+    "message" : "Título",
+    "description" : "",
+    "placeholders" : null
+  },
+  "icon_field.label" : {
+    "message" : "Ícone",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Ícone",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Ativar esta opção permitirá substituir os estilos do tema padrão. Desativar esta opção reconectará o módulo aos estilos do tema padrão.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Substituir estilo padrão",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.color.label" : {
+    "message" : "Cor",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Opções de estilo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.help_text" : {
+    "message" : "O valor está em pixels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.label" : {
+    "message" : "Tamanho",
+    "description" : "",
+    "placeholders" : null
+  }
+}

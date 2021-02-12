@@ -1,0 +1,80 @@
+.statistic {
+  text-align: center;
+}
+
+.statistic__circle *,
+.statistic__circle *:before,
+.statistic__circle *:after {
+  box-sizing: content-box;
+}
+
+.statistic__circle {
+  background-color: #d0d0d0;
+  border-radius: 50%;
+  float: none;
+  font-size: 150px;
+  height: 1em;
+  margin: 0 auto 20px;
+  position: relative;
+  width: 1em;
+}
+
+.statistic__bar,
+.statistic__fill {
+  border-color: #34b5e5;
+}
+
+.statistic__info {
+  display: block;
+  font-size: 0.3em;
+  left: 0;
+  line-height: 3.3em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 1;
+}
+
+.statistic__unit {
+  font-size: 0.6em;
+}
+
+.statistic__slice {
+  clip: rect(0, 1em, 1em, 0.5em);
+  height: 1em;
+  position: absolute;
+  width: 1em;
+}
+
+.statistic__circle .statistic__slice--large {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.statistic__bar,
+.statistic__fill--large {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.08em;
+  clip: rect(0, 0.5em, 1em, 0);
+  height: 0.84em;
+  position: absolute;
+  width: 0.84em;
+}
+
+.statistic__fill {
+  transform: rotate(180deg);
+}
+
+.statistic__circle:after {
+  background-color: #fff;
+  border-radius: 50%;
+  content: ' ';
+  display: block;
+  height: 0.96em;
+  left: 0.02em;
+  position: absolute;
+  top: 0.02em;
+  width: 0.96em;
+}

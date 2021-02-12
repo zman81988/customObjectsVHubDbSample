@@ -1,0 +1,62 @@
+{
+  "name" : {
+    "message" : "ブログ一覧バナー",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_image.label" : {
+    "message" : "背景画像",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "スタイルオプション",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.horizontal.help_text" : {
+    "message" : "値はピクセル単位です",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.horizontal.label" : {
+    "message" : "左／右",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.label" : {
+    "message" : "パディング",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.help_text" : {
+    "message" : "値はピクセル単位です",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.label" : {
+    "message" : "上／下",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.subtitle_color.label" : {
+    "message" : "サブタイトルの色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.title_color.label" : {
+    "message" : "タイトルの色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "subtitle.label" : {
+    "message" : "サブタイトル",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "タイトル",
+    "description" : "",
+    "placeholders" : null
+  }
+}

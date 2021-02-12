@@ -1,0 +1,67 @@
+{
+  "name" : {
+    "message" : "Module de défilement des témoignages",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Activer cette option vous permettra de remplacer les styles de thèmes par défaut. Désactiver cette option reconnectera le module aux styles de thèmes par défaut.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Remplacer le style par défaut",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Options de style",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.navigation_active_color.label" : {
+    "message" : "Couleur de navigation active",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.navigation_color.label" : {
+    "message" : "Couleur de navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.author_image.label" : {
+    "message" : "Image de l'auteur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.author_name.default" : {
+    "message" : "Alan Dixon",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.author_name.label" : {
+    "message" : "Nom de l'auteur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.author.label" : {
+    "message" : "Auteur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.content.default" : {
+    "message" : "<h3>Waouh, c'est incroyable !</h3><p>L'équipe Regroupement a géré notre activité comme s'il s'agissait de la sienne. Elle a relevé le défi en mettant à profit son courage, ses connaissances et sa capacité d'empathie. Je recommande VIVEMENT à tous de faire appel à ses services.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.content.label" : {
+    "message" : "Texte du témoignage",
+    "description" : "",
+    "placeholders" : null
+  },
+  "testimonial_slider.label" : {
+    "message" : "Témoignages",
+    "description" : "",
+    "placeholders" : null
+  }
+}

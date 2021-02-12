@@ -1,0 +1,95 @@
+<!-- module html  -->
+{% if dynamic_page_crm_object %}  
+{% set car = dynamic_page_crm_object %}
+
+<script>
+    var contactId = {{contact.hs_object_id}}
+   var carId = {{car.id}}
+
+    </script>
+
+<script src="https://kit.fontawesome.com/0a53560a42.js" crossorigin="anonymous"></script>
+
+{% set query = "vin="+ car.vin %}
+
+{% set favorited_cars = crm_associations(contact.hs_object_id, "USER_DEFINED", 2, query) %}
+
+
+
+<h1>{{car.year}} {{car.make}} {{model}} </h1>
+
+<div class="car">
+    <div class="carImage">
+        {% if car.image %}
+        <img src="{{car.image}}" alt="{{car.year}} {{car.make}} {{car.model}}">
+        {% else %}
+        <img src="https://f.hubspotusercontent20.net/hubfs/9307273/Imported%20images/plchldr255.png" alt="Picture coming soon">
+        {% endif %}
+    </div>
+    <div class="carDetails">
+        <div class="carPrice">
+            Price: {{car.price |format_currency("en-US")}}
+        </div>
+        <div class="carBody">
+            Body Type: {{ car.body_style.name}}
+        </div>
+        <div class="carDescription">
+             {{car.description }}
+        </div>
+        <div class="carDistance">
+            Distance from Cambridge: <span class="dealer_location"> {{car.location  }}</span> Miles
+        </div>
+        <div class="carListingDate">
+            Time since listing: <span class="listing_date">{{car.date_received}}</span> 
+        </div>
+        
+        <div class="favorite">
+            <input type="checkbox" name="favorite" id="favorite" class="red-heart-checkbox" {{ favorited_cars.total == 1 ? "checked" : ""}}>
+            <label for="favorite"></label>
+        </div>
+        
+
+    </div>
+
+</div>
+
+
+{% elif dynamic_page_crm_object_type_fqn %}
+    {% set cars = crm_objects(dynamic_page_crm_object_type_fqn, "limit=200","vin, price, picture, location, body_type, date_received, image") %}
+    
+    <div class="carListing">
+        {% for car in cars.results %}
+            <div class="carCard">
+                <a href="{{ request.path }}/{{ car.vin }}">
+                <div class="carImage">
+                    {% if car.image %}
+                    <img src="{{car.image}}" alt="{{car.year}} {{car.make}} {{car.model}}">
+                    {% else %}
+                    <img src="https://f.hubspotusercontent20.net/hubfs/9307273/Imported%20images/plchldr255.png" alt="Picture coming soon">
+                    {% endif %}
+                </div>  
+                <div class="carDetails">
+                    <div class="carPrice">
+                        Price: {{car.price |format_currency("en-US")}}
+                    </div>
+                    <div class="carBody">
+                        Body Type: {{ car.body_type}}
+                    </div>
+                    <div class="carDistance">
+                        Distance from Cambridge: <span class="dealer_location"> {{car.location}}</span> 
+                    </div>
+                    <div class="carListingDate">
+                        Time since listing: <span class="listing_date"> {{car.date_received }}  </span> 
+                    </div>
+        
+                </div>
+            </a>
+            </div>
+        
+        {% endfor %}
+    </div>
+    
+    
+    
+{% endif %}
+

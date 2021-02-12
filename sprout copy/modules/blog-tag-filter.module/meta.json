@@ -1,0 +1,10 @@
+{
+  "global" : true,
+  "master_language" : "en",
+  "smart_type" : "NOT_SMART",
+  "icon" : "@hubspot/sprout/images/module-icons/filter.svg",
+  "host_template_types" : [ "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 41041592117,
+  "label" : "Blog tag filter",
+  "is_available_for_new_content" : true
+}

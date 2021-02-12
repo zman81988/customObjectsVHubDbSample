@@ -1,0 +1,352 @@
+/* Menu Item Styles */
+
+.navigation-primary a {
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation-primary a:hover,
+.navigation-primary a:focus,
+.navigation-primary a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-item {
+  margin: 0;
+  padding: 0;
+}
+
+/* Active Menu Item Styles */
+
+.navigation-primary a.active-item,
+.navigation-primary a.active-branch {
+  position: relative;
+}
+
+.navigation-primary .submenu.level-1 > li > a.active-item:after,
+.navigation-primary .submenu.level-1 > li > a.active-branch:after {
+  background-color: #fff;
+  bottom: -3px;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .navigation-primary .submenu.level-1 > li > a.active-item:after,
+  .navigation-primary .submenu.level-1 > li > a.active-branch:after {
+    display: none;
+  }
+}
+
+/* Menu */
+
+.submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .submenu {
+    display: none;
+  }
+
+  .submenu > .has-submenu {
+    position: relative;
+  }
+
+  .submenu > li > a {
+    display: block;
+    width: 100%;
+  }
+
+  .submenu > .has-submenu > a {
+    width: 70%;
+  }
+
+  input[type='checkbox']:checked ~ .submenu {
+    display: block;
+  }
+}
+
+/* Top Level Menu */
+
+.submenu.level-1 {
+  display: inline-block;
+}
+
+.submenu.level-1 > li {
+  display: inline-block;
+  margin: 0.7rem 2.1rem 0.7rem 0;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.submenu.level-1 > li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+  .submenu.level-1 > li {
+    margin-right: 1.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .submenu.level-1 {
+    width: 100%;
+  }
+
+  .submenu.level-1 > li {
+    border-top: 1px solid #d0d0d0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .submenu.level-1 > li > a {
+    padding: 0.7rem 2.1rem;
+  }
+}
+
+/* Child Menus */
+
+.submenu.level-2 {
+  background-color: #34b5e5;
+  border: 1px solid #d0d0d0;
+  border-radius: 0 0 4px 4px;
+  left: -9999px;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  width: 200px;
+  z-index: 2;
+}
+
+.submenu.level-1 > li:hover .submenu.level-2,
+.submenu.level-1 > li.focus .submenu.level-2 {
+  left: 0;
+  opacity: 1;
+}
+
+.submenu.level-1 > li:hover:last-child .submenu.level-2,
+.submenu.level-1 > li.focus:last-child .submenu.level-2 {
+  left: auto;
+  right: 0;
+}
+
+.submenu.level-2 > li {
+  border-bottom: 1px solid #d0d0d0;
+  margin: 0;
+  padding: 0;
+}
+
+.submenu.level-2 > li:last-child,
+.submenu.level-2 > li:last-child .submenu {
+  border-bottom: none;
+}
+
+.submenu.level-2 .menu-item .menu-link {
+  display: block;
+  padding: 0.7rem;
+  transition: background-color 0.3s;
+}
+
+.submenu.level-2 .menu-item .menu-link:hover,
+.submenu.level-2 .menu-item .menu-link:focus {
+  background-color: #c168c2;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+@media (max-width: 767px) {
+  .submenu.level-2 {
+    border: none;
+    box-shadow: none;
+    opacity: 1;
+    position: static;
+    transform: unset;
+    visibility: visible;
+    width: 100%;
+  }
+
+  .submenu.level-2 .menu-item {
+    border-bottom: none;
+    border-top: 1px solid #d0d0d0;
+    padding: 0;
+  }
+
+  .submenu.level-2 .menu-item .menu-link {
+    padding: 0.7rem 2.8rem;
+    transition: none;
+  }
+
+  .submenu.level-2 .menu-item .menu-link:hover {
+    background-color: inherit;
+  }
+
+  .submenu.level-2 .menu-item .menu-link:hover,
+  .submenu.level-2 .menu-item .menu-link:focus {
+    transition: none;
+  }
+}
+
+.submenu.level-3 .menu-item .menu-link {
+  padding-left: 2.8rem;
+}
+
+@media (max-width: 767px) {
+  .submenu.level-3 {
+    background-color: inherit;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .submenu.level-3 > li {
+    background-color: inherit;
+    padding: 0;
+  }
+
+  .submenu.level-3 .menu-item .menu-link {
+    padding: 0.7rem 3.5rem;
+  }
+}
+
+/* Mobile Navigation */
+
+#nav-toggle,
+.submenu-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header__navigation {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .header__navigation-toggle {
+    cursor: pointer;
+    display: block;
+  }
+
+  .header__mobile-menu-icon,
+  .header__mobile-menu-icon:after,
+  .header__mobile-menu-icon:before {
+    background-color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    height: 4px;
+    width: 24px;
+  }
+
+  .header__mobile-menu-icon {
+    position: relative;
+    top: -6px;
+  }
+
+  .header__mobile-menu-icon:before {
+    top: -8px;
+  }
+
+  .header__mobile-menu-icon:after {
+    top: 8px;
+  }
+
+  .header__mobile-menu-icon:after,
+  .header__mobile-menu-icon:before {
+    content: '';
+    position: absolute;
+  }
+
+  #nav-toggle:checked ~ .header__navigation {
+    display: block;
+  }
+
+  /* prettier-ignore */
+  #nav-toggle:checked + .header__navigation-toggle .header__mobile-menu-icon {
+    margin: 0 auto;
+    transform: rotate(45deg);
+  }
+
+  /* prettier-ignore */
+  #nav-toggle:checked + .header__navigation-toggle .header__mobile-menu-icon:before {
+    content: none;
+  }
+
+  /* prettier-ignore */
+  #nav-toggle:checked + .header__navigation-toggle .header__mobile-menu-icon:after {
+    top: 0;
+    transform: rotate(-90deg);
+  }
+
+  .menu-arrow-icon,
+  .menu-arrow-icon:after {
+    background-color: #fff;
+    border-radius: 10px;
+    display: block;
+    height: 4px;
+    width: 20px;
+  }
+
+  .menu-arrow-icon {
+    margin: 0 auto;
+    position: relative;
+    top: 8px;
+  }
+
+  .menu-arrow-icon:after {
+    content: '';
+    position: absolute;
+    transform: rotate(-90deg);
+  }
+
+  input[type='checkbox']:checked ~ .menu-arrow .menu-arrow-bg {
+    transform: rotate(45deg);
+    transition: transform 0.4s;
+  }
+
+  .submenu.level-1 > .has-submenu > .menu-arrow,
+  .submenu > .has-submenu > .menu-arrow,
+  .submenu .menu-arrow {
+    border: none;
+    cursor: pointer;
+    padding: 13px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+  }
+
+  .submenu.level-1 > .has-submenu > .menu-arrow-bg,
+  .submenu > .has-submenu > .menu-arrow-bg,
+  .submenu .menu-arrow-bg {
+    display: block;
+    height: 20px;
+    margin-left: auto;
+    margin-right: 30px;
+    transition: transform 0.4s;
+    width: 20px;
+  }
+}
+
+/* HubSpot Editor Styles */
+
+.hs-inline-edit .submenu.level-1 > li.has-submenu:hover .submenu.level-2,
+.hs-inline-edit > li.has-submenu.focus .submenu.level-2 {
+  visibility: hidden;
+}

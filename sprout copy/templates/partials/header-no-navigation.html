@@ -1,0 +1,23 @@
+<!--
+  templateType: global_partial
+  label: Header no navigation
+-->
+<header class="header header--no-navigation">
+  <div class="header__container">
+
+    {# Logo #}
+    <div class="header__logo">
+      {% module 'header_logo'
+        path='@hubspot/logo',
+        img={
+          'alt': 'Sprout logo',
+          'height': '82',
+          'src': get_asset_url('../../images/sprout-theme-logo.png'),
+          'width': '205'
+        }
+      %}
+    </div>
+    {# End Logo #}
+
+  </div>
+</header>

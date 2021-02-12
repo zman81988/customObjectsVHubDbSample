@@ -1,0 +1,59 @@
+<section id="testimonial-slider--{{ name }}" class="testimonial-slider">
+  {% for testimonial in module.testimonial_slider %}
+    <div class="testimonial">
+      <div class="testimonial__inner-wrapper">
+        <blockquote class="testimonial__content">
+          {{ testimonial.content }}
+          {% if testimonial.author.author_name or testimonial.author.author_image.src %}
+            <div class="testimonial__author">
+              {% if testimonial.author.author_image.src %}
+                <img class="testimonial__author-image" src="{{ testimonial.author.author_image.src }}" alt="{{ testimonial.author.author_image.alt }}">
+              {% endif %}
+              {% if testimonial.author.author_name %}
+                <cite class="testimonial__author-name">{{ testimonial.author.author_name }}</cite>
+              {% endif %}
+            </div>
+          {% endif %}
+        </blockquote>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+{% if module.override_default_style %}
+{% require_css %}
+<style>
+  #hs_cos_wrapper_{{ name }} .tns-nav button {
+    background-color: {{ module.style.navigation_color.color }};
+  }
+
+  #hs_cos_wrapper_{{ name }} .tns-nav .tns-nav-active {
+    background-color: {{ module.style.navigation_active_color.color }};
+  }
+</style>
+{% end_require_css %}
+{% endif %}
+
+{% require_js %}
+<script>
+  var slider = tns({
+    arrowKeys: true,
+    autoplay: false,
+    container: '#testimonial-slider--{{ name }}',
+    controls: false,
+    gutter: 23,
+    items: 1,
+    mouseDrag: true,
+    navPosition: 'bottom',
+    responsive: {
+      1000: {
+        items: 3
+      },
+      767: {
+        items: 2
+      }
+    },
+    slideBy: 1
+  });
+</script>
+{% end_require_js %}

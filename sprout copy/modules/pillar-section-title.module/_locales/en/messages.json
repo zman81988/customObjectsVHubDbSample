@@ -1,0 +1,42 @@
+{
+  "name" : {
+    "message" : "Pillar Section Title",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Enabling this option will allow you to override default theme styles. Disabling this option will reconnect the module back to the default theme styles.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Override default style",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.color.label" : {
+    "message" : "Color",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style options",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Section Title",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "Your section title should describe your section and should be unique from the other section titles on the page. The title will automatically be added to the menu in the 'Pillar menu' module.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Title",
+    "description" : "",
+    "placeholders" : null
+  }
+}

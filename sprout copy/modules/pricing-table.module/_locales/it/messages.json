@@ -1,0 +1,177 @@
+{
+  "name" : {
+    "message" : "Tabella prezzi",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.billing_option_one_title.default" : {
+    "message" : "Fatturazione mensile",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.billing_option_one_title.label" : {
+    "message" : "Etichetta fatturazione",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.label" : {
+    "message" : "Opzione di prezzo uno",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.label" : {
+    "message" : "Tabella",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_button_link.label" : {
+    "message" : "Link pulsante",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_button_text.default" : {
+    "message" : "Registrati",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_button_text.label" : {
+    "message" : "Testo pulsante",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_currency.default" : {
+    "message" : "$",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_currency.label" : {
+    "message" : "Valuta",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_description.default" : {
+    "message" : "<p><strong>Download gratuiti illimitati</strong> e altro ancora!</p><ul><li>Dimensione file massima 25 MB</li><li>Larghezza di banda 2 GB</li><li>Registrazioni schermo 15 secondi</li><li>Registrazione video webcam 15 secondi</li><li>Branding app Cloud</li><li>Annotazioni illimitate</li><li>File illimitati</li><li>Integrazioni app desktop</li></ul>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_description.label" : {
+    "message" : "Descrizione",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_price.label" : {
+    "message" : "Prezzo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_title.default" : {
+    "message" : "Starter",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_title.label" : {
+    "message" : "Titolo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.billing_option_two_title.default" : {
+    "message" : "Risparmio del 15% sulla fatturazione annuale",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.billing_option_two_title.label" : {
+    "message" : "Etichetta fatturazione",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.label" : {
+    "message" : "Opzione di prezzo uno",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.label" : {
+    "message" : "Tabella",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_button_link.label" : {
+    "message" : "Link pulsante",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_button_text.default" : {
+    "message" : "Registrati",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_button_text.label" : {
+    "message" : "Testo pulsante",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_currency.default" : {
+    "message" : "$",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_currency.label" : {
+    "message" : "Valuta",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_description.default" : {
+    "message" : "<p><strong>Download gratuiti illimitati</strong> e altro ancora!</p><ul><li>Dimensione file massima 25 MB</li><li>Larghezza di banda 2 GB</li><li>Registrazioni schermo 15 secondi</li><li>Registrazione video webcam 15 secondi</li><li>Branding app Cloud</li><li>Annotazioni illimitate</li><li>File illimitati</li><li>Integrazioni app desktop</li></ul>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_description.label" : {
+    "message" : "Descrizione",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_price.label" : {
+    "message" : "Prezzo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_title.default" : {
+    "message" : "Enterprise",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_title.label" : {
+    "message" : "Titolo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Abilitare questa opzione ti consentirà di sovrascrivere gli stili del tema predefiniti. Disabilitare questa opzione ricollegherà il modulo agli stili del tema predefiniti.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Sovrascrivi lo stile predefinito",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active_option_color.label" : {
+    "message" : "Colore opzione attiva",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.header_bg_color.label" : {
+    "message" : "Colore sfondo intestazione",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.header_color.label" : {
+    "message" : "Colore testo intestazione",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Opzioni stile",
+    "description" : "",
+    "placeholders" : null
+  }
+}

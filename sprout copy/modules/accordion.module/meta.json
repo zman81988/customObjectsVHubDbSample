@@ -1,0 +1,10 @@
+{
+  "global" : false,
+  "master_language" : "en",
+  "smart_type" : "NOT_SMART",
+  "icon" : "@hubspot/sprout/images/module-icons/down.svg",
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 41043314340,
+  "label" : "Accordion",
+  "is_available_for_new_content" : true
+}

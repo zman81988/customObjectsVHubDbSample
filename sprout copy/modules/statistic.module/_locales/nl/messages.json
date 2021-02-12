@@ -1,0 +1,62 @@
+{
+  "name" : {
+    "message" : "Statistiek",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Als je deze optie inschakelt, kun je de standaard themastijlen overschrijven. Als je deze optie uitschakelt wordt de module weer gekoppeld aan de standaard themastijlen.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Standaardstijl overschrijven",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_description.default" : {
+    "message" : "<p>Klanttevredenheidsscore</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_description.label" : {
+    "message" : "Statistiek beschrijving",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_number.label" : {
+    "message" : "Statistiek getal",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_percentage.label" : {
+    "message" : "Statistiek percentage",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_unit.default" : {
+    "message" : "k",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_unit.label" : {
+    "message" : "Statistiek eenheid",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bar_color.label" : {
+    "message" : "Balkkleur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bar_fill_color.label" : {
+    "message" : "Kleur balkvulling",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Stijlopties",
+    "description" : "",
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,41 @@
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 1340px;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 1380px) {
+  .content-wrapper {
+    padding: 0;
+  }
+}
+
+.content-wrapper--narrow {
+  max-width: 760px;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .content-wrapper--narrow {
+    padding: 0;
+  }
+}
+
+.dnd-section {
+  padding: 80px 20px;
+}
+
+.dnd-section > .row-fluid {
+  margin: 0 auto;
+  max-width: 1340px;
+}
+
+.dnd-section .widget-type-cell {
+  padding: 0 20px;
+}
+
+@media (max-width: 767px) {
+  .dnd-section .widget-type-cell {
+    padding: 0;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "global" : false,
+  "master_language" : "en",
+  "smart_type" : "NOT_SMART",
+  "icon" : "@hubspot/sprout/images/module-icons/generate-chart.svg",
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 41043517903,
+  "label" : "Statistic",
+  "is_available_for_new_content" : true
+}

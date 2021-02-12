@@ -1,0 +1,42 @@
+{
+  "bio.default" : {
+    "message" : "<p>Joshua tem mais de 20 ano de experiência no setor de tecnologia. Ele é foi um dos fundadores da empresa em 2015, com a missão de ajudar a desenvolver as pessoas. Em seu tempo livre, ele gosta de brincar com os filhos, ir à praia e cozinhar.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bio.label" : {
+    "message" : "Biografia",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Membro da equipe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "position.default" : {
+    "message" : "CEO, cofundador",
+    "description" : "",
+    "placeholders" : null
+  },
+  "position.label" : {
+    "message" : "Posição",
+    "description" : "",
+    "placeholders" : null
+  },
+  "team_member_image.label" : {
+    "message" : "Imagem",
+    "description" : "",
+    "placeholders" : null
+  },
+  "team_member_name.default" : {
+    "message" : "Joshua Beck",
+    "description" : "",
+    "placeholders" : null
+  },
+  "team_member_name.label" : {
+    "message" : "Nome",
+    "description" : "",
+    "placeholders" : null
+  }
+}

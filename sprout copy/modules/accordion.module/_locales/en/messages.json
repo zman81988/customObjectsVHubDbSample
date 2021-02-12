@@ -1,0 +1,87 @@
+{
+  "content.default" : {
+    "message" : "Leverage the intuitive super awesome software that saves you time and will help grow your business.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content.label" : {
+    "message" : "Content",
+    "description" : "",
+    "placeholders" : null
+  },
+  "expanded.label" : {
+    "message" : "Expanded by default",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.default" : {
+    "message" : "How do I make an awesome template?",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.label" : {
+    "message" : "Header",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Accordion",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Enabling this option will allow you to override default theme styles. Disabling this option will reconnect the module back to the default theme styles.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Override default style",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.accordion_color.label" : {
+    "message" : "Header color",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.accordion_color.label" : {
+    "message" : "Header color",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.icon_color.label" : {
+    "message" : "Icon color",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.label" : {
+    "message" : "Active",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.accordion_color.label" : {
+    "message" : "Header color",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.icon_color.label" : {
+    "message" : "Icon color",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.label" : {
+    "message" : "Hover",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.icon_color.label" : {
+    "message" : "Icon color",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style options",
+    "description" : "",
+    "placeholders" : null
+  }
+}

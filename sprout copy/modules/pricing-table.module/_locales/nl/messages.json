@@ -1,0 +1,177 @@
+{
+  "name" : {
+    "message" : "Prijstabel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.billing_option_one_title.default" : {
+    "message" : "Maandelijkse facturering",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.billing_option_one_title.label" : {
+    "message" : "Factureringslabel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.label" : {
+    "message" : "Prijsoptie een",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.label" : {
+    "message" : "Tabel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_button_link.label" : {
+    "message" : "Koppeling voor knop",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_button_text.default" : {
+    "message" : "Meld je aan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_button_text.label" : {
+    "message" : "Knoptekst",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_currency.default" : {
+    "message" : "$",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_currency.label" : {
+    "message" : "Valuta",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_description.default" : {
+    "message" : "<p><strong>Gratis onbeperkte</strong> downloads, en nog meer!</p><ul><li>Maximum bestandsgrootte van 25 MB</li><li>2 GB bandbreedte</li><li>15 seconden aan schermopnames</li><li>15 seconden aan webcam video-opnames</li><li>CloudApp-branding</li><li>Onbeperkte annotaties</li><li>Ongeperkte bestanden</li><li>App-integraties voor desktop</li></ul>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_description.label" : {
+    "message" : "Beschrijving",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_price.label" : {
+    "message" : "Prijs",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_title.default" : {
+    "message" : "Starter",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_title.label" : {
+    "message" : "Titel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.billing_option_two_title.default" : {
+    "message" : "Met jaarlijkse facturering bespaar je 15%",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.billing_option_two_title.label" : {
+    "message" : "Factureringslabel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.label" : {
+    "message" : "Prijsoptie twee",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.label" : {
+    "message" : "Tabel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_button_link.label" : {
+    "message" : "Koppeling voor knop",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_button_text.default" : {
+    "message" : "Meld je aan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_button_text.label" : {
+    "message" : "Knoptekst",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_currency.default" : {
+    "message" : "$",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_currency.label" : {
+    "message" : "Valuta",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_description.default" : {
+    "message" : "<p><strong>Gratis onbeperkte</strong> downloads, en nog meer!</p><ul><li>Maximum bestandsgrootte van 25 MB</li><li>2 GB bandbreedte</li><li>15 seconden aan schermopnames</li><li>15 seconden aan webcam video-opnames</li><li>CloudApp-branding</li><li>Onbeperkte annotaties</li><li>Ongeperkte bestanden</li><li>App-integraties voor desktop</li></ul>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_description.label" : {
+    "message" : "Beschrijving",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_price.label" : {
+    "message" : "Prijs",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_title.default" : {
+    "message" : "Enterprise",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_title.label" : {
+    "message" : "Titel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Als je deze optie inschakelt, kun je de standaard themastijlen overschrijven. Als je deze optie uitschakelt wordt de module weer gekoppeld aan de standaard themastijlen.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Standaardstijl overschrijven",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active_option_color.label" : {
+    "message" : "Kleur actieve optie",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.header_bg_color.label" : {
+    "message" : "Achtergrondkleur header",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.header_color.label" : {
+    "message" : "Tekstkleur header",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Stijlopties",
+    "description" : "",
+    "placeholders" : null
+  }
+}

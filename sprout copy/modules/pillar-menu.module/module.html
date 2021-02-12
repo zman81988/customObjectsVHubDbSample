@@ -1,0 +1,16 @@
+<section class="pillar-navigation">
+  <h4 class="pillar-navigation__title">{{ module.title }}</h4>
+  <nav class="pillar-navigation__menu" aria-label="Same page section menu">
+    <ul id="pillar-navigation__menu-items" class="pillar-navigation__menu-items"></ul>
+  </nav>
+</section>
+
+{% if module.style.border.style != 'none' %}
+{% require_css %}
+<style>
+  #hs_cos_wrapper_{{ name }} .pillar-navigation__menu-item {
+    border-bottom: {{ module.style.border.width ~ 'px' ~ ' ' ~ module.style.border.style ~ ' ' ~ module.style.border.color.color }}
+  }
+</style>
+{% end_require_css %}
+{% endif %}

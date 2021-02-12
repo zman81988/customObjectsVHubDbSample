@@ -1,0 +1,67 @@
+{
+  "accessibility.label" : {
+    "message" : "Options d'accessibilité",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.choices.decorative" : {
+    "message" : "Ignoré par le lecteur d'écran",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.choices.semantic" : {
+    "message" : "Lu par le lecteur d'écran",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.label" : {
+    "message" : "Fins",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.title.label" : {
+    "message" : "Titre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "icon_field.label" : {
+    "message" : "Icône",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Icône",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Activer cette option vous permettra de remplacer les styles de thèmes par défaut. Désactiver cette option reconnectera le module aux styles de thèmes par défaut.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Remplacer le style par défaut",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.color.label" : {
+    "message" : "Couleur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Options de style",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.help_text" : {
+    "message" : "La valeur est en pixels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.label" : {
+    "message" : "Taille",
+    "description" : "",
+    "placeholders" : null
+  }
+}

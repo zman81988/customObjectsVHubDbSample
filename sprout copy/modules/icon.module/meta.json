@@ -1,0 +1,10 @@
+{
+  "global" : false,
+  "master_language" : "en",
+  "smart_type" : "NOT_SMART",
+  "icon" : "@hubspot/sprout/images/module-icons/certification.svg",
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 41043459875,
+  "label" : "Icon",
+  "is_available_for_new_content" : true
+}

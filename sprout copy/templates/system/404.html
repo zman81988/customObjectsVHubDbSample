@@ -1,0 +1,21 @@
+<!--
+  templateType: error_page
+  isAvailableForNewContent: true
+  label: Sprout - 404 error
+  screenshotPath: ../../images/template-previews/404.png
+-->
+{% extends '../layouts/base.html' %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  <section class="content-wrapper">
+    <div class="error-page" data-error="404">
+      {% module 'content'
+        path='@hubspot/rich_text',
+        html='<h1>Page not found.</h1>'
+      %}
+      {% module "button" path="../../modules/button" button_text="Go Home" button_options={ "button_link_toggle": true } button_link={ "url": { "type": "EXTERNAL", "href": "/"}, "open_in_new_tab": false, "no_follow": false } style={ "button_type" : "primary"} %}
+    </div>
+  </section>
+</main>
+{% endblock body %}

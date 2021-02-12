@@ -1,0 +1,72 @@
+{
+  "button_icon.label" : {
+    "message" : "Ícone do botão",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.default" : {
+    "message" : "Voltar ao blog",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.label" : {
+    "message" : "Texto do botão",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Banner de post de blog",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.choices.custom_bg_color" : {
+    "message" : "Cor de fundo personalizada",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.choices.custom_bg_image" : {
+    "message" : "Imagem de fundo personalizada",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.choices.featured_image" : {
+    "message" : "Imagem em destaque",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.label" : {
+    "message" : "Que tipo de banner você gostaria de usar?",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_color.label" : {
+    "message" : "Cor de fundo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_image.label" : {
+    "message" : "Imagem de fundo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Opções de estilo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.label" : {
+    "message" : "Horizontal",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.help_text" : {
+    "message" : "O valor está em pixels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.label" : {
+    "message" : "Superior/inferior",
+    "description" : "",
+    "placeholders" : null
+  }
+}

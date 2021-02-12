@@ -1,0 +1,10 @@
+{
+  "global" : false,
+  "master_language" : "en",
+  "smart_type" : "NOT_SMART",
+  "icon" : "@hubspot/sprout/images/module-icons/menu.svg",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 41043536970,
+  "label" : "Pillar menu",
+  "is_available_for_new_content" : true
+}

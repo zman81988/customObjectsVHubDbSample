@@ -1,0 +1,42 @@
+{
+  "name" : {
+    "message" : "Título da seção de pilar",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Ativar esta opção permitirá substituir os estilos do tema padrão. Desativar esta opção reconectará o módulo aos estilos do tema padrão.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Substituir estilo padrão",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.color.label" : {
+    "message" : "Cor",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Opções de estilo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Título da seção",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "O título da seção deve descrever a seção e ser exclusivo em relação aos outros títulos de seção na página. O título será adicionado automaticamente ao menu no módulo \"Menu de pilar\".",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Título",
+    "description" : "",
+    "placeholders" : null
+  }
+}

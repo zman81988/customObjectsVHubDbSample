@@ -1,0 +1,97 @@
+{
+  "name" : {
+    "message" : "Pillar-Menü",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.color.label" : {
+    "message" : "Farbe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.label" : {
+    "message" : "Unterer Rahmen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.dashed" : {
+    "message" : "Gestrichelt",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.dotted" : {
+    "message" : "Gepunktete",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.double" : {
+    "message" : "Doppelt",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.groove" : {
+    "message" : "Rille",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.inset" : {
+    "message" : "Einsatz",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.none" : {
+    "message" : "Nicht vorhanden",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.outset" : {
+    "message" : "Anfang",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.ridge" : {
+    "message" : "Grat",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.solid" : {
+    "message" : "Solide",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.label" : {
+    "message" : "Stil",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.width.help_text" : {
+    "message" : "Wert in Pixel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.width.label" : {
+    "message" : "Breite",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Stiloptionen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Inhaltsverzeichnis",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "Die Menüpunkte werden automatisch erstellt, wenn das Modul „Pillar-Abschnitt“ zur Seite hinzugefügt wird.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Titel",
+    "description" : "",
+    "placeholders" : null
+  }
+}

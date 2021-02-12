@@ -1,0 +1,62 @@
+{
+  "name" : {
+    "message" : "統計",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "このオプションを有効にすると、既定のテーマスタイルを上書きできます。このオプションを無効にすると、モジュールが既定のテーマスタイルに再接続されます。",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "既定のスタイルを上書き",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_description.default" : {
+    "message" : "<p>顧客満足度評価</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_description.label" : {
+    "message" : "統計の説明",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_number.label" : {
+    "message" : "統計の数値",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_percentage.label" : {
+    "message" : "統計のパーセンテージ",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_unit.default" : {
+    "message" : "000",
+    "description" : "",
+    "placeholders" : null
+  },
+  "statistic_unit.label" : {
+    "message" : "統計の単位",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bar_color.label" : {
+    "message" : "バーの色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bar_fill_color.label" : {
+    "message" : "バーの塗りつぶし色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "スタイルオプション",
+    "description" : "",
+    "placeholders" : null
+  }
+}

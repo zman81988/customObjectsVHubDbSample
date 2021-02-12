@@ -1,0 +1,64 @@
+<div class="accordion" aria-expanded="{% if module.expanded %}true{% else %}false{% endif %}">
+  <button>
+    {{ module.header }}
+    <span class="accordion__icon"></span>
+  </button>
+  <main>
+    <div class="accordion__item-content">
+      {{ module.content }}
+    </div>
+  </main>
+</div>
+
+{% if module.override_default_style %}
+{% require_css %}
+<style>
+  #hs_cos_wrapper_{{ name }} .accordion button {
+    color: {{ module.style.accordion_color.color }};
+  }
+
+  #hs_cos_wrapper_{{ name }} .accordion button:hover,
+  #hs_cos_wrapper_{{ name }} .accordion button:focus {
+    color: {{ module.style.hover.accordion_color.color }};
+  }
+
+  #hs_cos_wrapper_{{ name }} .accordion button:active,
+  #hs_cos_wrapper_{{ name }} .accordion[aria-expanded=true] button {
+    color: {{ module.style.active.accordion_color.color }};
+  }
+
+  #hs_cos_wrapper_{{ name }} button .accordion__icon {
+    background-color: {{ module.style.accordion_color.color }};
+  }
+
+  #hs_cos_wrapper_{{ name }} button:hover .accordion__icon,
+  #hs_cos_wrapper_{{ name }} button:focus .accordion__icon {
+    background-color: {{ module.style.hover.accordion_color.color }};
+  }
+
+  #hs_cos_wrapper_{{ name }} button:active .accordion__icon,
+  #hs_cos_wrapper_{{ name }} .accordion[aria-expanded=true] button .accordion__icon {
+    background-color: {{ module.style.active.accordion_color.color }};
+  }
+
+  #hs_cos_wrapper_{{ name }} .accordion__icon:before,
+  #hs_cos_wrapper_{{ name }} .accordion__icon:after {
+    background-color: {{ module.style.accordion_icon_color.color }};
+  }
+
+  #hs_cos_wrapper_{{ name }} button:hover .accordion__icon:before,
+  #hs_cos_wrapper_{{ name }} button:hover .accordion__icon:after,
+  #hs_cos_wrapper_{{ name }} button:focus .accordion__icon:before,
+  #hs_cos_wrapper_{{ name }} button:focus .accordion__icon:after {
+    background-color: {{ module.style.accordion_icon_color.color }};
+  }
+
+  #hs_cos_wrapper_{{ name }} button:active .accordion__icon:before,
+  #hs_cos_wrapper_{{ name }} button:active .accordion__icon:after,
+  #hs_cos_wrapper_{{ name }} .accordion[aria-expanded=true] button .accordion__icon:before,
+  #hs_cos_wrapper_{{ name }} .accordion[aria-expanded=true] button .accordion__icon:after {
+    background-color: {{ module.style.accordion_icon_color.color }};
+  }
+</style>
+{% end_require_css %}
+{% endif %}

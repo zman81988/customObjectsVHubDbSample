@@ -1,0 +1,97 @@
+{
+  "name" : {
+    "message" : "Pillarmenu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.color.label" : {
+    "message" : "Kleur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.label" : {
+    "message" : "Onderrand",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.dashed" : {
+    "message" : "Streepjes",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.dotted" : {
+    "message" : "Stippels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.double" : {
+    "message" : "Dubbel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.groove" : {
+    "message" : "Groef",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.inset" : {
+    "message" : "Verzonken",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.none" : {
+    "message" : "Geen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.outset" : {
+    "message" : "Opstaand",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.ridge" : {
+    "message" : "Ribbel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.solid" : {
+    "message" : "Ononderbroken",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.label" : {
+    "message" : "Stijl",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.width.help_text" : {
+    "message" : "Waarde is in pixels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.width.label" : {
+    "message" : "Breedte",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Stijlopties",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Inhoudsopgave",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "Menu-items worden automatisch aangemaakt wanneer de module 'Pillar-sectie' aan de pagina wordt toegevoegd",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Titel",
+    "description" : "",
+    "placeholders" : null
+  }
+}

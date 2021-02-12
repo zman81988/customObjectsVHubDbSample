@@ -1,0 +1,12 @@
+defaultPortal: customObjectsvHubDBSample
+portals:
+  - name: customObjectsvHubDBSample
+    portalId: 9307273
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          xxxxxxxxx
+        expiresAt: "2021-02-07T22:12:16.496Z"
+    personalAccessKey: >-
+      xxxxxxxxx

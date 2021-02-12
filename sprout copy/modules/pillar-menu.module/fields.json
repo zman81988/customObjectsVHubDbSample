@@ -1,0 +1,82 @@
+[ {
+  "id" : "title",
+  "name" : "title",
+  "label" : "Title",
+  "help_text" : "Menu items are automatically created when adding the 'Pillar section' module to the page",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Table of Contents"
+}, {
+  "id" : "style",
+  "name" : "style",
+  "label" : "Style options",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "style.border",
+    "name" : "border",
+    "label" : "Bottom border",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "style.border.style",
+      "name" : "style",
+      "label" : "Style",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "none", "None" ], [ "solid", "Solid" ], [ "dotted", "Dotted" ], [ "dashed", "Dashed" ], [ "double", "Double" ], [ "groove", "Groove" ], [ "ridge", "Ridge" ], [ "inset", "Inset" ], [ "outset", "Outset" ] ],
+      "type" : "choice",
+      "default" : "solid"
+    }, {
+      "id" : "style.border.width",
+      "name" : "width",
+      "label" : "Width",
+      "help_text" : "Value is in pixels",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "style.border.style",
+        "controlling_value_regex" : "none",
+        "operator" : "NOT_EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "display" : "slider",
+      "min" : 1,
+      "max" : 100,
+      "step" : 1,
+      "type" : "number",
+      "default" : 1
+    }, {
+      "id" : "style.border.color",
+      "name" : "color",
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "style.border.style",
+        "controlling_value_regex" : "none",
+        "operator" : "NOT_EQUAL",
+        "access" : null,
+        "hidden_subfields" : {
+          "opacity" : true
+        }
+      },
+      "type" : "color",
+      "default" : {
+        "color" : "#D0D0D0"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+} ]

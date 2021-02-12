@@ -1,0 +1,177 @@
+{
+  "name" : {
+    "message" : "Tabla de precios",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.billing_option_one_title.default" : {
+    "message" : "Facturación mensual",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.billing_option_one_title.label" : {
+    "message" : "Etiqueta de facturación",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.label" : {
+    "message" : "Opción de precios uno",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.label" : {
+    "message" : "Tabla",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_button_link.label" : {
+    "message" : "Enlace de botón",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_button_text.default" : {
+    "message" : "Registrarse",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_button_text.label" : {
+    "message" : "Texto del botón",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_currency.default" : {
+    "message" : "$",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_currency.label" : {
+    "message" : "Divisa",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_description.default" : {
+    "message" : "¡Descargas <p><strong>gratuitas ilimitadas</strong> y más!</p><ul><li>25 MB de tamaño máximo de los archivos</li><li>2 GB de ancho de banda</li><li>Grabaciones de 15 segundos de la pantalla</li><li>Grabaciones de 15 segundos de video con cámara web</li><li>Branding de CloudApp</li><li>Anotaciones ilimitadas</li><li>Archivos ilimitados</li><li>Integraciones de aplicaciones de escritorio</li></ul>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_description.label" : {
+    "message" : "Descripción",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_price.label" : {
+    "message" : "Precio",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_title.default" : {
+    "message" : "Starter",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_one.option_one_table.option_one_title.label" : {
+    "message" : "Título",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.billing_option_two_title.default" : {
+    "message" : "Facturación anual Ahorra 15%",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.billing_option_two_title.label" : {
+    "message" : "Etiqueta de facturación",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.label" : {
+    "message" : "Opción de precios dos",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.label" : {
+    "message" : "Tabla",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_button_link.label" : {
+    "message" : "Enlace de botón",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_button_text.default" : {
+    "message" : "Registrarse",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_button_text.label" : {
+    "message" : "Texto del botón",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_currency.default" : {
+    "message" : "$",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_currency.label" : {
+    "message" : "Divisa",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_description.default" : {
+    "message" : "¡Descargas <p><strong>gratuitas ilimitadas</strong>, y más!</p><ul><li>25 MB de tamaño máximo de los archivos</li><li>2 GB de ancho de banda</li><li>Grabaciones de 15 segundos en la pantalla</li><li>Grabaciones de 15 segundos de video con cámara web</li><li>Branding de CloudApp</li><li>Anotaciones ilimitadas</li><li>Archivos ilimitados</li><li>Integraciones de aplicaciones de escritorio</li></ul>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_description.label" : {
+    "message" : "Descripción",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_price.label" : {
+    "message" : "Precio",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_title.default" : {
+    "message" : "Enterprise",
+    "description" : "",
+    "placeholders" : null
+  },
+  "option_two.option_two_table.option_two_title.label" : {
+    "message" : "Título",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Activar esta opción te permitirá anular los estilos de temas predeterminados. Al desactivar esta opción se volverá a conectar el módulo a los estilos de temas predeterminados.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Anular estilo predeterminado",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active_option_color.label" : {
+    "message" : "Color de opción activa",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.header_bg_color.label" : {
+    "message" : "Color de fondo del encabezado",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.header_color.label" : {
+    "message" : "Color del texto del encabezado",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Opciones de estilos",
+    "description" : "",
+    "placeholders" : null
+  }
+}

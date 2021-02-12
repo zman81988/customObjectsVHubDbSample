@@ -1,0 +1,72 @@
+{
+  "button_icon.label" : {
+    "message" : "Button-Symbol",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.default" : {
+    "message" : "Zurück zum Blog",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.label" : {
+    "message" : "Button-Text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Banner für Blog-Beitrag",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.choices.custom_bg_color" : {
+    "message" : "Benutzerdefinierte Hintergrundfarbe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.choices.custom_bg_image" : {
+    "message" : "Benutzerdefiniertes Hintergrundbild",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.choices.featured_image" : {
+    "message" : "Feature-Bild",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.banner_image_select.label" : {
+    "message" : "Welche Art von Banner möchten Sie verwenden?",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_color.label" : {
+    "message" : "Hintergrundfarbe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.bg_image.label" : {
+    "message" : "Hintergrundbild",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Stiloptionen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.label" : {
+    "message" : "Auffüllung",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.help_text" : {
+    "message" : "Wert in Pixel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.padding.vertical.label" : {
+    "message" : "Oben/Unten",
+    "description" : "",
+    "placeholders" : null
+  }
+}

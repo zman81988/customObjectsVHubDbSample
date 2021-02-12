@@ -1,0 +1,97 @@
+{
+  "name" : {
+    "message" : "Menu pilier",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.color.label" : {
+    "message" : "Couleur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.label" : {
+    "message" : "Bordure inférieure",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.dashed" : {
+    "message" : "En pointillés",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.dotted" : {
+    "message" : "En pointillés",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.double" : {
+    "message" : "Double",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.groove" : {
+    "message" : "Rainure",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.inset" : {
+    "message" : "Bordure - bas",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.none" : {
+    "message" : "Aucune",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.outset" : {
+    "message" : "Bordure - haut",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.ridge" : {
+    "message" : "Bordure en relief",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.choices.solid" : {
+    "message" : "Solide",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.style.label" : {
+    "message" : "Style",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.width.help_text" : {
+    "message" : "La valeur est en pixels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.border.width.label" : {
+    "message" : "Largeur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Options de style",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Table des matières",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "Les éléments du menu sont créés automatiquement lorsque le module « Section pilier » est ajouté à la page",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Titre",
+    "description" : "",
+    "placeholders" : null
+  }
+}

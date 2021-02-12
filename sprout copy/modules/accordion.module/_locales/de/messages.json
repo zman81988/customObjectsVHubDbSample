@@ -1,0 +1,87 @@
+{
+  "content.default" : {
+    "message" : "Nutzen Sie die intuitive, attraktive Software, die Ihnen Zeit spart und von der Ihr Unternehmen profitiert.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content.label" : {
+    "message" : "Content",
+    "description" : "",
+    "placeholders" : null
+  },
+  "expanded.label" : {
+    "message" : "Standardmäßig erweitert",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.default" : {
+    "message" : "Wie erstelle ich eine attraktive Vorlage?",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header.label" : {
+    "message" : "Überschrift",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Accordion",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Wenn Sie diese Option aktivieren, können Sie die Standard-Designstile außer Kraft setzen. Durch Deaktivieren dieser Option wird das Modul wieder mit den Standard-Designstilen verknüpft.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Standardstil überschreiben",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.accordion_color.label" : {
+    "message" : "Header-Farbe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.accordion_color.label" : {
+    "message" : "Header-Farbe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.icon_color.label" : {
+    "message" : "Symbolfarbe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.active.label" : {
+    "message" : "Aktiv",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.accordion_color.label" : {
+    "message" : "Header-Farbe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.icon_color.label" : {
+    "message" : "Symbolfarbe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.hover.label" : {
+    "message" : "Zeigen auf",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.icon_color.label" : {
+    "message" : "Symbolfarbe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Stiloptionen",
+    "description" : "",
+    "placeholders" : null
+  }
+}

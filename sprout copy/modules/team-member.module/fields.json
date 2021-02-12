@@ -1,0 +1,45 @@
+[ {
+  "id" : "team_member_image",
+  "name" : "team_member_image",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : ""
+  }
+}, {
+  "id" : "team_member_name",
+  "name" : "team_member_name",
+  "label" : "Name",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Joshua Beck"
+}, {
+  "id" : "position",
+  "name" : "position",
+  "label" : "Position",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "CEO, Co-Founder"
+}, {
+  "id" : "bio",
+  "name" : "bio",
+  "label" : "Bio",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Joshua has over 20 years of experience in the tech industry. He helped start this company in 2015 with the mission of helping people grow. In his spare time he loves hanging out with his kids, going to the beach, and cooking.</p>"
+} ]

@@ -1,0 +1,67 @@
+{
+  "accessibility.label" : {
+    "message" : "Optionen für Barrierefreiheit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.choices.decorative" : {
+    "message" : "Von Bildschirmleseprogramm ignoriert",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.choices.semantic" : {
+    "message" : "Von Bildschirmleseprogramm gelesen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.purpose.label" : {
+    "message" : "Zweck",
+    "description" : "",
+    "placeholders" : null
+  },
+  "accessibility.title.label" : {
+    "message" : "Titel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "icon_field.label" : {
+    "message" : "Symbol",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Symbol",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.help_text" : {
+    "message" : "Wenn Sie diese Option aktivieren, können Sie die Standard-Designstile außer Kraft setzen. Durch Deaktivieren dieser Option wird das Modul wieder mit den Standard-Designstilen verknüpft.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "override_default_style.label" : {
+    "message" : "Standardstil überschreiben",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.color.label" : {
+    "message" : "Farbe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Stiloptionen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.help_text" : {
+    "message" : "Wert in Pixel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.size.label" : {
+    "message" : "Größe",
+    "description" : "",
+    "placeholders" : null
+  }
+}

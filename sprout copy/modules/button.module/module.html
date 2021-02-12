@@ -1,0 +1,31 @@
+{% if module.button_link.url.type is equalto 'EMAIL_ADDRESS' %}
+  {% set href = 'mailto:' ~ module.button_link.url.href %}
+{% elif module.button_link.url.href == '/' %}
+  {% set href = module.button_link.url.href %}
+{% else %}
+  {% unless (module.button_link.url.href is string_containing '//') or !module.button_link.url.href %}
+    {% set href = '//' ~ module.button_link.url.href %}
+  {% else %}
+    {% set href = module.button_link.url.href || '' %}
+  {% endunless %}
+{% endif %}
+
+{% set rel = (module.button_link.open_in_new_tab ? 'noopener ' : null) ~ (module.button_link.no_follow ? 'nofollow' : null) %}
+
+<{% if module.button_options.button_link_toggle == true %}a href="{{ href }}" {% else %}button {% endif %} class="button{% if module.style.button_type == 'secondary' %} button--secondary{% elif module.style.button_type == 'simple' %} button--simple{% endif %}{% if module.style.button_size == 'small' %} button--small{% elif module.style.button_size == 'large' %} button--large{% endif %}{% if module.button_icon.icon_position == 'right' %} button--icon-right{% endif %}"
+    id="button_{{ name }}"
+    {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+    rel="{{ rel }}">
+
+    {% if module.button_options.button_icon_toggle == true and module.button_icon.icon_field.unicode %}
+      {% icon
+        extra_classes='button__icon'
+        name='{{ module.button_icon.icon_field.name }}'
+        purpose='decorative'
+        style='{{ module.button_icon.icon_field.type }}'
+        unicode='{{ module.button_icon.icon_field.unicode }}'
+      %}
+    {% endif %}
+  {{ module.button_text }}
+
+</{% if module.button_options.button_link_toggle == true %}a{% else %}button{% endif %}>
